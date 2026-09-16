@@ -58,6 +58,9 @@ export function RoleExplorer() {
                   Participación estimada: <strong>{active.distribucion.porcentaje_estimado}%</strong>
                 </p>
                 <SourceCitation fuente={active.distribucion.fuente} />
+                {active.distribucion.nota && (
+                  <p className="panel-sub">{active.distribucion.nota}</p>
+                )}
               </>
             )}
             <h3>Nomenclaturas / alias mapeados a esta familia</h3>

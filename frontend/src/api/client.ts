@@ -3,7 +3,7 @@ const API_BASE = "http://127.0.0.1:8000";
 export interface DataSource {
   id: string;
   nombre: string;
-  tipo: "oficial" | "estimacion";
+  tipo: "oficial" | "comunitario" | "estimacion";
   descripcion: string;
   url: string | null;
   fecha: string | null;
@@ -12,7 +12,15 @@ export interface DataSource {
 export interface RoleDistribution {
   porcentaje_estimado: number;
   tipo: string;
+  nota: string | null;
   fuente: DataSource;
+}
+
+export interface ProvinceEmployment {
+  provincia: string;
+  empleos_registrados: number;
+  porcentaje: number;
+  periodo: string;
 }
 
 export interface RoleFamily {
@@ -78,5 +86,6 @@ export const api = {
   employmentSummary: () => getJson<EmploymentSummary>("/api/employment/summary"),
   employmentTimeseries: () => getJson<EmploymentSnapshot[]>("/api/employment/timeseries"),
   employmentByRole: () => getJson<ByRoleResponse>("/api/employment/by-role"),
+  employmentByProvince: () => getJson<ProvinceEmployment[]>("/api/employment/by-province"),
   sources: () => getJson<DataSource[]>("/api/sources"),
 };

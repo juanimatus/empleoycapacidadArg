@@ -1,0 +1,42 @@
+{
+  "descripcion": "Distribución del empleo IT por familia de rol, calculada a partir de una encuesta primaria real (no una encuesta oficial del Estado, pero sí un relevamiento directo con miles de respuestas).",
+  "tipo": "COMUNITARIO_VERIFICABLE",
+  "fuente": {
+    "nombre": "Sysarmy - Encuesta de Sueldos IT Argentina 2025.1",
+    "url": "https://sysarmy.com/blog/posts/resultados-de-la-encuesta-de-sueldos-2025-1/",
+    "url_dataset": "https://docs.google.com/spreadsheets/d/1hlLwv9SLJvrnsTq_UsEAHkHGNiziH7IdT1lJd4fq6kU/edit",
+    "licencia": "Creative Commons Atribución-NoComercial-CompartirIgual 4.0 Internacional (CC BY-NC-SA 4.0)",
+    "muestra_total": 5196,
+    "fecha_relevamiento": "2025 (primer semestre)"
+  },
+  "metodologia": "Se tomó la columna 'trabajo_de' (rol autodeclarado) de las 5.196 respuestas de la encuesta y se mapearon las categorías de Sysarmy a nuestras 12 familias. 4.161 respuestas (80,1%) mapearon de forma razonable; el resto (Technical Leader, Architect, Consultant, Business Analyst, Networking, Recruiter, VP/C-Level, Docente, etc. — 1.035 respuestas, 19,9%) no tiene un mapeo claro a esta taxonomía y se excluyó en vez de forzarlo. Dentro de la categoría 'Developer' de Sysarmy (710+462+391+213=1.776 respuestas) no hay sub-distinción entre Backend/Frontend/Full Stack/Mobile, así que esa proporción interna sigue siendo una estimación editorial (marcada aparte); el total del bloque 'Developer' sí es dato real de la encuesta.",
+  "licencia_uso": "CC BY-NC-SA 4.0: uso no comercial, con atribución a Sysarmy/OpenQube y manteniendo la misma licencia en derivados. Este proyecto, mientras sea sin fines de lucro, puede usar estos datos citando la fuente.",
+  "respuestas_mapeadas": 4161,
+  "respuestas_totales": 5196,
+  "porcentaje_no_mapeado": 19.9,
+  "distribucion": [
+    {"role_family_id": "backend", "respuestas": 710, "porcentaje_estimado": 17.1, "nota": "Sub-split editorial dentro del bloque real 'Developer' (n=1776)"},
+    {"role_family_id": "devops", "respuestas": 630, "porcentaje_estimado": 15.1, "nota": "Dato directo de la encuesta (categoría 'SysAdmin / DevOps / SRE')"},
+    {"role_family_id": "product-project", "respuestas": 467, "porcentaje_estimado": 11.2, "nota": "Dato directo de la encuesta ('Manager / Director' + 'Scrum Master')"},
+    {"role_family_id": "frontend", "respuestas": 462, "porcentaje_estimado": 11.1, "nota": "Sub-split editorial dentro del bloque real 'Developer' (n=1776)"},
+    {"role_family_id": "data", "respuestas": 457, "porcentaje_estimado": 11.0, "nota": "Dato directo de la encuesta ('BI Analyst/Data Analyst' + 'Data Engineer' + 'DBA')"},
+    {"role_family_id": "fullstack", "respuestas": 391, "porcentaje_estimado": 9.4, "nota": "Sub-split editorial dentro del bloque real 'Developer' (n=1776)"},
+    {"role_family_id": "qa", "respuestas": 247, "porcentaje_estimado": 5.9, "nota": "Dato directo de la encuesta ('QA / Tester')"},
+    {"role_family_id": "mobile", "respuestas": 213, "porcentaje_estimado": 5.1, "nota": "Sub-split editorial dentro del bloque real 'Developer' (n=1776)"},
+    {"role_family_id": "ux-ui", "respuestas": 193, "porcentaje_estimado": 4.6, "nota": "Dato directo de la encuesta ('UX Designer' + 'Designer' + 'UX Writer' + 'UX Researcher')"},
+    {"role_family_id": "support-sysadmin", "respuestas": 153, "porcentaje_estimado": 3.7, "nota": "Dato directo de la encuesta ('HelpDesk' + 'Technical Support')"},
+    {"role_family_id": "security", "respuestas": 123, "porcentaje_estimado": 3.0, "nota": "Dato directo de la encuesta ('Infosec')"},
+    {"role_family_id": "data-science-ml", "respuestas": 115, "porcentaje_estimado": 2.8, "nota": "Dato directo de la encuesta ('Data Scientist' + 'AI Engineer')"}
+  ],
+  "categorias_no_mapeadas": [
+    {"categoria": "Technical Leader", "respuestas": 367},
+    {"categoria": "Architect", "respuestas": 125},
+    {"categoria": "Consultant", "respuestas": 99},
+    {"categoria": "Business Analyst", "respuestas": 93},
+    {"categoria": "Networking", "respuestas": 89},
+    {"categoria": "Recruiter", "respuestas": 70},
+    {"categoria": "Functional Analyst", "respuestas": 56},
+    {"categoria": "VP / C-Level", "respuestas": 40},
+    {"categoria": "Otras categorías minoritarias", "respuestas": 96}
+  ]
+}

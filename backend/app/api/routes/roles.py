@@ -20,6 +20,7 @@ def _build_role_out(db: Session, rf: RoleFamily) -> RoleFamilyOut:
         dist_out = RoleDistributionOut(
             porcentaje_estimado=dist.porcentaje_estimado,
             tipo=dist.tipo,
+            nota=dist.nota,
             fuente=fuente,
         )
     return RoleFamilyOut(

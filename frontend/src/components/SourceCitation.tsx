@@ -1,10 +1,15 @@
 import type { DataSource } from "../api/client";
 
+const LABELS: Record<DataSource["tipo"], string> = {
+  oficial: "Dato oficial",
+  comunitario: "Encuesta comunitaria",
+  estimacion: "Estimación editorial",
+};
+
 export function SourceCitation({ fuente }: { fuente: DataSource }) {
-  const isOficial = fuente.tipo === "oficial";
   return (
-    <div className={`source-citation ${isOficial ? "source-oficial" : "source-estimacion"}`}>
-      <span className="source-badge">{isOficial ? "Dato oficial" : "Estimación preliminar"}</span>
+    <div className={`source-citation source-${fuente.tipo}`}>
+      <span className="source-badge">{LABELS[fuente.tipo] ?? fuente.tipo}</span>
       {fuente.url ? (
         <a href={fuente.url} target="_blank" rel="noreferrer">
           {fuente.nombre}

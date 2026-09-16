@@ -1,6 +1,7 @@
 import { NavLink, Route, HashRouter as Router, Routes } from "react-router-dom";
 import { Dashboard } from "./pages/Dashboard";
 import { Methodology } from "./pages/Methodology";
+import { Provinces } from "./pages/Provinces";
 import { RoleExplorer } from "./pages/RoleExplorer";
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
               Dashboard
             </NavLink>
             <NavLink to="/roles">Explorador de Roles</NavLink>
+            <NavLink to="/provincias">Por Provincia</NavLink>
             <NavLink to="/metodologia">Fuentes y Metodología</NavLink>
           </nav>
         </header>
@@ -21,6 +23,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Dashboard />} />
             <Route path="/roles" element={<RoleExplorer />} />
+            <Route path="/provincias" element={<Provinces />} />
             <Route path="/metodologia" element={<Methodology />} />
           </Routes>
         </main>

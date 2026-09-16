@@ -23,7 +23,18 @@ class RoleAliasOut(BaseModel):
 class RoleDistributionOut(BaseModel):
     porcentaje_estimado: float
     tipo: str
+    nota: str | None = None
     fuente: DataSourceOut
+
+    class Config:
+        from_attributes = True
+
+
+class ProvinceEmploymentOut(BaseModel):
+    provincia: str
+    empleos_registrados: int
+    porcentaje: float
+    periodo: str
 
     class Config:
         from_attributes = True

@@ -10,6 +10,7 @@ from app.db import Base, SessionLocal, engine
 from app.models import (
     DataSource,
     EmploymentSnapshot,
+    ProvinceEmployment,
     RoleAlias,
     RoleDistribution,
     RoleFamily,
@@ -48,16 +49,31 @@ SOURCE_OPSSI_KPI = DataSource(
     fecha="2025-07",
 )
 
-SOURCE_ESTIMACION = DataSource(
-    id="estimacion-editorial-roles",
-    nombre="Estimación editorial preliminar (Observatorio)",
-    tipo="estimacion",
+SOURCE_OEDE_PROVINCIA = DataSource(
+    id="oede-provincia-2023",
+    nombre="OEDE / datos.produccion.gob.ar - Puestos de trabajo por provincia y CLAE2",
+    tipo="oficial",
     descripcion=(
-        "No existe fuente pública oficial con distribución de empleo IT por "
-        "rol específico. Estimación inicial a reemplazar por una fuente primaria."
+        "Serie oficial de empleo asalariado registrado por provincia, sector "
+        "privado, CLAE2 62+63 (Software y Servicios Informáticos). Descarga "
+        "directa del portal de datos abiertos del Ministerio de Producción."
     ),
-    url=None,
-    fecha="2026-09",
+    url="https://datos.produccion.gob.ar/dataset/puestos-de-trabajo-registrados-por-provincia-y-sector-de-actividad",
+    fecha="2023-11",
+)
+
+SOURCE_SYSARMY = DataSource(
+    id="sysarmy-2025-1",
+    nombre="Sysarmy - Encuesta de Sueldos IT Argentina 2025.1",
+    tipo="comunitario",
+    descripcion=(
+        "Encuesta comunitaria abierta (no gubernamental) con 5.196 respuestas "
+        "de trabajadores IT en Argentina. Dataset publicado bajo licencia "
+        "CC BY-NC-SA 4.0. Es la fuente primaria más completa disponible hoy "
+        "para estimar la distribución de roles, a falta de una encuesta oficial."
+    ),
+    url="https://sysarmy.com/blog/posts/resultados-de-la-encuesta-de-sueldos-2025-1/",
+    fecha="2025",
 )
 
 
@@ -71,7 +87,7 @@ def seed():
     db = SessionLocal()
     try:
         if db.query(DataSource).count() == 0:
-            db.add_all([SOURCE_OEDE, SOURCE_OPSSI_KPI, SOURCE_ESTIMACION])
+            db.add_all([SOURCE_OEDE, SOURCE_OPSSI_KPI, SOURCE_OEDE_PROVINCIA, SOURCE_SYSARMY])
             db.commit()
 
         if db.query(RoleFamily).count() == 0:
@@ -97,6 +113,20 @@ def seed():
                 )
             db.commit()
 
+        if db.query(ProvinceEmployment).count() == 0:
+            provincias = load_json("oede_employment_by_province.json")
+            for row in provincias["provincias"]:
+                db.add(
+                    ProvinceEmployment(
+                        provincia=row["provincia"],
+                        empleos_registrados=row["empleos_registrados"],
+                        porcentaje=row["porcentaje"],
+                        periodo=provincias["periodo"],
+                        fuente_id=SOURCE_OEDE_PROVINCIA.id,
+                    )
+                )
+            db.commit()
+
         if db.query(SectorKPI).count() == 0:
             kpis = load_json("sector_kpis.json")
             for kpi in kpis:
@@ -114,14 +144,15 @@ def seed():
             db.commit()
 
         if db.query(RoleDistribution).count() == 0:
-            dist = load_json("role_distribution_estimate.json")
+            dist = load_json("role_distribution_sysarmy.json")
             for row in dist["distribucion"]:
                 db.add(
                     RoleDistribution(
                         role_family_id=row["role_family_id"],
                         porcentaje_estimado=row["porcentaje_estimado"],
                         tipo=dist["tipo"],
-                        fuente_id=SOURCE_ESTIMACION.id,
+                        nota=row.get("nota"),
+                        fuente_id=SOURCE_SYSARMY.id,
                     )
                 )
             db.commit()

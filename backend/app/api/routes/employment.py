@@ -2,8 +2,13 @@ from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
 
 from app.db import get_db
-from app.models import DataSource, EmploymentSnapshot, RoleFamily, SectorKPI
-from app.schemas import EmploymentSnapshotOut, EmploymentSummaryOut, SectorKPIOut
+from app.models import DataSource, EmploymentSnapshot, ProvinceEmployment, RoleFamily, SectorKPI
+from app.schemas import (
+    EmploymentSnapshotOut,
+    EmploymentSummaryOut,
+    ProvinceEmploymentOut,
+    SectorKPIOut,
+)
 
 router = APIRouter(prefix="/api/employment", tags=["employment"])
 
@@ -47,6 +52,16 @@ def summary(db: Session = Depends(get_db)):
     )
 
 
+@router.get("/by-province", response_model=list[ProvinceEmploymentOut])
+def by_province(db: Session = Depends(get_db)):
+    rows = (
+        db.query(ProvinceEmployment)
+        .order_by(ProvinceEmployment.empleos_registrados.desc())
+        .all()
+    )
+    return rows
+
+
 @router.get("/by-role")
 def by_role(db: Session = Depends(get_db)):
     """Cruce simple: total de empleo del último año x distribución estimada por familia."""
@@ -74,6 +89,10 @@ def by_role(db: Session = Depends(get_db)):
     return {
         "anio_base": ultimo.anio,
         "empleos_registrados_totales": ultimo.empleos_registrados,
-        "aviso": "El total es dato oficial (OEDE). La segmentación por rol es una estimación preliminar no oficial.",
+        "aviso": (
+            "El total es dato oficial (OEDE). La segmentación por rol se calcula a partir de la "
+            "encuesta comunitaria Sysarmy 2025.1 (n=5.196); dentro del bloque 'Developer' el "
+            "reparto entre Backend/Frontend/Full Stack/Mobile sigue siendo una estimación editorial."
+        ),
         "distribucion": result,
     }

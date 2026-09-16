@@ -1,0 +1,41 @@
+{
+  "descripcion": "Empleo registrado (puestos de trabajo asalariados, sector privado) en el sector Software y Servicios Informáticos (CLAE2 62 + 63), por provincia, último período disponible.",
+  "fuente": {
+    "nombre": "OEDE / Subsecretaría de Estudios y Prospectiva Productiva (datos.produccion.gob.ar)",
+    "documento": "Puestos de trabajo asalariados registrados por provincia y clae2, sector privado",
+    "url": "https://datos.produccion.gob.ar/dataset/puestos-de-trabajo-registrados-por-provincia-y-sector-de-actividad",
+    "url_csv": "https://cdn.produccion.gob.ar/cdn-cep/datos-por-provincia/por-provincia-clae2/puestos/puestos_priv.csv",
+    "tipo": "oficial",
+    "fecha_descarga": "2026-09-16"
+  },
+  "periodo": "2023-11",
+  "cobertura": "CLAE2 62 (Servicios de programación, consultoría informática y actividades conexas) + CLAE2 63 (Actividades de procesamiento de información, hospedaje de datos y actividades relacionadas), sector privado",
+  "nota_metodologica": "Este dataset provincial es 'sector privado' y su último dato disponible es nov-2023, por lo que el total (147.267) es algo menor y más antiguo que la serie nacional 'total empresas' 2024 (158.179) usada en el Dashboard. Ambos números son consistentes entre sí (mismo orden de magnitud y fuente OEDE); se documentan por separado en vez de mezclarlos para no aparentar más precisión de la que hay.",
+  "empleos_registrados_total": 147267,
+  "provincias": [
+    {"provincia": "Ciudad Autónoma de Buenos Aires", "empleos_registrados": 102632, "porcentaje": 69.69},
+    {"provincia": "Buenos Aires", "empleos_registrados": 16659, "porcentaje": 11.31},
+    {"provincia": "Córdoba", "empleos_registrados": 12453, "porcentaje": 8.46},
+    {"provincia": "Santa Fe", "empleos_registrados": 6398, "porcentaje": 4.34},
+    {"provincia": "Mendoza", "empleos_registrados": 2090, "porcentaje": 1.42},
+    {"provincia": "Tucumán", "empleos_registrados": 1221, "porcentaje": 0.83},
+    {"provincia": "Chaco", "empleos_registrados": 892, "porcentaje": 0.61},
+    {"provincia": "Entre Ríos", "empleos_registrados": 690, "porcentaje": 0.47},
+    {"provincia": "Corrientes", "empleos_registrados": 568, "porcentaje": 0.39},
+    {"provincia": "Neuquén", "empleos_registrados": 527, "porcentaje": 0.36},
+    {"provincia": "San Juan", "empleos_registrados": 428, "porcentaje": 0.29},
+    {"provincia": "Salta", "empleos_registrados": 420, "porcentaje": 0.29},
+    {"provincia": "San Luis", "empleos_registrados": 391, "porcentaje": 0.27},
+    {"provincia": "Misiones", "empleos_registrados": 330, "porcentaje": 0.22},
+    {"provincia": "Chubut", "empleos_registrados": 313, "porcentaje": 0.21},
+    {"provincia": "Río Negro", "empleos_registrados": 260, "porcentaje": 0.18},
+    {"provincia": "Jujuy", "empleos_registrados": 259, "porcentaje": 0.18},
+    {"provincia": "Santiago del Estero", "empleos_registrados": 176, "porcentaje": 0.12},
+    {"provincia": "Tierra del Fuego", "empleos_registrados": 157, "porcentaje": 0.11},
+    {"provincia": "Catamarca", "empleos_registrados": 152, "porcentaje": 0.10},
+    {"provincia": "La Pampa", "empleos_registrados": 115, "porcentaje": 0.08},
+    {"provincia": "La Rioja", "empleos_registrados": 65, "porcentaje": 0.04},
+    {"provincia": "Formosa", "empleos_registrados": 53, "porcentaje": 0.04},
+    {"provincia": "Santa Cruz", "empleos_registrados": 18, "porcentaje": 0.01}
+  ]
+}

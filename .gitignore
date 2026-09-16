@@ -5,6 +5,7 @@ backend/**/__pycache__/
 backend/uvicorn.log
 *.pyc
 backend/data/raw/sources/*.pdf
+backend/data/raw/sources/*.csv
 
 # Frontend
 frontend/node_modules/

@@ -25,7 +25,21 @@ class RoleDistribution(Base):
     id: Mapped[int] = mapped_column(primary_key=True, autoincrement=True)
     role_family_id: Mapped[str] = mapped_column(ForeignKey("role_families.id"))
     porcentaje_estimado: Mapped[float] = mapped_column(Float, nullable=False)
-    tipo: Mapped[str] = mapped_column(String, default="ESTIMACION_PRELIMINAR_NO_OFICIAL")
+    tipo: Mapped[str] = mapped_column(String, default="COMUNITARIO_VERIFICABLE")
+    nota: Mapped[str | None] = mapped_column(String, nullable=True)
+    fuente_id: Mapped[str] = mapped_column(ForeignKey("data_sources.id"))
+
+
+class ProvinceEmployment(Base):
+    """Empleo IT registrado por provincia, para un período dado (fuente: OEDE, sector privado)."""
+
+    __tablename__ = "province_employment"
+
+    id: Mapped[int] = mapped_column(primary_key=True, autoincrement=True)
+    provincia: Mapped[str] = mapped_column(String, nullable=False)
+    empleos_registrados: Mapped[int] = mapped_column(Integer, nullable=False)
+    porcentaje: Mapped[float] = mapped_column(Float, nullable=False)
+    periodo: Mapped[str] = mapped_column(String, nullable=False)
     fuente_id: Mapped[str] = mapped_column(ForeignKey("data_sources.id"))
 
 

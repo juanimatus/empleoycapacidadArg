@@ -39,7 +39,8 @@ El dashboard queda en `http://localhost:5173`.
 ## Estado del MVP
 
 - ✅ Taxonomía de 12 familias de rol IT con nomenclaturas/alias curadas.
-- ✅ Serie de empleo IT registrado 2015-2024 (dato oficial, OEDE vía CESSI/OPSSI).
+- ✅ Serie de empleo IT registrado 2015-2024, nacional (dato oficial, OEDE vía CESSI/OPSSI).
+- ✅ Empleo IT por provincia (dato oficial, OEDE / datos.produccion.gob.ar, sector privado, nov-2023).
 - ✅ Indicadores sectoriales (salario, rotación, participación femenina).
-- ⚠️ Distribución de empleo por familia de rol: **estimación editorial preliminar**, no oficial — no existe hoy una fuente pública argentina con ese desglose. Es el próximo problema a resolver (encuesta propia o acceso a datos primarios).
-- ⏳ Pendiente: desagregación provincial, cruce con INDEC EPH, clasificador automático de avisos de empleo usando la tabla de alias como base.
+- ✅ Distribución de empleo por familia de rol: calculada sobre la **encuesta comunitaria Sysarmy 2025.1** (5.196 respuestas reales, licencia CC BY-NC-SA 4.0) — un nivel de confianza intermedio entre dato oficial y estimación editorial, explícitamente marcado como tal en toda la app. Dentro del bloque "Developer" el reparto Backend/Frontend/Full Stack/Mobile sigue siendo estimación editorial (Sysarmy no lo desagrega).
+- ⏳ Pendiente: cruce con INDEC EPH, clasificador automático de avisos de empleo usando la tabla de alias como base, evaluar acceso a datos primarios de CESSI/OPSSI para reemplazar Sysarmy como fuente de distribución de roles.
