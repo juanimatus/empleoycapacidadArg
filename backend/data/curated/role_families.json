@@ -1,0 +1,130 @@
+[
+  {
+    "id": "backend",
+    "nombre": "Desarrollo Backend",
+    "descripcion": "Diseño y construcción de la lógica de servidor, APIs, bases de datos e integraciones que sostienen una aplicación.",
+    "aliases": [
+      "Backend Developer", "Desarrollador Backend", "Desarrollador/a Backend",
+      "Backend Engineer", "Ingeniero de Software Backend", "Dev Backend",
+      "Programador Backend", "Software Engineer Backend", "API Developer",
+      "Backend .NET", "Backend Java", "Backend Python", "Backend Node",
+      "Backend PHP", "Backend Ruby", "Backend Go", "Server-side Developer",
+      "Desarrollador de Sistemas Backend"
+    ]
+  },
+  {
+    "id": "frontend",
+    "nombre": "Desarrollo Frontend",
+    "descripcion": "Construcción de interfaces de usuario web: maquetado, interactividad y consumo de APIs desde el cliente.",
+    "aliases": [
+      "Frontend Developer", "Desarrollador Frontend", "Desarrollador/a Frontend",
+      "Frontend Engineer", "Dev Frontend", "Programador Frontend",
+      "React Developer", "Angular Developer", "Vue Developer",
+      "UI Developer", "Web Developer Frontend", "Frontend JavaScript Developer"
+    ]
+  },
+  {
+    "id": "fullstack",
+    "nombre": "Desarrollo Full Stack",
+    "descripcion": "Rol que combina responsabilidades de backend y frontend en un mismo puesto.",
+    "aliases": [
+      "Full Stack Developer", "Desarrollador Full Stack", "Desarrollador/a FullStack",
+      "Full Stack Engineer", "Programador Full Stack", "Fullstack Software Engineer",
+      "Dev FullStack"
+    ]
+  },
+  {
+    "id": "mobile",
+    "nombre": "Desarrollo Mobile",
+    "descripcion": "Desarrollo de aplicaciones para dispositivos móviles, nativas o multiplataforma.",
+    "aliases": [
+      "Mobile Developer", "Desarrollador Mobile", "Desarrollador de Apps Móviles",
+      "Android Developer", "iOS Developer", "React Native Developer",
+      "Flutter Developer", "Mobile Engineer", "App Developer"
+    ]
+  },
+  {
+    "id": "data",
+    "nombre": "Datos y Analytics (BI / Data Engineering)",
+    "descripcion": "Construcción de pipelines de datos, modelado, integración y generación de reportes/business intelligence.",
+    "aliases": [
+      "Data Engineer", "Ingeniero de Datos", "Data Analyst", "Analista de Datos",
+      "BI Developer", "Business Intelligence Analyst", "Analista BI",
+      "ETL Developer", "Database Administrator", "DBA", "Data Warehouse Developer",
+      "Analista de Business Intelligence"
+    ]
+  },
+  {
+    "id": "data-science-ml",
+    "nombre": "Data Science / IA / Machine Learning",
+    "descripcion": "Desarrollo de modelos estadísticos, de machine learning e inteligencia artificial, y análisis avanzado de datos.",
+    "aliases": [
+      "Data Scientist", "Científico de Datos", "Machine Learning Engineer",
+      "ML Engineer", "AI Engineer", "Ingeniero de IA", "Investigador de IA",
+      "NLP Engineer", "MLOps Engineer", "Analista de Inteligencia Artificial"
+    ]
+  },
+  {
+    "id": "devops",
+    "nombre": "DevOps / SRE / Infraestructura Cloud",
+    "descripcion": "Automatización de infraestructura, despliegues, monitoreo, confiabilidad de sistemas y administración de la nube.",
+    "aliases": [
+      "DevOps Engineer", "Ingeniero DevOps", "Site Reliability Engineer", "SRE",
+      "Cloud Engineer", "Ingeniero Cloud", "Infrastructure Engineer",
+      "Platform Engineer", "Systems Engineer Cloud", "AWS Engineer",
+      "Azure Engineer", "GCP Engineer", "Administrador de Infraestructura Cloud"
+    ]
+  },
+  {
+    "id": "qa",
+    "nombre": "QA / Testing",
+    "descripcion": "Diseño y ejecución de pruebas manuales y automatizadas para asegurar la calidad del software.",
+    "aliases": [
+      "QA Engineer", "QA Tester", "Analista de Testing", "Tester",
+      "Quality Assurance Analyst", "Automation Tester", "QA Automation Engineer",
+      "Ingeniero de Calidad de Software", "SDET", "Analista de Calidad"
+    ]
+  },
+  {
+    "id": "security",
+    "nombre": "Ciberseguridad",
+    "descripcion": "Protección de sistemas, redes y datos: análisis de vulnerabilidades, respuesta a incidentes y seguridad de la información.",
+    "aliases": [
+      "Security Engineer", "Ingeniero de Seguridad", "Analista de Ciberseguridad",
+      "Cybersecurity Analyst", "Penetration Tester", "Pentester",
+      "Information Security Analyst", "SOC Analyst", "Security Architect",
+      "Especialista en Seguridad Informática"
+    ]
+  },
+  {
+    "id": "ux-ui",
+    "nombre": "UX/UI Design",
+    "descripcion": "Diseño de experiencia e interfaz de usuario: investigación, prototipado y diseño visual de productos digitales.",
+    "aliases": [
+      "UX Designer", "UI Designer", "UX/UI Designer", "Diseñador UX",
+      "Diseñador UX/UI", "Product Designer", "Diseñador de Producto",
+      "Interaction Designer", "UX Researcher"
+    ]
+  },
+  {
+    "id": "product-project",
+    "nombre": "Gestión de Producto / Proyecto IT",
+    "descripcion": "Planificación, priorización y coordinación de equipos y entregas de productos o proyectos de software.",
+    "aliases": [
+      "Product Owner", "Product Manager", "Project Manager IT",
+      "Scrum Master", "Agile Coach", "Gerente de Producto",
+      "Gerente de Proyecto IT", "Líder de Proyecto", "PMO IT",
+      "Delivery Manager", "Coordinador de Proyectos IT"
+    ]
+  },
+  {
+    "id": "support-sysadmin",
+    "nombre": "Soporte Técnico / Sysadmin",
+    "descripcion": "Soporte técnico a usuarios, administración de sistemas y redes, mantenimiento de infraestructura on-premise.",
+    "aliases": [
+      "Soporte Técnico", "IT Support", "Help Desk", "Mesa de Ayuda",
+      "System Administrator", "Administrador de Sistemas", "Network Administrator",
+      "Administrador de Redes", "Técnico IT", "Field Support Engineer"
+    ]
+  }
+]

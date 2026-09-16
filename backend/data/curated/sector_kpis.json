@@ -1,0 +1,38 @@
+[
+  {
+    "id": "participacion_femenina",
+    "nombre": "Participación femenina en el empleo del sector",
+    "valor": 35.4,
+    "unidad": "pct",
+    "periodo": "2025",
+    "fuente": "CESSI/OPSSI - Foco Talento, jul-2025",
+    "nota": "Creció casi 10 puntos porcentuales desde 2018."
+  },
+  {
+    "id": "salario_promedio",
+    "nombre": "Salario promedio de la industria del Software",
+    "valor": 2725272,
+    "unidad": "ARS",
+    "periodo": "2025-03",
+    "fuente": "CESSI/OPSSI - Foco Talento, jul-2025",
+    "nota": "Incremento de 17,9% respecto a dic-2024."
+  },
+  {
+    "id": "tasa_rotacion",
+    "nombre": "Tasa de rotación de personal",
+    "valor": 20,
+    "unidad": "pct",
+    "periodo": "2024",
+    "fuente": "CESSI/OPSSI - Foco Talento, jul-2025",
+    "nota": "La mitad que tres años atrás; refleja mayor estabilidad laboral."
+  },
+  {
+    "id": "nuevos_empleos_2024",
+    "nombre": "Nuevos puestos de trabajo generados en 2024",
+    "valor": 6131,
+    "unidad": "empleos",
+    "periodo": "2024",
+    "fuente": "OEDE, republicado por CESSI/OPSSI - Foco Talento, jul-2025",
+    "nota": "Representa el 63% del empleo generado por el conjunto de la Economía del Conocimiento en 2024."
+  }
+]

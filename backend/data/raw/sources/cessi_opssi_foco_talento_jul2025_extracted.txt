@@ -1,0 +1,1452 @@
+---PAGE 0---
+SECTOR DE 
+SOFTWARE Y 
+SERVICIOS 
+INFORMÁTICOS 
+DE ARGENTINA 
+FOCO TALENTO 
+/JUL2025
+/REPORTE 
+OBSERVATORIO PERMANENTE DE LA 
+INDUSTRIA DEL SOFTWARE Y SERVICIOS 
+INFORMÁTICOS DE LA ARGENTINA
+CÁMARA DE LA INDUSTRIA 
+ARGENTINA
+ 
+DEL
+ 
+SOFTWARE
+---PAGE 1---
+/INDICE
+El presente reporte ha sido elaborado por el Observatorio 
+Permanente de la Industria del Software y Servicios Informáticos 
+(OPSSI), una iniciativa de la Cámara de Empresas de Software y 
+Servicios Informáticos de la República Argentina (CESSI) (http://
+www.cessi.org.ar/)
+RESUMEN EJECUTIVO 
+ 
+EMPLEO  
+ 
+VENTAS - EVOLUCIÓN, COMPOSICIÓN Y PRECIOS 
+ 
+SALARIOS  
+ 
+SALARIOS CLUSTER DESARROLLO 
+ 
+ADICIONALES 
+ 
+TASA DE ROTACIÓN  
+ 
+PRINCIPALES DIFICULTADES DE 2019 A 2024  
+Y EXPECTATIVAS PARA 2025 
+ 
+FICHA PRESENCIALIDAD Y PRODUCTIVIDAD 
+ 
+ANEXO METODOLÓGICO 
+ 
+CARACTERÍSTICAS DE LA MUESTRA DE LA ENCUESTA SALARIAL 
+3 
+ 
+4 
+ 
+7 
+ 
+11 
+ 
+15 
+ 
+20 
+ 
+23 
+ 
+25
+27 
+ 
+35 
+ 
+37
+---PAGE 2---
+/RESUMEN 
+EJECUTIVO
+ventas interanuales .  
+Cerrando el año 2024 con  
+US$ 22 mil millones. 
+ fue el incremento del salario  
+entre 
+dic-24 y mar-25. 
+el 
+incremento salarial 
+proyectado entre abril y 
+julio 2025
+ para el cluster 
+de Desarrollo.
+fue  la tasa de rotación de la industria durante 
+2024
+, con una marcada reducción interanual.
+Empleo femenino.
+el diferencial salarial del  
+Cluster de Desarrollo
+ con  
+respecto al conjunto del sector. 
+de las empresas 
+otorga algún tipo de
+ 
+bono remunerativo. 
+fue el promedio salarial   
+de la industria del software  
+en
+ marzo 2025
+.
+nuevos puestos de  
+trabajo en 2024
+ .
++13.1%
++ 17,9%
+35%
++8% 
++ 42%+ 6,5%
++ 20%
+$2,7M
+6.131
+3
+
+---PAGE 3---
+4
+Este desempeño positivo es ampliamente superior al de los otros Servicios Basados en 
+el Conocimiento (+1,6% interanual) y contrasta con el del sector privado en general 
+(-1,7% interanual).  
+El 
+empleo 
+en las empresas de 
+Software 
+ha ido creciendo en forma ininterrumpida 
+desde 2015 (exceptuando el 2do. trimestre de 2020), habiendo generado
+ 60.537 
+nuevos puestos de trabajo en los últimos 10 años. 
+En
+ 
+2024 
+la industria del
+ Software generó 6.131 nuevos empleos
+, 
+alcanzando 
+158.179 empleos registrados en total.
+/EMPLEO
+Fuente:  Elaboración propia en base a Subsecretaría de Economía del Conocimiento y encuestas del OPSSI. 
+Empleo en la industria del Software a 2024:
+del empleo r e gi s trado pri v ado
+2, 3 %
+empleados en el último año
++ 6. 1 3 1
+(+ 4 %)
+158 . 1 7 9
+( empleos r e gi s trado s )
+2 015
+2 016
+2 017
+2 018
+2 019
+2 0 2 0
+2 0 21
+2 0 22
+2 0 23
+2 0 2 4
+9 7 . 642
+10 0 . 7 22
+105 . 186
+11 0. 060
+11 7 . 6 8 1
+123 . 148
+134 . 6 94
+14 7 . 660
+1 5 2 . 048
+158 . 1 7 9
+3,2%
+4, 4 %
+4, 6 %
+6,9%
+4, 6 %
+9, 4 %
+9, 6 %
+3,0%
+4,0%
+2 0 0 . 000
+15 0 . 000
+10 0 . 000
+5 0. 000
+0
+1 0 ,0%
+7 ,50%
+5,0%
+2,5%
+0 ,0%
+Cantidad de empleos r e gi s trados en Soft w a r e
+y su v ariación in t eranual (%) - 2 015 a 2 0 2 4
+---PAGE 4---
+5
+/EMPLEO
+En 2019 el crecimiento del empleo en el sector había comenzado a acelerarse (6,9%), 
+aminoró cuando empezó la pandemia de Covid-19 (4,6% en 2020) y se disparó 
+durante 2021 y 2022 (9,4% y 9,6% respectivamente) para volver a desacelerarse en 
+2023 (3%) en sintonía con la dinámica del sector en el resto del mundo. En el último 
+año, la tendencia vuelve a ser al alza (+4%).
+Fuente: Elaboración propia en base al Observatorio de Empleo y Dinámica Empresarial de la Subsecretaría de Empleo y 
+Formación Laboral.
+En los últimos 10 años (2015-2024), el crecimiento del empleo en Software 
+ha sido exponencial (64%), lo cual resulta aún más signiﬁcativo teniendo en 
+consideración que el empleo del sector privado en general sólo creció un 1% 
+en este período, y que el de varias actividades incluso cayó. De esta manera, el 
+Software vio crecer su participación en el empleo privado 
+registrado 
+de un 
+1,4% en 2015 a un 2,3% en 2024. 
+Variación últimos diez años (2015-2024) de los 
+empleados registrados por rama de actividad
+-1, 4 %
+-3,7%
+-4, 4 %
+-1 7 ,5%
+-21,1%
+Soft
+w
+a
+r
+e
+Alimen
+t
+os
+Extracción de 
+p e
+t
+r
+óleo y gas
+Maquinaria 
+y equipos
+Agricultura 
+y ganadería
+T o tal servicios
+T o tal Se
+c
+t
+or Pri
+v
+ado
+P r od
+u
+c
+t
+os químicos
+A u
+t
+om
+o
+t
+o
+r
+es
+Servicios ﬁnancie
+r
+os
+Cor
+r
+eos y 
+t eleco
+municaciones
+-30%
+-5,0%
+2 0%
+45%
+7 0%
+6 4 %
+8,2%
+6,9%
+5, 6 %
+3,2%
+1,0%
+1,0%
+T o tal Indu
+s
+tria
+---PAGE 5---
+6
+/EMPLEO
+Fuente: Elaboración propia en base a encuestas del OPSSI. 
+Por último, cabe destacar que durante este lapso, el empleo femenino ha 
+ganado sistemáticamente participación en la industria. Entre 2005 y 2020, la 
+proporción de mujeres se duplicó, pasando del 15% al 30%. Esta tendencia se 
+mantuvo en los años siguientes: en 2018 la participación femenina era del 26%, y 
+para 2025 alcanzó el 35,4%, lo que representa un crecimiento de casi 10 puntos 
+porcentuales en siete años.  
+Distribución del empleo por género. Años 2018-1° Trim  2025
+Muje r es
+Homb r es
+2 0 25
+35% 6 5%
+6 5%
+6 5%
+6 7%
+20 2 4
+20 23
+20 22
+2 0 21
+68%
+7 0%
+7 2%
+7 4 %
+202 0
+2 019
+2 018
+35%
+35%
+3 3 %
+32%
+30%
+2 8%
+2 6 %
+100%7 5%50%25%0%
+---PAGE 6---
+7
+En 2021, durante la pandemia por el Covid-19, el crecimiento de las ventas del sector 
+aumentó considerablemente (15,8%), y aunque se desaceleró en 2022, siguió siendo 
+relativamente elevado, volviendo a acelerarse en 2023 y creciendo un 13% en cada uno 
+de los dos últimos años.
+En 
+2024 
+la industria del 
+Software facturó USD 22.221 millones
+, lo que 
+implica un aumento del 13,1% interanual total.
+/VENTAS - EVOLUCIÓN, 
+COMPOSICIÓN Y PRECIOS 
+Ventas totales de la Industria del Software en 2024
+Facturación de las empresas de Software (en millones 
+de USD oﬁcial) y su variación interanual
+2 019
+2 0 2 0
+2 0 21
+2 0 22
+2 0 23
+2 0 2 4
+15.845
+1 7 .383
+1 9 . 648
+22.221
+5,9%
+15,8%
+9,7%
+13,0%
+13,1%
+0
+5 . 000
+1 0. 000
+15 . 000
+25 . 000
+2 0. 000
+0 ,0%
+5,0%
+1 0 ,0%
+15,0%
+2 0 ,0%
+13 . 6 7 8
+12 . 9 13
+Fuente: Elaboración propia en base a datos del Polo IT Buenos Aires - DG Estrategia Productiva y Regímenes de Promoción 
+del GCBA sobre la base de ARCA.
+22.221
+millones de
+USD ( oﬁcial)
++2. 5 7 2 (+1 3 %)
+con r espe c t o
+a 20 23
+---PAGE 7---
+8
+Al analizar la distribución de la facturación del sector por verticales, observamos 
+que 
+las ventas al sector ﬁnanciero (bancos, ﬁntech, terminales de pago, etc.) 
+lo muestran como el principal cliente con un 19,4%
+; seguido bastante detrás 
+por el sector público (gobiernos, poder judicial, etc.) con el 11,7%.
+Distribución de las ventas del sector en % por 
+vertical / cliente (suma 100%) - 2024
+A 2024, 
+los servicios gestionados en software
+ (arquitectura, diseño, codiﬁcación 
+consultoría, testing, etc.) representaron un 
+28,2% de la facturación
+, seguidos por el 
+desarrollo de plataformas de software y servicios
+ (IaaS, PaaS, SaaS, ﬁntech, etc.) 
+con 
+un 25,4%
+. La venta de 
+licencias de aplicaciones de software (propias y de 
+terceros) 
+signiﬁcaron 
+un 30% en conjunto.
+/VENTAS - EVOLUCIÓN, 
+COMPOSICIÓN Y PRECIOS 
+Fuente: Elaboración propia en base a encuesta del OPSSI. 
+Aplic a ti v os de Soft w a r e
+p r opos 11,0%
+3,0%
+1,1%
+0 , 6 %
+Sopor t e infrae s tru c tura
+Outsou r cing BPO ( contabilidad,
+operación de p r oceso s )
+R ecruitment
+0% 1 0 ,0% 2 0 ,0% 3 0 ,0%
+Servicios g e s tionados
+Pl a ta f orma de Soft w a r e y Servicios
+Aplic a ti v os de Soft w a r e de t e r ce r os
+Staff augment a tion
+2 8,2%
+25, 4 %
+19,1%
+11,5%
+---PAGE 8---
+9
+Fuente: Elaboración propia en base a encuesta del OPSSI. 
+/VENTAS - EVOLUCIÓN, 
+COMPOSICIÓN Y PRECIOS 
+Soft w a r e y SI
+Ot r os
+Indu s tria manu f .
+L o gí s tica y transpor t e
+Servicios ﬁnancie r os
+Ene r gía y r ecursos n a t...
+Come r cio y r e tail
+Consumo masi v o
+Ag r o y ag r oindu s tria
+T elco, con t enidos y m...
+Salud
+As e guradoras
+Se c t or público
+8,0%
+19, 4 %
+11,7%
+9,9%
+9,1%
+8,0%
+7 , 3 %
+6, 4 %
+5,7%
+5, 6 %
+3,7%
+3, 4 %
+1,9%
+Variación de las ventas y los precios (del principal 
+producto o servicio SSI) en 2024
+---PAGE 9---
+10
+Fuente: Elaboración propia en base a encuesta del OPSSI. 
+/VENTAS - EVOLUCIÓN, 
+COMPOSICIÓN Y PRECIOS 
+El impacto negativo de la inﬂación se hace evidente al observar que en 
+2024 el 68% de las empresas actualizó los precios de sus principales 
+productos y servicios por debajo de la inﬂación (en 2023 había sido el 
+73% de las empresas). Sin embargo, la amplia mayoría de las empresas 
+(un 72%) logró aumentar el volumen de sus ventas medidas en 
+unidades ﬁjas (licencias, servicios por hora hombre, etc.).
+Variación de las ventas y los precios (del principal 
+producto o servicio SSI) en 2024
+A umenta r on Se mantuvie r on
+ Disminu y e r on
+V entas ( en unidades ﬁja s )
+12% 1 6 % 7 2%
+P r ecios ( con r espe c t o a la inﬂación)
+68% 11% 2 0%
+0% 25% 50% 7 5% 100 %
+---PAGE 10---
+11
+/SALARIOS
+Fuente: Elaboración propia en base OEDE y encuesta OPSSI. 
+A marzo de 2025
+, el salario promedio del sector de Software alcanzó los $2.725.272, 
+prácticamente 
+duplicando
+ su valor respecto de 
+marzo de 2024
+ y registrando un 
+aumento del 17,9% en relación con diciembre de 2024.
+Remuneraciones Software - Marzo 2025
+v s asalariado pri v ado
+p r omedio
++100%
+in t eranual y +1 7 ,9% 
+desde dic-24
++111%
+$2. 72 5. 2 7 2
+(p r omedio del se c t o r ,
+en bru t o )
+---PAGE 11---
+12
+/SALARIOS
+Fuente: Elaboración propia en base a OEDE, INDEC y Ministerio de Economía.
+Al analizar la evolución del salario real (a pesos constantes de marzo 2023), 
+se observa que el poder adquisitivo a marzo de 2025 aumentó un 8% con 
+respecto a marzo de 2023, recuperándose así de la caída de principios del 
+año 2024.
+Evolución de los salarios (promedio salarios brutos) en empresas 
+de Software en Pesos corrientes y constantes (base marzo 2023)
+mar-23 jun-23 sep-23 dic-23 mar- 2 4 jun- 2 4 sep- 2 4 dic- 2 4 mar- 2 4
+$0
+$1 . 00 0 . 000
+$2 . 00 0. 000
+$415 . 156
+$332 . 7 2 4
+$2 . 7 25. 2 7 3
+$451 . 123
+$3 . 00 0 . 000
+En pesos corrien t es En pesos con s tan t es ( a mar-23)
+$1. 2 8 9 .338
+---PAGE 12---
+13
+/SALARIOS
+Fuente: Elaboración propia en base a OEDE, INDEC y Ministerio de Economía. 
+Un proceso similar puede observarse en la evolución de los salarios medidos 
+en dólares durante los últimos dos años. Si bien el incremento entre puntas 
+(marzo 2023 y marzo 2025) a tipo de cambio oﬁcial (BNA) fue importante 
+(+26%), el contexto macroeconómico actual ha signiﬁcado que el 
+crecimiento más signiﬁcativo se ha dado en el último año (+68%).
+Evolución de los salarios (promedio salarios brutos) en empresas 
+de Software en Dólar oﬁcial (BNA) y MEP
+mar-23 jun-23 sep-23 dic-23 mar- 2 4 jun- 2 4 sep- 2 4 dic- 2 4 mar-25
+USD1 . 096
+USD1 . 9 7 9
+USD1.484
+USD1.2 6 5
+US D 2 . 163
+US D 2.503
+En USD BNA En USD MEP
+---PAGE 13---
+14
+/SALARIOS
+Fuente: Elaboración propia en base a OEDE, INDEC y Ministerio de Economía. 
+Retomando así ambos análisis, durante estos últimos años la variación 
+salarial en la industria ha superado signiﬁcativamente la variación de índice 
+general de precios, así como también de la cotización del dólar. Repasando lo 
+ocurrido durante el último cuatrimestre, se observa que esta dinámica se 
+reproduce en tanto los salarios han aumentado un +17,9% mientras que el 
+IPC y el dólar lo hicieron en un 8,5% y 13,4% respectivamente.
+Valoración de los salarios en Software, la inﬂación (IPC) y el dólar 
+(oﬁcial y MEP) - primer trimestre 2025 y últimos 2 años
+Salarios Soft w a r e IPC Dólar BNA Dólar MEP
+0 ,0%
+2 0 0 ,0%
+40 0 ,0%
+1 7 ,9% 8,5% 4, 6 % 13, 4 %
+dic- 2 4 a mar-25
+556, 4 %
+504,1%
+419,0%
+232, 4 %
+mar-23 a mar-25
+60 0 ,0%
+---PAGE 14---
+15
+A partir de los resultados obtenidos en nuestra última encuesta, en la 
+presente publicación incorporamos un análisis comparado con el cluster 
+de Desarrollo de la industria de Software. Por sus características técnicas, 
+son salarios que se encuentran por encima de la media del sector (+8%). 
+/SALARIOS CLUSTER 
+DESARROLLO
+Fuente: elaboración propia en base a encuestas del OPSSI, SysArmy y OEDE. 
+Durante el primer cuatrimestre de 2025, la mediana salarial del sector de acuerdo 
+a los relevamientos del OPSSI (CESSI) se incrementó un 10,6%, mientras que para 
+julio del año actual las ﬁrmas proyectan incrementos salariales del 6,6%. 
+2 . 95 0. 000
+2. 2 8 9 . 156
+OPSSI OEDE - Media m ó vil 6 meses
+S Y SARMY
+0
+1 . 00 0. 000
+f eb- 20 21
+2 . 00 0 . 000
+3 . 00 0 . 000
+4 . 00 0 . 000
+a g o- 20 21 ene- 20 22 jul- 20 22 ene- 2 0 23 jul- 20 23 ene- 2 0 2 4 abr- 20 2 4 jul- 2 0 2 4 o c t- 20 2 4 ene- 2 0 25 mar- 2 0 25t abr- 20 25 jul- 20 25 o c t- 2 0 25
+P r oy ección
+2 . 7 25. 2 7 3
+2. 3 12.343
+2 . 6 6 7 .413
+3 . 14 0 . 3 95
+Evolución salarial Cluster Desarrollo, Industria del Software  
+y muestra SYSARMY, Años 2021-2025. En pesos.
+---PAGE 15---
+16
+Mediana salarial según seniority y su variación.  
+Enero - Abril 2025. En miles de pesos y en porcentaje.
+Realizando una apertura según seniority y concentrándose en los 3 centrales 
+(Junior, Semisenior y Senior), se observa que los incrementos salariales informados 
+Fuente: Elaboración propia en base a encuestas del OPSSI.
+/SALARIOS CLUSTER 
+DESARROLLO
+Junior
+Semisenior
+Senior
+$1.
+5
+23K
+$2
+.
+100K
+$3.255K
+$1.
+8
+13K
+Seniority
+ene-
+2
+0
+25
+abr-
+2 0
+25
+$2.
+2
+90K
+$3
+.
+7
+90K
+19%
+V
+ariación
+9%
+1
+6
+%
+---PAGE 16---
+17
+Brecha salarial según seniority. Años 2017 - 2025. En porcentaje.
+En función de estos movimientos, las brechas salariales parecieran haberse 
+estabilizado en nuevos valores, presentando una ampliación entre la categoría 
+senior y el resto
+Fuente: Elaboración propia en base a encuestas del OPSSI. 
+/SALARIOS CLUSTER 
+DESARROLLO
+49%
+118%
+155%
+41%
+4 3 %
+1 0 7%
+4 6 %
+121%
+100%
+118% 115%
+9% 3 6 %
+7 2%
+40%
+3 3 %
+Jr a Sr Jr a SSr SSr a Sr
+0%
+50%
+100%
+150%
+2 00%
+ene- 2 017 ene- 2 018 ene- 2 018 ene- 2 02 0 ene- 2 0 21 ene- 2 0 22 ene- 2 0 23 ene- 2 0 2 4 ene- 2 0 25
+abril- 2 0 25
+42%
+48%
+4 3 %
+41%
+5 3 %
+5 6 %
+51% 5 6 % 5 4 % 5 7%
+99%
+130%
+108%
+
+---PAGE 17---
+18
+Ratio Salarios Cluster Desarrollo según seniority vs RIPTE/CBT/SMV
+No obstante, tomando en cuenta la evolución durante estos últimos años, cabe 
+destacar que, indistintamente de su seniority, los perﬁles pertenecientes al cluster 
+de Desarrollo han mejorado su situación relativa con respecto a la Canasta Básica 
+Total (CBT), RIPTE y Salario Mínimo Vital y Móvil (SMV).  
+Fuente: Elaboración propia en base a encuestas del OPSSI. 
+/SALARIOS CLUSTER 
+DESARROLLO
+T o tal/
+C B T
+0 ,00
+2,00
+4,00
+6,00
+8,00
+1 0 ,00
+12,00
+Jr / C B T
+SSr/
+C B T
+S r . / C B T
+T o tal/
+RIPTE
+Jr/
+RIPTE
+SSr/
+RIPTE
+S r ./
+RIPTE
+T o tal/
+SMV
+Jr/ SMV
+SSr/
+SMV
+S r ./
+SMV
+Grupo
+R a tio 2 0 21
+ R a tio 2 0 25
+---PAGE 18---
+19
+Actualmente, la mayoría de las empresas actualiza sus remuneraciones 
+trimestralmente, estando el resto distribuidas equitativamente entre 
+actualizaciones mensuales, bimestrales, cuatrimestrales (algo más que el 
+resto) y semestrales.
+Fuente: Elaboración propia en base a encuestas del OPSSI. 
+/SALARIOS CLUSTER 
+DESARROLLO
+Frecuencia de actualización  
+de salarios entre las  
+empresas de Software  
+(proporción de empresas) -  
+abril 2025
+Bime s tral
+8, 6 %
+Anual
+Mensual
+Seme s tral
+0 ,5%
+8,1%
+13, 6 %
+Cu a trime s tral
+21, 3 %
+T rime s tral
+48,0%
+---PAGE 19---
+20
+/ADICIONALES
+En total, cerca del 42% de las empresas relevadas otorga algún tipo de bono 
+salarial. Para todos los estratos, en promedio se otorgan anualmente bonos 
+equivalentes a un sueldo.  En términos comparativos, podría decirse que a mayor 
+tamaño de las empresas, mayor es la proporción de éstas que ofrece el bono 
+salarial (como excepción, la proporción de empresas de 201 a 400 empleados 
+que otorgan bonos sería menor a la de entre 51 a 200 empleados).
+Fuente: Elaboración propia en base a encuesta del OPSSI. 
+Empresas que otorgan bonos (en %) - Total empresas - Abril 25
+Ha s ta 10
+empleados
+51 a 2 00
+empleados
+T o tal emp r esas
+0 ,00%
+25,00%
+5 0 ,00%
+7 5,00%
+10 0. 00%
+26, 9 2%
+2 01 a 400
+empleados
+Más de 400
+empleados
+P art.
+35,9 6 %
+49,3 3 %
+44,4 4 %
+41, 9 8%
+9 0 ,00%
+11 a 50
+empleados
+---PAGE 20---
+21
+/ADICIONALES
+En total, el 25,9% de las empresas otorga adicionales no remunerativos. A 
+diferencia del caso de los bonos, no se observa una correlación tan deﬁnida según 
+el tamaño de la empresa, aunque existe una brecha entre las empresas de más y 
+menos de 50 empleados. De acuerdo a lo relevado en nuestra última encuesta, las 
+empresas entregaron en promedio $30.000 como adicionales a todos los 
+seniorities.
+Fuente: Elaboración propia en base a encuesta del OPSSI. 
+Empresas que otorgan bonos (en %) - Total empresas - Abril 25
+Ha
+s
+ta 10
+empleados
+51 a 
+2
+00
+empleados
+T
+o
+tal emp
+r
+esas
+0 ,0%
+1 0 ,0%
+2 0 ,0%
+3 0 ,0%
+P
+art.
+4 0 ,0%
+23,1%
+21,1%
+33, 3 %
+3 0 ,0%
+32,0%
+25,9%
+11 a 50
+empleados
+2 01 a 400
+empleados
+Más de 400
+empleados
+---PAGE 21---
+22
+/ADICIONALES
+Por último, se observa entre las empresas relevadas que el 16,9% paga parte de 
+sus salarios en otras monedas (US$, criptos, etc.). En particular, esta práctica 
+parece tener mayor participación en ﬁrmas de entre 50 y 400 empleados.
+Fuente: Elaboración propia en base a encuesta del OPSSI. 
+Empresas que pagan parte del sueldo en otras monedas 
+(en %) - Total muestra - Abr. 25
+Ha
+s
+ta 10
+empleados
+51 a 
+2
+00
+empleados
+T
+o
+tal emp
+r
+esas
+0 ,0%
+1 0 ,0%
+2 0 ,0%
+3 0 ,0%
+P
+art.
+5,9%
+1 0 ,5%
+2 7 ,8%
+14, 3 %
+22,7%
+16,9%
+11 a 50
+empleados
+2 01 a 400
+empleados
+Más de 400
+empleados
+---PAGE 22---
+23
+/TASA DE ROTACIÓN 
+Tasa de rotación: promedio entre altas y bajas / promedio de personal al inicio y ﬁnal del período.  
+Tasa de deserción: renuncias / promedio de personal al inicio y ﬁnal del período.  
+Tasa de despidos: despidos / promedio de personal al inicio y ﬁnal del período.  
+Fuente: Elaboración propia en base a encuestas del OPSSI.
+La rotación de personal en el sector ha sido históricamente elevada, con 
+valores entre el 27% y el 28% entre 2013 y 2018. Sin embargo, en los últimos 
+años ha experimentado cambios signiﬁcativos: luego de alcanzar el 30% en 
+2019, descendió al 25% en 2020 debido al inicio de la pandemia de Covid-19; 
+en 2021 se disparó hasta un máximo histórico del 40%, para luego iniciar un 
+descenso sostenido que llevó la tasa al 20% en 2024, es decir, a la mitad del 
+valor registrado tres años antes.
+Tasa de rotación, deserción y despidos. Años 2011-2024
+3 0 , 3 %
+0 ,0%
+5,0%
+2 011 202 0 20 21 20 22 20 23 20 2 4
+3,0% 3,0%
+2,0%
+5, 6 % 5, 3 %
+T asa de r o tación T asa de dese r ción T asa de despidos
+2 012 2 015 2 016 2 017 2 018 2 0192 013 2 014
+5,0%
+1 0 ,0%
+15,0%
+2 0 ,0%
+25,0%
+3 0 ,0%
+35,0%
+4 0 ,0%
+3 0 , 4 %
+26,9%
+ 2 7 ,5%
+ 2 7 , 3 %
+ 2 7 ,2%
+ 2 7 , 3 %
+ 2 8,0%
+3 0 ,0%
+25,0%
+4 0 ,0%
+3 1,0%
+21,1%
+19,9%
+26,1%
+2 7 , 6 %
+ 25,7%
+2 4,9%
+ 2 4,8%
+ 2 4, 3 %
+ 25,0%
+ 25,5%
+21,0%
+2 0 ,0%
+3 1,0%
+22,0%
+13,7%
+11,7%
+
+---PAGE 23---
+24
+/TASA DE ROTACIÓN 
+Fuente: Elaboración propia en base a OPSSI 
+En gran medida, esta estabilización de la rotación en niveles 
+considerablemente más bajos que los estándares del sector se explica por 
+una tasa de deserción del 12%, sensiblemente inferior a la histórica, que 
+rondaba el 20%.  
+ 
+Tomando en cuenta lo ocurrido durante los primeros meses de este año, la 
+tendencia a la baja pareciera continuar, en tanto todos los registros muestran 
+marcadas reducciones en términos interanuales. 
+Tasa comparada abril 2024 vs abril 2025
+4,1%
+6, 4 %
+1, 6 %
+2,0%
+3,2%
+0 ,9%
+ABRIL 2 4 ABRIL 25
+T a s a  d e s e r c i ó n
+T a s a  r o t a c i ó n
+T a s a  d e s p i d o s
+---PAGE 24---
+25
+Fuente: Elaboración propia. 
+Ranking de las problemáticas en 2025
+/PRINCIPALES DIFICULTADES DE 2019 
+A 2024 Y EXPECTATIVAS PARA 2025
+En 2024, el principal problema que percibieron las empresas de Software fueron 
+los costos salariales, y la inﬂación en un segundo lugar 
+(aunque ambos estén 
+relacionados). La disponibilidad de recursos caliﬁcados, que históricamente fue la 
+principal diﬁcultad que debió enfrentar el sector para crecer, quedó relegada 
+desde 2022 a un tercer lugar. 
+20 21
+Co s t o de los servicios
+T rans f e r encias al e x t erior
+Demanda
+Financiamien t o
+R ecursos para el e x t erior Con t e x t o P olítico local
+Tipo de cambio
+Ca r ga ﬁscal
+Ma r g en de r entabilidad
+P r ecios al clien t e
+Inﬂación
+Co s t os salariales
+R ecursos disponibles
+20 22 20 23 20 2 4 20 25
+20 21
+Co s t o de los servicios
+T rans f e r encias al e x t erior
+Demanda
+Financiamien t o
+R ecursos para el e x t erior Con t e x t o P olítico local
+Tipo de cambio
+Ca r ga ﬁscal
+Ma r g en de r entabilidad
+P r ecios al clien t e
+Inﬂación
+Co s t os salariales
+R ecursos disponibles
+20 22 20 23 20 2 4 20 25
+---PAGE 25---
+26
+Fuente: Elaboración propia. 
+Expectativas de las empresas para 2025
+/PRINCIPALES DIFICULTADES DE 2019 
+A 2024 Y EXPECTATIVAS PARA 2025
+Para 2025, las expectativas son que la inﬂación prácticamente ya no tenga 
+ninguna incidencia sobre las perspectivas del negocio, ganando terreno 
+como diﬁcultades
+ el margen de rentabilidad, la carga ﬁscal y la demanda.
+Más de la mitad de las empresas (60%) espera aumentar su personal
+ con 
+respecto a 2024, conﬁrmando la tendencia al crecimiento sostenido del empleo en el 
+Software; y 
+una proporción aún mayor (83%) espera que en 2025 el volumen de 
+sus ventas, medidas en unidades ﬁjas
+ (cantidad de licencias, servicios medidos en 
+horas hombre, etc.), 
+continúe subiendo
+. Entre aquellas empresas que exportan, las 
+expectativas también son alentadoras: 
+un 63% espera que las ventas al exterior 
+suban
+ y sólo un 15% que disminuyan. Con respecto a los precios, la gran mayoría 
+(60%) espera que varíen por debajo de la inﬂación (IPC).
+Empleados
+60% 11%
+1 4 %
+15%
+60%
+V entas (unidades ﬁja s )
+Exportaciones
+P r ecios ( v s. e xpe c t a ti v as inﬂación)
+8 3 %
+6 3 %
+3 4 %
+100% 7 5% 50% 25% 0% 6 %
+22%
+3 %
+2 9%
+A umentarán Se man t endrán
+ Disminuirán
+---PAGE 26---
+27
+Durante el mes de abril de 2025 el espacio de Talento de la CESSI elaboró una 
+encuesta adicional relevando la opinión de los socios y sus colaboradores. En 
+esta oportunidad, el análisis se centró en el impacto de los esquemas de 
+presencialidad sobre la productividad de las ﬁrmas y sus equipos de trabajo.
+/FICHA PRESENCIALIDAD Y 
+PRODUCTIVIDAD 
+Fuente: Elaboración propia. 
+En primera instancia, comparando los esquemas entre los dos tipos de 
+perﬁles informados, los técnicos suelen tener menores niveles de 
+presencialidad respecto a los perﬁles no-técnicos.
+Esquema de presencialidad según perﬁl.
+R e m o t o ( s i n d í a  ﬁ j o )
+E v e n t u a l ( 1  d í a  a  l a  s e m a n a  e n o ﬁ c i n a )
+M i x t o ( 2 / 3  d í a s  a  l a  s e m a n a  e n o ﬁ c i n a )
+P r e s e n c i a l ( 4 / 5  d í a s  p o r  s e m a n a  e n o ﬁ c i n a )
+7 , 9 %
+2 7 , 1 %
+3 1 , 4 %
+33 , 6 %
+E q u i p o s  No T é c n i c o s
+7 , 1 %
+2 7 , 1 %
+1 7 , 1 %
+4 8 , 6 %
+E q u i p o s  T é c n i c o s
+R e m o t o ( s i n d í a  ﬁ j o )
+M i x t o ( 2 / 3  d í a s  a  l a  s e m a n a  e n o ﬁ c i n a )
+E v e n t u a l ( 1  d í a  a  l a  s e m a n a  e n o ﬁ c i n a
+P r e s e n c i a l ( 4 / 5  d í as  p o r  s e m a n a  e n o ﬁ c i n a )
+---PAGE 27---
+28
+Realizando esta apertura por tamaño de empresa, se observa que los 
+esquemas de trabajo remoto están más presentes en ﬁrmas con menos de 
+100 colaboradores. A su vez, a medida que se incrementa el tamaño adquieren 
+mayor participación los esquemas mixtos.
+/FICHA PRESENCIALIDAD Y 
+PRODUCTIVIDAD 
+Fuente: Elaboración propia. 
+En el caso de equipos no-técnicos, los esquemas remotos están presentes 
+principalmente también en ﬁrmas con menos de 100 colaboradores. En 
+ﬁrmas grandes (+ de 300 colaboradores), los esquemas mixtos son más 
+comunes. 
+Esquema de presencialidad según tamaño de empresa
+5 2 , 3 8 % 4 9 , 0 9 % 5 0 %5 7 , 1 4 % 4 7 , 6 2 % 2 3 , 0 8 %
+1 9 , 0 5 % 2 5 , 4 5 % 5 0 %2 8 , 5 7% 2 8 , 5 7% 3 8 , 4 %
+1 4 , 2 9 % 1 4 , 55 % 1 4 , 2 9 % 1 9 , 0 5 % 3 8 , 4 %
+1 4 , 2 9 % 1 0 , 9 1 % 4 , 7 6 %
+10 COLABORADORES
+O MENOS
+11 Y 50 
+COLABORADORES
+51 Y 100
+COLABORADORES
+101 Y 300
+COLABORADORES
+301 Y 1 . 000 
+COLABORADORES
+MÁS DE 1 . 000 
+COLABORADORESEQUIPOS TÉCNICOS
+EQUIPOS NO TÉCNICOS
+R e m o t o ( s i n d í a  ﬁ j o )
+E v e n t u a l ( 1  d í a  a  l a
+s e m a n a  e n o ﬁ c i n a )
+M i x t o  ( 2 / 3  d í as  a  l a
+s e m a n a  e n o ﬁ c i n a )
+P r e s e n c i a l ( 4 / 5  d í a s
+p o r  s e m a n a  e n o ﬁ c i n a )
+3 8 , 1 0 % 4 1 , 8 2 %
+5 0 %
+4 2 , 8 6 % 1 9 , 0 5 %
+2 3 , 0 8 %3 8 , 1 0 % 2 3 , 6 4 %
+5 0 %
+1 7 , 8 6 % 3 8 , 1 0 %
+9 , 5 2 % 2 1 , 8 2 % 3 9 , 2 9 % 3 8 , 1 0 % 7 6 , 9 2 %
+1 4 , 2 9 % 1 2 , 7 3% 4 , 7 6 %
+R e m o t o ( s i n d í a  ﬁ j o )
+E v e n t u a l ( 1  d í a  a  l a
+s e m a n a  e n o ﬁ c i n a )
+M i x t o  ( 2 / 3  d í as  a  l a
+s e m a n a  e n o ﬁ c i n a )
+P r e s e nc i a l ( 4 / 5  d í a s
+p o r  s e m a n a  e n o ﬁ c i n a )
+---PAGE 28---
+28
+En el esquema actual, un 80% de los encuestados considera que la 
+productividad se mantuvo o aumentó. Tomando en cuenta el tamaño de las 
+empresas, y de manera estilizada, podría decirse que la pérdida de 
+productividad se registró en las empresas de mayor tamaño.
+/FICHA PRESENCIALIDAD Y 
+PRODUCTIVIDAD 
+Fuente: Elaboración propia. 
+No obstante, tomando en cuenta el perﬁl de quien contestó la encuesta, se 
+observa que quienes registran mayoritariamente las pérdidas de 
+productividad han sido los socios. En este contexto, y dado que no es una 
+exigencia mayoritaria por parte de sus clientes, el retorno a la presencialidad se 
+plantea como el medio más adecuado para revertir esta situación y recuperar 
+Esquema de presencialidad según tamaño de empresa
+Impacto en productividad según perﬁl
+6 1 , 9 0 % 2 9 , 0 9 %
+5 0 %
+3 5 , 7 1 % 1 9 , 0 5 % 1 5 , 3 8 %
+2 8 , 5 7% 4 7 , 2 7%
+5 0 %
+5 3 , 5 7% 5 7 , 1 4 % 5 3 , 8 5 %
+9 , 5 2 % 2 3 , 6 4 % 1 0 , 7 1 % 2 3 , 8 1 % 3 0 , 7 7%
+10 COLABORADORES
+O MENOS
+11 Y 50 
+COLABORADORES
+51 Y 100
+COLABORADORES
+101 Y 300
+COLABORADORES
+301 Y 1 . 000 
+COLABORADORES
+MÁS DE 1 . 000 
+COLABORADORESPRODU C TIVI D AD
+G a n é
+M e  m a n t u v e
+P e r d í
+3 0 , 8 %
+2 1 , 8 %
+4 7 , 4 %
+S o c i o s
+G a n é P e r d í M e  m a n t u v e
+C ol a b o r a d o r e s
+G a n é P e r d í M e  m a n t u v e
+6 , 5 %
+4 8 , 4 %
+4 5 , 2 %
+---PAGE 29---
+29
+Tomando en cuenta la opinión de los socios que han registrado pérdidas en la 
+productividad de sus empresas, se observa que su intención es incrementar la 
+presencialidad en esquemas de 2 a 3 días para los perﬁles técnicos y de 3 a 4 
+para aquellos no-técnicos. Por último, el 30% de los socios no considera 
+incrementar la cantidad de días.
+/FICHA PRESENCIALIDAD Y 
+PRODUCTIVIDAD 
+2
+ Se trata de la cantidad de días adicionales que los encuestados están dispuestos a pedir a sus colaboradores.
+Incremento (evaluado
+2
+) en la cantidad de días según esquema y 
+equipo. - Empresas que perdieron competitividad.
+ESQUEMA A C T U AL / INCORPOR A CIÓN DE DÍAS
+1 2 , 5 0 % 2 9 , 1 7 % 4 , 1 7 % 2 3 , 0 8 %
+1 2 , 5 0 % 1 6 , 6 7% 8 , 3 3% 3 8 , 4 %
+1 2 , 5 0 % 1 2 , 5 0 %
+2 9 , 1 7 %
+4 , 1 7% 1 4 , 2 9 %
+0 1 2 3 T O T A LEQUIPOS TÉCNICOS
+EQUIPOS NO TÉCNICOS
+T O T A L
+R e m o t o ( s i n d í a  ﬁ j o )
+E v e n t u a l ( 1  d í a  a  l a
+s e m a n a  e n o ﬁ c i n a )
+M i x t o  ( 2 / 3  d í as  a  l a
+s e m a n a  e n o ﬁ c i n a )
+P r e s e nc i a l ( 4 / 5  d í a s
+p o r  s e m a n a  e n o ﬁ c i n a )
+8 , 3 3% 4 2 , 8 6 % 4 , 1 7 %
+1 00 %2 9 , 1 7% 3 7 , 5 0 % 4 , 1 7 %
+33 , 3 3%1 2 , 5 0 % 4 , 1 7 %
+2 9 , 1 7%
+2 9 , 1 7% 3 7 , 5 0 %2 9 , 1 7%T O T A L 1 00 %4 , 1 7 %
+1 7 , 8 6 %
+8 , 3 3% 2 5 , 00 % 3 9 , 2 9 % 3 7 , 5 0 %
+R e m o t o ( s i n d í a  ﬁ j o )
+E v e n t u a l ( 1  d í a  a  l a
+s e m a n a  e n o ﬁ c i n a )
+M i x t o  ( 2 / 3  d í as  a  l a
+s e m a n a  e n o ﬁ c i n a )
+Fuente: Elaboración propia.
+---PAGE 30---
+30
+Realizando un análisis similar para las ﬁrmas que mantuvieron su productividad y 
+considerando la opinión de socios y colaboradores, vemos que mayoritariamente 
+(55%) no se planea modiﬁcar el esquema de presencialidad. Aun así, cabe destacar 
+que una proporción signiﬁcativa (38%) evalúa avanzar hacia esquemas de 2-3 días. 
+/FICHA PRESENCIALIDAD Y 
+PRODUCTIVIDAD 
+3
+ Se trata de la cantidad de días adicionales que los encuestados están dispuestos a pedir a sus colaboradores. 
+Fuente: Elaboración propia.
+Incremento (evaluado
+3
+) en la cantidad de días según esquema y 
+equipo. - Empresas que mantuvieron la productividad.
+2 6 , 8 7 % 1 4 , 9 3% 2 , 99 %
+1 , 4 9 %
+4 4 , 7 8 %
+8 , 9 6 % 1 7 , 9 1 % 1 , 4 9 % 2 8 , 3 6 %
+5 , 9 7% 1 7 , 9 1 %
+3 1 , 3 4 %
+7 , 4 6 %
+1 1 , 9 4 %
+8 , 9 6 %
+0 1 2 5 T O T A LEQUIPOS TÉCNICOS
+EQUIPOS NO TÉCNICOS
+T O T A L
+R e m o t o ( s i n d í a  ﬁ j o )
+E v e n t u a l ( 1  d í a  a  l a
+s e m a n a  e n o ﬁ c i n a )
+M i x t o  ( 2 / 3  d í as  a  l a
+s e m a n a  e n o ﬁ c i n a )
+P r e s e nc i a l ( 4 / 5  d í a s
+p o r  s e m a n a  e n o ﬁ c i n a )
+2 0 , 9 0 % 1 , 4 9 %
+1 00 %55 , 22 % 4 , 4 8 % 1 , 4 9 %
+2 8 , 3%1 1 , 9 4 %
+8 , 9 6 %
+3 8 , 8 1 %
+2 9 , 1 7% 3 7 , 5 0 %2 9 , 1 7%T O T A L 1 00 %
+1 , 4 9 %
+1 3 , 4 3%
+1 4 , 9 3%
+2 8 , 3%
+R e m o t o ( s i n d í a  ﬁ j o )
+E v e n t u a l ( 1  d í a  a  l a
+s e m a n a  e n o ﬁ c i n a )
+M i x t o  ( 2 / 3  d í as  a  l a
+s e m a n a  e n o ﬁ c i n a )
+8 , 9 6 %
+1 4 , 9 3%
+1 , 4 9 % 1 1 , 9 4 %
+P r e s e nc i a l ( 4 / 5  d í a s  p o r
+s e m a n a  e n o ﬁ c i n a ) 1 , 4 9 %
+1 , 4 9 %
+ESQUEMA A C T U AL / INCORPOR A CIÓN DE DÍAS
+---PAGE 31---
+31
+Las herramientas y su utilización varía según el impacto percibido en la 
+productividad. En las ﬁrmas que registran una pérdida de productividad, se están 
+llevando a cabo reuniones periódicas y se está elaborando una política especíﬁca 
+para facilitar ese retorno. En cambio, entre las empresas que no han 
+experimentado efectos negativos en su productividad, la proporción que impulsa 
+estas acciones es considerablemente menor; en estos casos, la mayoría no está 
+desarrollando herramientas o políticas para el regreso a la presencialidad.
+/FICHA PRESENCIALIDAD Y 
+PRODUCTIVIDAD 
+Fuente: Elaboración propia.
+Herramientas para la vuelta a la presencialidad según empresas 
+que perdieron o mantuvieron competitividad
+1 4 , 3 %
+33 , 3 %
+1 9 %
+33 , 3 %
+O t r o s
+R e u n i on e s  p e r i ó d i c a s
+El a b o r a c i ón  d e  p olí t i c a
+No  s e  t r a b a j a  e n p ol í t i c a
+P é r d i d a  d e  p r o d u c t i v i d a d
+O t r o s
+R e un i on e s  p e r i ó d i c a s
+El a b o r a c i ón d e  p ol í t i c a
+No s e  t r a b a j a  e n p ol í t i c a
+1 1 , 9 %
+2 9 , 9 %
+1 3 , 4 %
+4 4 , 8 %
+M a n t u v i e r on p r o d u c t i v i d a d
+---PAGE 32---
+32
+Una tendencia similar se observa en la mejora de las compensaciones. Los socios 
+que registran una pérdida de productividad estarían más dispuestas a ofrecer 
+incentivos (35,7% vs 19,3% en el conjunto de ﬁrmas encuestadas) para incrementar 
+la presencialidad de sus equipos. 
+/FICHA PRESENCIALIDAD Y 
+PRODUCTIVIDAD 
+Fuente: Elaboración propia.
+Mejora en las compensaciones ante aumento en 
+presencialidad según empresa.
+N o
+S í
+No  s u m a r é  p r e s e nc i a l i d a d
+33 , %
+1 9 , 3 %
+4 7 , 1 %
+M e j o r a  e n c o m p e n s a c i ó n
+e n n u e s t r a  c o m p l e t a
+M e j o r a  e n c o m p e n s a c i ón e n ﬁ r m a s
+q u e  p e r d i e r on  p r o d u c t i v i d a d
+N o
+S í
+No  s u m a r é  p r e s e nc i a l i d a d
+2 5 %
+3 5 , 7 %
+3 9 , 3 %
+---PAGE 33---
+33
+Por último, el cambio hacia esquemas de mayor presencialidad es un proceso que  
+actualmente pareciera estar en “evaluación” en la industria, en tanto se registran 
+proporciones elevadas de ﬁrmas que no planean incrementar la cantidad de días que 
+los colaboradores asisten a la oﬁcina. Aun así, en este contexto, cabe destacar que 
+aquellas ﬁrmas que sí lo hicieron han registrado mayoritariamente cambios positivos. 
+/FICHA PRESENCIALIDAD Y 
+PRODUCTIVIDAD 
+Fuente: Elaboración propia.
+Mejora en las compensaciones ante aumento en 
+presencialidad según empresa.
+A umen t é p r esencialidad
+No aumen t é la p r esencialidad P ositi v os
+No d e t e ct é cambios
+N e g a ti v os
+7%
+6 5,1% 2 7 ,9%
+6 9, 3 %
+3 0 ,7%
+---PAGE 34---
+34
+/Salarios promedio de la industria 
+del software (base OEDE) 
+/ANEXO METODOLÓGICO 
+Para analizar la evolución del salario en la industria del software sin que los 
+datos se vean distorsionados por saltos estacionales, aplicamos una técnica 
+conocida como media móvil. En este caso, usamos una ventana de seis 
+meses, lo que signiﬁca que cada punto en la serie representa el promedio de 
+los salarios de ese mes y los cinco anteriores. Esto permite ver con mayor 
+claridad la tendencia general, evitando que un aumento o baja puntual afecte 
+demasiado el análisis. 
+ 
+Además, los datos fueron ajustados para quitar el efecto del Sueldo Anual 
+Complementario (SAC o aguinaldo), que se paga principalmente en junio y 
+diciembre, ya que esos pagos elevan los ingresos de manera puntual en esos 
+meses. Así, estos ajustes permiten estimar un salario medio bruto mensual 
+más representativo y fácil de comparar a lo largo del tiempo. 
+/Salarios del cluster Desarrollo 
+(base Cessi-OPSSI) 
+Desde 2021, en los relevamientos salariales realizados por OPSSI no se solicita 
+a las empresas que informen directamente el salario promedio, sino que se 
+les pide que indiquen el salario mínimo y máximo que manejan para cada 
+perﬁl. A partir de esos dos valores se calcula un promedio simple que luego 
+es ponderado en función de la cantidad de personas que la empresa informa 
+para ese perﬁl. 
+---PAGE 35---
+35
+Cantidad de empresas y colaboradores - 
+últimas tres encuestas del OPSSI
+La muestra de la última encuesta, de abril de 2025, estuvo conformada por 
+243 empresas
+ que declararon emplear en total a
+ 39.386 colaboradores.  
+/CARACTERÍSTICAS DE LA MUESTRA 
+DE LA ENCUESTA SALARIAL 
+0
+50
+100
+150
+2 00
+250
+0
+1 0 . 000
+2 0 . 000
+3 0 . 000
+4 0 . 000
+5 0 . 000
+235
+3 9 .884 4 0 . 1 7 0
+235
+25.548 2 4. 2 42
+3 9 .386
+2 43
+25.345
+Emp r esas Colaborado r es Colaborado r es c/in f o salarial
+o c t- 2 4 ene-25 abr-25
+---PAGE 36---
+36
+Distribución de colaboradores/as por GÉNERO 
+- abril 2025
+La muestra de la última encuesta, de abril de 2025, estuvo conformada por 
+243 empresas
+ que declararon emplear en total a
+ 39.386 colaboradores.  
+/CARACTERÍSTICAS DE LA MUESTRA 
+DE LA ENCUESTA SALARIAL 
+0 ,1%
+64,9%
+Homb r es
+Muje r es
+Ot r os g éne r os
+35,0%
+---PAGE 37---
+37
+/CARACTERÍSTICAS 
+DE LA MUESTRA
+/LOCALIZACIÓN DE 
+EMPRESAS POR PROVINCIA
+Fuente: Elaboración propia sobre encuestas OPSSI. 
+1
+1
+1
+1
+1
+1
+1
+3
+2
+318
+19
+115
+7 4
+---PAGE 38---
+38
+/CARACTERÍSTICAS 
+DE LA MUESTRA
+/LOCALIZACIÓN DE 
+EMPLEADOS POR PROVINCIA
+Fuente: Elaboración propia sobre encuestas OPSSI. 
+116
+125
+1 2 4
+3 6 2
+7 56
+9 2
+84
+147
+17
+34
+99
+135
+4 . 090
+12 . 044
+1 2 7 . 963
+617
+48
+12323
+9 3
+2 3 1
+1 . 6 96
+426
+---PAGE 39---
+SECTOR DE 
+SOFTWARE Y 
+SERVICIOS 
+INFORMÁTICOS 
+DE ARGENTINA 
+FOCO TALENTO 
+/JUL2025
+/REPORTE 
+

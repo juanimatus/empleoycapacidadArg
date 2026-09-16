@@ -1,0 +1,31 @@
+{
+  "descripcion": "Empleo registrado (puestos de trabajo asalariados) en el sector Software y Servicios Informáticos, Argentina, total nacional, serie anual.",
+  "fuente": {
+    "nombre": "Observatorio de Empleo y Dinámica Empresarial (OEDE), Subsecretaría de Empleo y Formación Laboral, Ministerio de Trabajo de la Nación",
+    "republicado_por": "CESSI / OPSSI - Observatorio Permanente de la Industria del Software y Servicios Informáticos",
+    "documento": "Sector de Software y Servicios Informáticos de Argentina - Foco Talento",
+    "fecha_documento": "2025-07",
+    "url_documento": "https://cessi.org.ar/wp-content/uploads/2025/08/CESSI-OPSSI-Reporte-de-los-principales-indicadores-de-la-industria-del-Software-con-Foco-en-Talento_Julio-2025.pdf",
+    "tipo": "oficial",
+    "nota": "Dato extraído textualmente del reporte OPSSI, que a su vez cita como fuente al OEDE. No hay acceso directo confirmado a la serie cruda en datos.gob.ar/datos.produccion.gob.ar para esta segmentación exacta al momento de construir este MVP; se usa el valor republicado y citado por OPSSI."
+  },
+  "unidad": "empleos_registrados",
+  "cobertura": "nacional",
+  "serie_anual": [
+    {"anio": 2015, "empleos_registrados": 97642, "variacion_interanual_pct": null},
+    {"anio": 2016, "empleos_registrados": 100722, "variacion_interanual_pct": 3.2},
+    {"anio": 2017, "empleos_registrados": 105186, "variacion_interanual_pct": 4.4},
+    {"anio": 2018, "empleos_registrados": 110060, "variacion_interanual_pct": 4.6},
+    {"anio": 2019, "empleos_registrados": 117681, "variacion_interanual_pct": 6.9},
+    {"anio": 2020, "empleos_registrados": 123148, "variacion_interanual_pct": 4.6},
+    {"anio": 2021, "empleos_registrados": 134694, "variacion_interanual_pct": 9.4},
+    {"anio": 2022, "empleos_registrados": 147660, "variacion_interanual_pct": 9.6},
+    {"anio": 2023, "empleos_registrados": 152048, "variacion_interanual_pct": 3.0},
+    {"anio": 2024, "empleos_registrados": 158179, "variacion_interanual_pct": 4.0}
+  ],
+  "indicadores_adicionales_2024": {
+    "participacion_empleo_privado_registrado_pct": 2.3,
+    "nuevos_empleos_2024": 6131,
+    "crecimiento_acumulado_2015_2024_pct": 64
+  }
+}
