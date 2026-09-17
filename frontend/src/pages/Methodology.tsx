@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { api, type DataSource } from "../api/client";
+import { Reveal } from "../components/Reveal";
 import { SourceCitation } from "../components/SourceCitation";
 
 export function Methodology() {
@@ -13,6 +14,7 @@ export function Methodology() {
   return (
     <div className="page">
       <section className="hero">
+        <span className="hero-kicker">04 · Transparencia</span>
         <h1>Fuentes y Metodología</h1>
         <p>
           Este observatorio nace porque el observatorio de empleo oficial argentino actualiza
@@ -22,7 +24,7 @@ export function Methodology() {
         </p>
       </section>
 
-      <div className="panel">
+      <Reveal className="panel">
         <h2>Tres niveles de dato</h2>
         <ul className="methodology-list">
           <li>
@@ -47,9 +49,9 @@ export function Methodology() {
             tal en cada dato.
           </li>
         </ul>
-      </div>
+      </Reveal>
 
-      <div className="panel">
+      <Reveal className="panel" delay={100}>
         <h2>Fuentes citadas</h2>
         {error && <p className="error-box">No se pudo conectar con la API ({error}).</p>}
         <div className="source-list">
@@ -65,9 +67,9 @@ export function Methodology() {
           Atribución-NoComercial-CompartirIgual 4.0 (CC BY-NC-SA 4.0): este proyecto, mientras sea
           sin fines de lucro, puede reutilizarlos citando la fuente.
         </p>
-      </div>
+      </Reveal>
 
-      <div className="panel">
+      <Reveal className="panel" delay={200}>
         <h2>Limitaciones conocidas</h2>
         <ul className="methodology-list">
           <li>
@@ -89,7 +91,7 @@ export function Methodology() {
             El listado de nomenclaturas/alias por rol es una curación manual inicial, no exhaustiva.
           </li>
         </ul>
-      </div>
+      </Reveal>
     </div>
   );
 }

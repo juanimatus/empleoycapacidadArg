@@ -1,4 +1,5 @@
 import { NavLink, Route, HashRouter as Router, Routes } from "react-router-dom";
+import { ScrollProgress } from "./components/ScrollProgress";
 import { Dashboard } from "./pages/Dashboard";
 import { Methodology } from "./pages/Methodology";
 import { Provinces } from "./pages/Provinces";
@@ -7,9 +8,10 @@ import { RoleExplorer } from "./pages/RoleExplorer";
 function App() {
   return (
     <Router>
+      <ScrollProgress />
       <div className="app-shell">
         <header className="topbar">
-          <span className="brand">Observatorio IT AR</span>
+          <span className="brand">Observatorio IT · AR</span>
           <nav>
             <NavLink to="/" end>
               Dashboard

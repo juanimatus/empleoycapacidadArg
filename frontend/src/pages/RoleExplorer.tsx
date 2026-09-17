@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { api, type RoleFamily } from "../api/client";
+import { Reveal } from "../components/Reveal";
 import { SourceCitation } from "../components/SourceCitation";
 
 export function RoleExplorer() {
@@ -26,6 +27,7 @@ export function RoleExplorer() {
   return (
     <div className="page">
       <section className="hero">
+        <span className="hero-kicker">02 · Taxonomía</span>
         <h1>Explorador de Roles IT</h1>
         <p>
           Cada familia agrupa decenas de nombres de puesto reales (nomenclaturas) usados en
@@ -49,7 +51,7 @@ export function RoleExplorer() {
         </ul>
 
         {active && (
-          <div className="panel role-detail">
+          <Reveal className="panel role-detail" key={active.id}>
             <h2>{active.nombre}</h2>
             <p>{active.descripcion}</p>
             {active.distribucion && (
@@ -71,7 +73,7 @@ export function RoleExplorer() {
                 </span>
               ))}
             </div>
-          </div>
+          </Reveal>
         )}
       </div>
     </div>

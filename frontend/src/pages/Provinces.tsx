@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { api, type ProvinceEmployment } from "../api/client";
+import { CountUp } from "../components/CountUp";
 import { ProvinceDistributionChart } from "../components/ProvinceDistributionChart";
+import { Reveal } from "../components/Reveal";
 
 export function Provinces() {
   const [data, setData] = useState<ProvinceEmployment[]>([]);
@@ -25,6 +27,7 @@ export function Provinces() {
   return (
     <div className="page">
       <section className="hero">
+        <span className="hero-kicker">03 · Geografía</span>
         <h1>Empleo IT por Provincia</h1>
         <p>
           Empleo registrado del sector Software y Servicios Informáticos (dato oficial OEDE,
@@ -35,26 +38,35 @@ export function Provinces() {
 
       <section className="kpi-grid">
         <div className="kpi-card">
-          <span className="kpi-value">{total.toLocaleString("es-AR")}</span>
+          <span className="kpi-value">
+            <CountUp value={total} />
+          </span>
           <span className="kpi-label">Empleos IT registrados (sector privado)</span>
         </div>
         <div className="kpi-card">
-          <span className="kpi-value">{caba ? `${caba.porcentaje}%` : "—"}</span>
+          <span className="kpi-value">
+            {caba ? <CountUp value={caba.porcentaje} decimals={2} suffix="%" /> : "—"}
+          </span>
           <span className="kpi-label">Concentrado en CABA</span>
         </div>
         <div className="kpi-card">
-          <span className="kpi-value">{interior.toLocaleString("es-AR")}</span>
+          <span className="kpi-value">
+            <CountUp value={interior} />
+          </span>
           <span className="kpi-label">Empleos IT en el resto del país</span>
         </div>
       </section>
 
-      <div className="panel">
+      <span className="section-kicker">
+        <span className="n">04</span> Ranking provincial
+      </span>
+      <Reveal className="panel">
         <h2>Top 12 provincias por empleo IT registrado</h2>
         <p className="panel-sub">Fuente oficial: OEDE / datos.produccion.gob.ar.</p>
         <ProvinceDistributionChart data={data} />
-      </div>
+      </Reveal>
 
-      <div className="panel">
+      <Reveal className="panel" delay={120}>
         <h2>Detalle completo (24 jurisdicciones)</h2>
         <table className="province-table">
           <thead>
@@ -74,7 +86,7 @@ export function Provinces() {
             ))}
           </tbody>
         </table>
-      </div>
+      </Reveal>
     </div>
   );
 }

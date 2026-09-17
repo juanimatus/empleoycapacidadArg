@@ -5,7 +5,10 @@ import {
   type EmploymentSnapshot,
   type EmploymentSummary,
 } from "../api/client";
+import { CountUp } from "../components/CountUp";
 import { EmploymentTimeseries } from "../components/EmploymentTimeseries";
+import { Marquee } from "../components/Marquee";
+import { Reveal } from "../components/Reveal";
 import { RoleDistributionChart } from "../components/RoleDistributionChart";
 
 export function Dashboard() {
@@ -40,9 +43,10 @@ export function Dashboard() {
   return (
     <div className="page">
       <section className="hero">
+        <span className="hero-kicker">01 · Observatorio</span>
         <h1>Observatorio de Empleo IT Argentina</h1>
         <p>
-          Empleo IT segmentado por rol, con datos oficiales (OEDE) y estimaciones editoriales
+          Empleo IT segmentado por rol, con datos oficiales (OEDE) y encuestas comunitarias
           explícitamente marcadas. Un observatorio que no confunde "programador" con toda la
           industria.
         </p>
@@ -50,17 +54,27 @@ export function Dashboard() {
 
       <section className="kpi-grid">
         <div className="kpi-card">
-          <span className="kpi-value">{summary.empleos_registrados_ultimo_anio.toLocaleString("es-AR")}</span>
+          <span className="kpi-value">
+            <CountUp value={summary.empleos_registrados_ultimo_anio} />
+          </span>
           <span className="kpi-label">Empleos IT registrados ({summary.ultimo_anio})</span>
         </div>
         <div className="kpi-card">
           <span className="kpi-value">
-            {summary.variacion_interanual_pct != null ? `+${summary.variacion_interanual_pct}%` : "—"}
+            {summary.variacion_interanual_pct != null ? (
+              <>
+                +<CountUp value={summary.variacion_interanual_pct} decimals={1} suffix="%" />
+              </>
+            ) : (
+              "—"
+            )}
           </span>
           <span className="kpi-label">Variación interanual</span>
         </div>
         <div className="kpi-card">
-          <span className="kpi-value">{summary.cantidad_familias_rol}</span>
+          <span className="kpi-value">
+            <CountUp value={summary.cantidad_familias_rol} />
+          </span>
           <span className="kpi-label">Familias de rol relevadas</span>
         </div>
         <div className="kpi-card">
@@ -69,28 +83,42 @@ export function Dashboard() {
         </div>
       </section>
 
+      <Marquee
+        items={byRole.distribucion.map((r) => `${r.nombre} ${r.porcentaje_estimado}%`)}
+      />
+
+      <span className="section-kicker">
+        <span className="n">02</span> Evolución y distribución
+      </span>
       <section className="grid-2">
-        <div className="panel">
+        <Reveal className="panel">
           <h2>Evolución del empleo IT registrado</h2>
           <p className="panel-sub">Fuente oficial: OEDE, Ministerio de Trabajo.</p>
           <EmploymentTimeseries data={timeseries} />
-        </div>
-        <div className="panel">
+        </Reveal>
+        <Reveal className="panel" delay={120}>
           <h2>Distribución estimada por familia de rol</h2>
           <p className="panel-sub warning">{byRole.aviso}</p>
           <RoleDistributionChart data={byRole.distribucion} />
-        </div>
+        </Reveal>
       </section>
 
+      <span className="section-kicker">
+        <span className="n">03</span> Indicadores del sector
+      </span>
       <section className="kpi-grid">
         {summary.kpis.map((kpi) => (
           <div className="kpi-card" key={kpi.id}>
             <span className="kpi-value">
-              {kpi.unidad === "ARS"
-                ? `$${kpi.valor.toLocaleString("es-AR")}`
-                : kpi.unidad === "pct"
-                ? `${kpi.valor}%`
-                : kpi.valor.toLocaleString("es-AR")}
+              {kpi.unidad === "ARS" ? (
+                <>
+                  $<CountUp value={kpi.valor} />
+                </>
+              ) : kpi.unidad === "pct" ? (
+                <CountUp value={kpi.valor} decimals={kpi.valor % 1 !== 0 ? 1 : 0} suffix="%" />
+              ) : (
+                <CountUp value={kpi.valor} />
+              )}
             </span>
             <span className="kpi-label">{kpi.nombre}</span>
             {kpi.nota && <span className="kpi-nota">{kpi.nota}</span>}

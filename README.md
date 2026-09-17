@@ -9,8 +9,12 @@ El observatorio de empleo oficial argentino actualiza pocas métricas y no disti
 ## Estructura
 
 - `backend/` — API FastAPI + SQLite. Modelos, datos curados (`data/curated/`) y script de seed.
-- `frontend/` — Dashboard en React + TypeScript (Vite): Dashboard, Explorador de Roles, Fuentes y Metodología.
+- `frontend/` — Dashboard en React + TypeScript (Vite): Dashboard, Explorador de Roles, Por Provincia, Fuentes y Metodología.
 - `docs/` — documentación adicional.
+
+## Diseño
+
+Estética "Brutalist Grid" adaptada a un observatorio de datos: grillas con líneas finas, tipografía mono (JetBrains Mono) para números y kickers, Space Grotesk para títulos, sin sombras ni bordes redondeados. Elegida a propósito por la afinidad temática con el proyecto — honestidad sobre los números, cero maquillaje — y no por moda visual. Componentes reutilizables en `frontend/src/components/`: `Reveal` (scroll-reveal), `CountUp` (contadores animados), `Marquee` (ticker de roles), `ScrollProgress`.
 
 ## Cómo correrlo
 
