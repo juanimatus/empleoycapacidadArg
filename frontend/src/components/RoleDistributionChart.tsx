@@ -21,9 +21,7 @@ export function RoleDistributionChart({ data }: { data: ByRoleItem[] }) {
         <XAxis type="number" unit="%" tick={{ fontFamily: MONO, fontSize: 11 }} />
         <YAxis type="category" dataKey="nombre" width={220} tick={{ fontFamily: MONO, fontSize: 11 }} />
         <Tooltip
-          formatter={(value: number, key: string) =>
-            key === "porcentaje_estimado" ? [`${value}%`, "Participación estimada"] : [value, key]
-          }
+          formatter={(value) => [`${value}%`, "Participación estimada"]}
           contentStyle={{ borderRadius: 0, border: "1px solid #0a0a0a", fontFamily: MONO }}
         />
         <Bar dataKey="porcentaje_estimado" fill="var(--accent)" radius={[0, 0, 0, 0]} />

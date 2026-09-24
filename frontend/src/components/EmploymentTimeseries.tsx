@@ -21,7 +21,7 @@ export function EmploymentTimeseries({ data }: { data: EmploymentSnapshot[] }) {
           tick={{ fontFamily: "JetBrains Mono, monospace", fontSize: 11 }}
         />
         <Tooltip
-          formatter={(value: number) => [value.toLocaleString("es-AR"), "Empleos registrados"]}
+          formatter={(value) => [Number(value).toLocaleString("es-AR"), "Empleos registrados"]}
           labelFormatter={(label) => `Año ${label}`}
           contentStyle={{ borderRadius: 0, border: "1px solid #0a0a0a", fontFamily: "JetBrains Mono, monospace" }}
         />

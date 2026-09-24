@@ -21,7 +21,7 @@ export function ProvinceDistributionChart({ data }: { data: ProvinceEmployment[]
         <XAxis type="number" tick={{ fontFamily: MONO, fontSize: 11 }} />
         <YAxis type="category" dataKey="provincia" width={190} tick={{ fontFamily: MONO, fontSize: 11 }} />
         <Tooltip
-          formatter={(value: number) => [value.toLocaleString("es-AR"), "Empleos registrados"]}
+          formatter={(value) => [Number(value).toLocaleString("es-AR"), "Empleos registrados"]}
           contentStyle={{ borderRadius: 0, border: "1px solid #0a0a0a", fontFamily: MONO }}
         />
         <Bar dataKey="empleos_registrados" fill="var(--accent)" radius={[0, 0, 0, 0]} />

@@ -3,6 +3,7 @@ backend/.venv/
 backend/data/observatorio.db
 backend/**/__pycache__/
 backend/uvicorn.log
+backend/.pytest_cache/
 *.pyc
 backend/data/raw/sources/*.pdf
 backend/data/raw/sources/*.csv
@@ -11,7 +12,10 @@ backend/data/raw/sources/*.csv
 frontend/node_modules/
 frontend/dist/
 frontend/vite.log
+.env
+.env.local
 
-# OS / editor
+# Local tooling / OS / editor
+.claude/
 .DS_Store
 .vscode/

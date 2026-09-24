@@ -38,7 +38,29 @@ npm install
 npm run dev
 ```
 
-El dashboard queda en `http://localhost:5173`.
+El dashboard queda en `http://localhost:5173`. Para apuntar a otro backend: `cp .env.example .env` y editar `VITE_API_URL` (en el backend, `CORS_ORIGINS` acepta una lista separada por comas).
+
+### Tests
+
+```bash
+cd backend
+pip install -r requirements-dev.txt
+python -m pytest -q
+```
+
+CI (GitHub Actions) corre los tests del backend y el build del frontend en cada push/PR.
+
+## Datos
+
+Los JSON curados en `backend/data/curated/` están versionados y son lo único que necesita la app. Los archivos crudos (CSV/PDF originales) no se versionan por tamaño; las URLs para reproducirlos están en cada JSON y en [docs/METODOLOGIA.md](docs/METODOLOGIA.md). Términos de reutilización de cada fuente: [DATA_LICENSES.md](DATA_LICENSES.md).
+
+## Contribuir
+
+Issues y PRs bienvenidos, sobre todo: fuentes primarias para el desglose por rol, actualización de la serie provincial, y ampliación de nomenclaturas/alias en `role_families.json`. Todo dato nuevo debe traer su fuente y tipo (oficial / comunitario / estimación).
+
+## Licencia
+
+Código: [MIT](LICENSE). Datos: ver [DATA_LICENSES.md](DATA_LICENSES.md) (la distribución por rol deriva de Sysarmy, CC BY-NC-SA 4.0).
 
 ## Estado del MVP
 
