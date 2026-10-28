@@ -46,6 +46,7 @@ class RoleFamilyOut(BaseModel):
     descripcion: str
     aliases: list[str]
     distribucion: RoleDistributionOut | None = None
+    perfil: dict | None = None
 
     class Config:
         from_attributes = True

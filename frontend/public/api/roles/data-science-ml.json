@@ -17,7 +17,7 @@
   "distribucion": {
     "porcentaje_estimado": 2.8,
     "tipo": "COMUNITARIO_VERIFICABLE",
-    "nota": "Dato directo de la encuesta ('Data Scientist' + 'AI Engineer')",
+    "nota": "Dato directo de la encuesta.",
     "fuente": {
       "id": "sysarmy-2025-1",
       "nombre": "Sysarmy - Encuesta de Sueldos IT Argentina 2025.1",
@@ -26,5 +26,174 @@
       "url": "https://sysarmy.com/blog/posts/resultados-de-la-encuesta-de-sueldos-2025-1/",
       "fecha": "2025"
     }
+  },
+  "perfil": {
+    "respuestas": 115,
+    "salario_bruto_mensual_ars": {
+      "Junior": {
+        "n": 28,
+        "p25": 1527000.0,
+        "mediana": 1814000.0,
+        "p75": 2605000.0
+      },
+      "Semi-Senior": {
+        "n": 54,
+        "p25": 2058000.0,
+        "mediana": 2682000.0,
+        "p75": 3374000.0
+      },
+      "Senior": {
+        "n": 25,
+        "p25": 3400000.0,
+        "mediana": 4883000.0,
+        "p75": 6412000.0
+      }
+    },
+    "seniority": {
+      "Junior": 27.8,
+      "Semi-Senior": 49.6,
+      "Senior": 22.6
+    },
+    "modalidad": {
+      "remoto": 53.9,
+      "hibrido": 45.2,
+      "presencial": 0.9
+    },
+    "genero": {
+      "hombres_cis": 79.1,
+      "mujeres_cis": 19.1,
+      "otras_identidades_o_sin_respuesta": 1.7
+    },
+    "sueldo_dolarizado": 41.7,
+    "anios_experiencia_mediana": 3.0,
+    "uso_ia_promedio_0a5": 4.0,
+    "provincias": [
+      {
+        "nombre": "Ciudad Autónoma de Buenos Aires",
+        "porcentaje": 59.1
+      },
+      {
+        "nombre": "Buenos Aires",
+        "porcentaje": 12.2
+      },
+      {
+        "nombre": "Córdoba",
+        "porcentaje": 10.4
+      },
+      {
+        "nombre": "Santa Fe",
+        "porcentaje": 7.0
+      },
+      {
+        "nombre": "Mendoza",
+        "porcentaje": 3.5
+      },
+      {
+        "nombre": "Neuquén",
+        "porcentaje": 2.6
+      }
+    ],
+    "tecnologias": [
+      {
+        "nombre": "Python",
+        "porcentaje": 97.4
+      },
+      {
+        "nombre": "SQL",
+        "porcentaje": 66.1
+      },
+      {
+        "nombre": "R",
+        "porcentaje": 25.2
+      },
+      {
+        "nombre": "Bash/Shell",
+        "porcentaje": 16.5
+      },
+      {
+        "nombre": "Javascript",
+        "porcentaje": 12.2
+      },
+      {
+        "nombre": "HTML",
+        "porcentaje": 8.7
+      },
+      {
+        "nombre": "TypeScript",
+        "porcentaje": 5.2
+      },
+      {
+        "nombre": "C++",
+        "porcentaje": 4.3
+      }
+    ],
+    "frameworks": [
+      {
+        "nombre": "TensorFlow",
+        "porcentaje": 44.3
+      },
+      {
+        "nombre": "Torch",
+        "porcentaje": 27.8
+      },
+      {
+        "nombre": "Flask",
+        "porcentaje": 27.0
+      },
+      {
+        "nombre": "Spark",
+        "porcentaje": 27.0
+      },
+      {
+        "nombre": "Django",
+        "porcentaje": 11.3
+      },
+      {
+        "nombre": "Hadoop",
+        "porcentaje": 7.0
+      },
+      {
+        "nombre": "Node.js",
+        "porcentaje": 5.2
+      },
+      {
+        "nombre": "React.js",
+        "porcentaje": 5.2
+      }
+    ],
+    "plataformas": [
+      {
+        "nombre": "Docker",
+        "porcentaje": 48.7
+      },
+      {
+        "nombre": "Linux",
+        "porcentaje": 36.5
+      },
+      {
+        "nombre": "Amazon Web Services",
+        "porcentaje": 35.7
+      },
+      {
+        "nombre": "Google Cloud Platform",
+        "porcentaje": 32.2
+      },
+      {
+        "nombre": "Azure",
+        "porcentaje": 31.3
+      },
+      {
+        "nombre": "Kubernetes",
+        "porcentaje": 8.7
+      },
+      {
+        "nombre": "Windows Server",
+        "porcentaje": 7.0
+      },
+      {
+        "nombre": "Serverless",
+        "porcentaje": 4.3
+      }
+    ]
   }
 }

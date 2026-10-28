@@ -3,7 +3,7 @@ import type { DataSource } from "../api/client";
 const LABELS: Record<DataSource["tipo"], string> = {
   oficial: "Dato oficial",
   comunitario: "Encuesta comunitaria",
-  estimacion: "Estimación editorial",
+  estimacion: "Estimación",
 };
 
 export function SourceCitation({ fuente }: { fuente: DataSource }) {

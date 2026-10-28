@@ -92,7 +92,8 @@ def by_role(db: Session = Depends(get_db)):
         "aviso": (
             "El total es dato oficial (OEDE). La segmentación por rol se calcula a partir de la "
             "encuesta comunitaria Sysarmy 2025.1 (n=5.196); dentro del bloque 'Developer' el "
-            "reparto entre Backend/Frontend/Full Stack/Mobile sigue siendo una estimación editorial."
+            "reparto entre Backend/Frontend/Full Stack/Mobile se infiere por las tecnologías que "
+            "declara cada persona (ver Metodología)."
         ),
         "distribucion": result,
     }

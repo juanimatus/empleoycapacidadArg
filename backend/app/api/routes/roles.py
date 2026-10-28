@@ -1,3 +1,7 @@
+import json
+from functools import cache
+from pathlib import Path
+
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 
@@ -6,6 +10,16 @@ from app.models import DataSource, RoleDistribution, RoleFamily
 from app.schemas import RoleDistributionOut, RoleFamilyOut
 
 router = APIRouter(prefix="/api/roles", tags=["roles"])
+
+PROFILES_PATH = (
+    Path(__file__).resolve().parents[3] / "data" / "curated" / "role_profiles_sysarmy.json"
+)
+
+
+@cache
+def _profiles() -> dict:
+    """Fichas por rol calculadas por `app.ingestion.sysarmy_profiles` (no pasan por la base)."""
+    return json.loads(PROFILES_PATH.read_text(encoding="utf-8"))["perfiles"]
 
 
 def _build_role_out(db: Session, rf: RoleFamily) -> RoleFamilyOut:
@@ -29,6 +43,7 @@ def _build_role_out(db: Session, rf: RoleFamily) -> RoleFamilyOut:
         descripcion=rf.descripcion,
         aliases=[a.alias for a in rf.aliases],
         distribucion=dist_out,
+        perfil=_profiles().get(rf.id),
     )
 
 

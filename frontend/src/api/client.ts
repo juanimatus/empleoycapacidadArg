@@ -25,12 +25,42 @@ export interface ProvinceEmployment {
   periodo: string;
 }
 
+export interface SalaryStats {
+  n: number;
+  p25: number;
+  mediana: number;
+  p75: number;
+}
+
+export type Seniority = "Junior" | "Semi-Senior" | "Senior";
+
+export interface ShareItem {
+  nombre: string;
+  porcentaje: number;
+}
+
+export interface RoleProfile {
+  respuestas: number;
+  salario_bruto_mensual_ars: Record<Seniority, SalaryStats | null>;
+  seniority: Record<Seniority, number>;
+  modalidad: { remoto: number; hibrido: number; presencial: number };
+  genero: { hombres_cis: number; mujeres_cis: number; otras_identidades_o_sin_respuesta: number };
+  sueldo_dolarizado: number;
+  anios_experiencia_mediana: number | null;
+  uso_ia_promedio_0a5: number | null;
+  provincias: ShareItem[];
+  tecnologias: ShareItem[];
+  frameworks: ShareItem[];
+  plataformas: ShareItem[];
+}
+
 export interface RoleFamily {
   id: string;
   nombre: string;
   descripcion: string;
   aliases: string[];
   distribucion: RoleDistribution | null;
+  perfil: RoleProfile | null;
 }
 
 export interface EmploymentSnapshot {

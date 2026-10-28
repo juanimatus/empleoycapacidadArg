@@ -17,79 +17,79 @@
   "distribucion": [
     {
       "role_family_id": "backend",
-      "porcentaje_estimado": 17.1,
-      "nota": "Estimación editorial: Sysarmy no separa Backend/Frontend/Full Stack/Mobile. Lo real es el bloque 'Developer' completo (1.776 respuestas, 42,7%); este reparto interno es criterio propio.",
-      "respuestas_estimadas": 710,
-      "tipo_dato": "ESTIMACION_EDITORIAL"
+      "respuestas_con_stack": 737,
+      "porcentaje_estimado": 18.8,
+      "tipo_dato": "ESTIMACION_EDITORIAL",
+      "nota": "Reparto inferido por tecnologías dentro del bloque real 'Developer'. Sysarmy no separa Backend/Frontend/Full Stack/Mobile. Se infiere por las tecnologías declaradas: Mobile si usa Flutter, React Native, SwiftUI, Ionic, Cordova, Swift, Dart u Objective-C; Full Stack si usa un framework de frontend (React, Angular, Vue, Next, Svelte) y además uno de backend o un lenguaje de servidor; Frontend o Backend si sólo aparece uno de los dos lados."
+    },
+    {
+      "role_family_id": "fullstack",
+      "respuestas_con_stack": 713,
+      "porcentaje_estimado": 18.2,
+      "tipo_dato": "ESTIMACION_EDITORIAL",
+      "nota": "Reparto inferido por tecnologías dentro del bloque real 'Developer'. Sysarmy no separa Backend/Frontend/Full Stack/Mobile. Se infiere por las tecnologías declaradas: Mobile si usa Flutter, React Native, SwiftUI, Ionic, Cordova, Swift, Dart u Objective-C; Full Stack si usa un framework de frontend (React, Angular, Vue, Next, Svelte) y además uno de backend o un lenguaje de servidor; Frontend o Backend si sólo aparece uno de los dos lados."
     },
     {
       "role_family_id": "devops",
       "respuestas": 630,
       "porcentaje_estimado": 15.1,
-      "nota": "Dato directo de la encuesta (categoría 'SysAdmin / DevOps / SRE')"
+      "nota": "Dato directo de la encuesta."
     },
     {
       "role_family_id": "product-project",
       "respuestas": 467,
       "porcentaje_estimado": 11.2,
-      "nota": "Dato directo de la encuesta ('Manager / Director' + 'Scrum Master')"
-    },
-    {
-      "role_family_id": "frontend",
-      "porcentaje_estimado": 11.1,
-      "nota": "Estimación editorial: Sysarmy no separa Backend/Frontend/Full Stack/Mobile. Lo real es el bloque 'Developer' completo (1.776 respuestas, 42,7%); este reparto interno es criterio propio.",
-      "respuestas_estimadas": 462,
-      "tipo_dato": "ESTIMACION_EDITORIAL"
+      "nota": "Dato directo de la encuesta."
     },
     {
       "role_family_id": "data",
       "respuestas": 457,
       "porcentaje_estimado": 11.0,
-      "nota": "Dato directo de la encuesta ('BI Analyst/Data Analyst' + 'Data Engineer' + 'DBA')"
-    },
-    {
-      "role_family_id": "fullstack",
-      "porcentaje_estimado": 9.4,
-      "nota": "Estimación editorial: Sysarmy no separa Backend/Frontend/Full Stack/Mobile. Lo real es el bloque 'Developer' completo (1.776 respuestas, 42,7%); este reparto interno es criterio propio.",
-      "respuestas_estimadas": 391,
-      "tipo_dato": "ESTIMACION_EDITORIAL"
+      "nota": "Dato directo de la encuesta."
     },
     {
       "role_family_id": "qa",
       "respuestas": 247,
       "porcentaje_estimado": 5.9,
-      "nota": "Dato directo de la encuesta ('QA / Tester')"
-    },
-    {
-      "role_family_id": "mobile",
-      "porcentaje_estimado": 5.1,
-      "nota": "Estimación editorial: Sysarmy no separa Backend/Frontend/Full Stack/Mobile. Lo real es el bloque 'Developer' completo (1.776 respuestas, 42,7%); este reparto interno es criterio propio.",
-      "respuestas_estimadas": 213,
-      "tipo_dato": "ESTIMACION_EDITORIAL"
+      "nota": "Dato directo de la encuesta."
     },
     {
       "role_family_id": "ux-ui",
       "respuestas": 193,
       "porcentaje_estimado": 4.6,
-      "nota": "Dato directo de la encuesta ('UX Designer' + 'Designer' + 'UX Writer' + 'UX Researcher')"
+      "nota": "Dato directo de la encuesta."
     },
     {
       "role_family_id": "support-sysadmin",
       "respuestas": 153,
       "porcentaje_estimado": 3.7,
-      "nota": "Dato directo de la encuesta ('HelpDesk' + 'Technical Support')"
+      "nota": "Dato directo de la encuesta."
+    },
+    {
+      "role_family_id": "frontend",
+      "respuestas_con_stack": 124,
+      "porcentaje_estimado": 3.2,
+      "tipo_dato": "ESTIMACION_EDITORIAL",
+      "nota": "Reparto inferido por tecnologías dentro del bloque real 'Developer'. Sysarmy no separa Backend/Frontend/Full Stack/Mobile. Se infiere por las tecnologías declaradas: Mobile si usa Flutter, React Native, SwiftUI, Ionic, Cordova, Swift, Dart u Objective-C; Full Stack si usa un framework de frontend (React, Angular, Vue, Next, Svelte) y además uno de backend o un lenguaje de servidor; Frontend o Backend si sólo aparece uno de los dos lados."
     },
     {
       "role_family_id": "security",
       "respuestas": 123,
       "porcentaje_estimado": 3.0,
-      "nota": "Dato directo de la encuesta ('Infosec')"
+      "nota": "Dato directo de la encuesta."
     },
     {
       "role_family_id": "data-science-ml",
       "respuestas": 115,
       "porcentaje_estimado": 2.8,
-      "nota": "Dato directo de la encuesta ('Data Scientist' + 'AI Engineer')"
+      "nota": "Dato directo de la encuesta."
+    },
+    {
+      "role_family_id": "mobile",
+      "respuestas_con_stack": 102,
+      "porcentaje_estimado": 2.6,
+      "tipo_dato": "ESTIMACION_EDITORIAL",
+      "nota": "Reparto inferido por tecnologías dentro del bloque real 'Developer'. Sysarmy no separa Backend/Frontend/Full Stack/Mobile. Se infiere por las tecnologías declaradas: Mobile si usa Flutter, React Native, SwiftUI, Ionic, Cordova, Swift, Dart u Objective-C; Full Stack si usa un framework de frontend (React, Angular, Vue, Next, Svelte) y además uno de backend o un lenguaje de servidor; Frontend o Backend si sólo aparece uno de los dos lados."
     }
   ],
   "categorias_no_mapeadas": [
@@ -133,6 +133,8 @@
   "bloque_developer": {
     "respuestas": 1776,
     "porcentaje": 42.7,
+    "con_stack_identificable": 1676,
+    "sin_stack_identificable": 100,
     "familias": [
       "backend",
       "frontend",
@@ -140,6 +142,6 @@
       "mobile"
     ],
     "tipo_dato": "COMUNITARIO_VERIFICABLE",
-    "nota": "Total real del bloque 'Developer' de Sysarmy. El reparto entre las cuatro familias es estimación editorial."
+    "nota": "Total real del bloque 'Developer' de Sysarmy. El reparto entre las cuatro familias se infiere por stack; quienes no declaran tecnologías reconocibles se reparten en la misma proporción."
   }
 }
