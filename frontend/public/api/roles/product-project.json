@@ -15,6 +15,29 @@
     "Delivery Manager",
     "Coordinador de Proyectos IT"
   ],
+  "codigo": "51",
+  "grupo": {
+    "codigo": "5",
+    "nombre": "Producto, diseño y gestión"
+  },
+  "ocupaciones": [
+    {
+      "codigo": "5101",
+      "nombre": "Líder o gerente de producto / proyecto",
+      "categorias_sysarmy": [
+        "Manager / Director"
+      ],
+      "ciuo08": "1330"
+    },
+    {
+      "codigo": "5102",
+      "nombre": "Scrum master / facilitador/a ágil",
+      "categorias_sysarmy": [
+        "Scrum Master"
+      ],
+      "ciuo08": "2511"
+    }
+  ],
   "distribucion": {
     "porcentaje_estimado": 11.2,
     "tipo": "COMUNITARIO_VERIFICABLE",

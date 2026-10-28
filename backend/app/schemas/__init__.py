@@ -40,11 +40,26 @@ class ProvinceEmploymentOut(BaseModel):
         from_attributes = True
 
 
+class CoitGrupoOut(BaseModel):
+    codigo: str
+    nombre: str
+
+
+class CoitOcupacionOut(BaseModel):
+    codigo: str
+    nombre: str
+    categorias_sysarmy: list[str]
+    ciuo08: str
+
+
 class RoleFamilyOut(BaseModel):
     id: str
     nombre: str
     descripcion: str
     aliases: list[str]
+    codigo: str | None = None
+    grupo: CoitGrupoOut | None = None
+    ocupaciones: list[CoitOcupacionOut] = []
     distribucion: RoleDistributionOut | None = None
     perfil: dict | None = None
 

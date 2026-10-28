@@ -16,6 +16,14 @@ def test_api_smoke():
         estimadas = {r["id"] for r in roles if r["distribucion"]["tipo"] == "ESTIMACION_EDITORIAL"}
         assert estimadas == {"backend", "frontend", "fullstack", "mobile"}
 
+        # Todos los roles tienen código COIT-AR único y la lista sale ordenada por código.
+        codigos = [r["codigo"] for r in roles]
+        assert None not in codigos and codigos == sorted(set(codigos))
+        assert all(o["codigo"].startswith(r["codigo"]) for r in roles for o in r["ocupaciones"])
+
+        coit = client.get("/api/clasificador").json()
+        assert len(coit["grupos"]) == 5
+
         summary = client.get("/api/employment/summary").json()
         assert summary["ultimo_anio"] == 2024
         assert summary["empleos_registrados_ultimo_anio"] == 158179

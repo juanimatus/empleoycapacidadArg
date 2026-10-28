@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { api, type ProvinceEmployment } from "../api/client";
+import { DataTable } from "../components/DataTable";
 import { ProvinceDistributionChart } from "../components/ProvinceDistributionChart";
 
 export function Provinces() {
@@ -58,29 +59,16 @@ export function Provinces() {
         <ProvinceDistributionChart data={data} />
       </section>
 
-      <section className="panel">
-        <h2>Las 24 jurisdicciones</h2>
-        <div className="table-scroll">
-          <table className="province-table">
-            <thead>
-              <tr>
-                <th>Provincia</th>
-                <th>Empleos registrados</th>
-                <th>% del total</th>
-              </tr>
-            </thead>
-            <tbody>
-              {data.map((p) => (
-                <tr key={p.provincia}>
-                  <td>{p.provincia}</td>
-                  <td>{p.empleos_registrados.toLocaleString("es-AR")}</td>
-                  <td>{p.porcentaje}%</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      </section>
+      <DataTable
+        summary="Ver las 24 jurisdicciones en tabla"
+        caption="Empleo IT registrado por jurisdicción"
+        headers={["Provincia", "Empleos registrados", "% del total"]}
+        rows={data.map((p) => [
+          p.provincia,
+          p.empleos_registrados.toLocaleString("es-AR"),
+          `${p.porcentaje.toLocaleString("es-AR")}%`,
+        ])}
+      />
     </div>
   );
 }

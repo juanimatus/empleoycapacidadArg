@@ -54,11 +54,26 @@ export interface RoleProfile {
   plataformas: ShareItem[];
 }
 
+export interface CoitOcupacion {
+  codigo: string;
+  nombre: string;
+  categorias_sysarmy: string[];
+  ciuo08: string;
+}
+
+export interface CoitGrupo {
+  codigo: string;
+  nombre: string;
+}
+
 export interface RoleFamily {
   id: string;
   nombre: string;
   descripcion: string;
   aliases: string[];
+  codigo: string | null;
+  grupo: CoitGrupo | null;
+  ocupaciones: CoitOcupacion[];
   distribucion: RoleDistribution | null;
   perfil: RoleProfile | null;
 }
@@ -106,6 +121,21 @@ export interface ByRoleResponse {
   distribucion: ByRoleItem[];
 }
 
+/** COIT-AR: clasificador propio de ocupaciones IT (gran grupo > familia > ocupación). */
+export interface Clasificador {
+  nombre: string;
+  version: string;
+  fecha: string;
+  tipo: string;
+  descripcion: string;
+  estructura: { nivel: string; digitos: number; ejemplo: string }[];
+  notas: string[];
+  grupos: (CoitGrupo & {
+    descripcion: string;
+    familias: { codigo: string; role_family_id: string; ocupaciones: CoitOcupacion[] }[];
+  })[];
+}
+
 async function getJson<T>(path: string): Promise<T> {
   const url = API_BASE ? `${API_BASE}${path}` : `${import.meta.env.BASE_URL}${path.slice(1)}.json`;
   const res = await fetch(url);
@@ -118,6 +148,7 @@ async function getJson<T>(path: string): Promise<T> {
 export const api = {
   roles: () => getJson<RoleFamily[]>("/api/roles"),
   role: (id: string) => getJson<RoleFamily>(`/api/roles/${id}`),
+  clasificador: () => getJson<Clasificador>("/api/clasificador"),
   employmentSummary: () => getJson<EmploymentSummary>("/api/employment/summary"),
   employmentTimeseries: () => getJson<EmploymentSnapshot[]>("/api/employment/timeseries"),
   employmentByRole: () => getJson<ByRoleResponse>("/api/employment/by-role"),

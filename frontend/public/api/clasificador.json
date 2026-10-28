@@ -1,0 +1,291 @@
+{
+  "nombre": "COIT-AR · Clasificador de Ocupaciones IT de Argentina",
+  "version": "0.1",
+  "fecha": "2026-10",
+  "tipo": "clasificador propio, no oficial",
+  "descripcion": "Clasificación jerárquica propia del observatorio para ordenar el trabajo IT en Argentina. Inspirada en la OSCA australiana. No reemplaza al Clasificador Nacional de Ocupaciones (CNO-2001, INDEC) ni a la CIUO-08 de la OIT, que existen pero no abren el trabajo IT en roles.",
+  "estructura": [
+    {
+      "nivel": "Gran grupo",
+      "digitos": 1,
+      "ejemplo": "1"
+    },
+    {
+      "nivel": "Familia de rol",
+      "digitos": 2,
+      "ejemplo": "11"
+    },
+    {
+      "nivel": "Ocupación",
+      "digitos": 4,
+      "ejemplo": "1101"
+    }
+  ],
+  "notas": [
+    "La seniority (Junior, Semi-Senior, Senior) es un atributo de la persona, no una ocupación distinta: no tiene código propio.",
+    "La columna ciuo08 es una correspondencia aproximada con la CIUO-08 (OIT) a 4 dígitos, para poder comparar con estadísticas internacionales.",
+    "Las ocupaciones de las familias 11 a 14 salen de separar la categoría 'Developer' de Sysarmy por las tecnologías declaradas."
+  ],
+  "grupos": [
+    {
+      "codigo": "1",
+      "nombre": "Desarrollo de software",
+      "descripcion": "Construyen aplicaciones: lógica de servidor, interfaces web y apps móviles.",
+      "familias": [
+        {
+          "codigo": "11",
+          "role_family_id": "backend",
+          "ocupaciones": [
+            {
+              "codigo": "1101",
+              "nombre": "Desarrollador/a backend",
+              "categorias_sysarmy": [
+                "Developer (stack backend)"
+              ],
+              "ciuo08": "2512"
+            }
+          ]
+        },
+        {
+          "codigo": "12",
+          "role_family_id": "frontend",
+          "ocupaciones": [
+            {
+              "codigo": "1201",
+              "nombre": "Desarrollador/a frontend",
+              "categorias_sysarmy": [
+                "Developer (stack frontend)"
+              ],
+              "ciuo08": "2513"
+            }
+          ]
+        },
+        {
+          "codigo": "13",
+          "role_family_id": "fullstack",
+          "ocupaciones": [
+            {
+              "codigo": "1301",
+              "nombre": "Desarrollador/a full stack",
+              "categorias_sysarmy": [
+                "Developer (stack backend y frontend)"
+              ],
+              "ciuo08": "2512"
+            }
+          ]
+        },
+        {
+          "codigo": "14",
+          "role_family_id": "mobile",
+          "ocupaciones": [
+            {
+              "codigo": "1401",
+              "nombre": "Desarrollador/a mobile",
+              "categorias_sysarmy": [
+                "Developer (stack mobile)"
+              ],
+              "ciuo08": "2514"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "2",
+      "nombre": "Datos e inteligencia artificial",
+      "descripcion": "Ordenan, analizan y modelan datos para tomar decisiones o automatizarlas.",
+      "familias": [
+        {
+          "codigo": "21",
+          "role_family_id": "data",
+          "ocupaciones": [
+            {
+              "codigo": "2101",
+              "nombre": "Analista de datos / BI",
+              "categorias_sysarmy": [
+                "BI Analyst / Data Analyst"
+              ],
+              "ciuo08": "2511"
+            },
+            {
+              "codigo": "2102",
+              "nombre": "Ingeniero/a de datos",
+              "categorias_sysarmy": [
+                "Data Engineer"
+              ],
+              "ciuo08": "2521"
+            },
+            {
+              "codigo": "2103",
+              "nombre": "Administrador/a de bases de datos",
+              "categorias_sysarmy": [
+                "DBA (Database Administrator)"
+              ],
+              "ciuo08": "2521"
+            }
+          ]
+        },
+        {
+          "codigo": "22",
+          "role_family_id": "data-science-ml",
+          "ocupaciones": [
+            {
+              "codigo": "2201",
+              "nombre": "Científico/a de datos",
+              "categorias_sysarmy": [
+                "Data Scientist"
+              ],
+              "ciuo08": "2120"
+            },
+            {
+              "codigo": "2202",
+              "nombre": "Ingeniero/a de IA / machine learning",
+              "categorias_sysarmy": [
+                "AI Engineer"
+              ],
+              "ciuo08": "2519"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "3",
+      "nombre": "Infraestructura y operaciones",
+      "descripcion": "Mantienen funcionando servidores, nubes, redes y puestos de trabajo.",
+      "familias": [
+        {
+          "codigo": "31",
+          "role_family_id": "devops",
+          "ocupaciones": [
+            {
+              "codigo": "3101",
+              "nombre": "Ingeniero/a DevOps / SRE / cloud",
+              "categorias_sysarmy": [
+                "SysAdmin / DevOps / SRE"
+              ],
+              "ciuo08": "2522"
+            }
+          ]
+        },
+        {
+          "codigo": "32",
+          "role_family_id": "support-sysadmin",
+          "ocupaciones": [
+            {
+              "codigo": "3201",
+              "nombre": "Técnico/a de soporte y mesa de ayuda",
+              "categorias_sysarmy": [
+                "HelpDesk",
+                "Technical Support"
+              ],
+              "ciuo08": "3512"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "4",
+      "nombre": "Calidad y seguridad",
+      "descripcion": "Prueban que el software funcione y lo protegen de ataques y fallas.",
+      "familias": [
+        {
+          "codigo": "41",
+          "role_family_id": "qa",
+          "ocupaciones": [
+            {
+              "codigo": "4101",
+              "nombre": "Analista de QA / testing",
+              "categorias_sysarmy": [
+                "QA / Tester"
+              ],
+              "ciuo08": "2519"
+            }
+          ]
+        },
+        {
+          "codigo": "42",
+          "role_family_id": "security",
+          "ocupaciones": [
+            {
+              "codigo": "4201",
+              "nombre": "Especialista en ciberseguridad",
+              "categorias_sysarmy": [
+                "Infosec"
+              ],
+              "ciuo08": "2529"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "5",
+      "nombre": "Producto, diseño y gestión",
+      "descripcion": "Deciden qué se construye, cómo se usa y cómo se organiza el trabajo.",
+      "familias": [
+        {
+          "codigo": "51",
+          "role_family_id": "product-project",
+          "ocupaciones": [
+            {
+              "codigo": "5101",
+              "nombre": "Líder o gerente de producto / proyecto",
+              "categorias_sysarmy": [
+                "Manager / Director"
+              ],
+              "ciuo08": "1330"
+            },
+            {
+              "codigo": "5102",
+              "nombre": "Scrum master / facilitador/a ágil",
+              "categorias_sysarmy": [
+                "Scrum Master"
+              ],
+              "ciuo08": "2511"
+            }
+          ]
+        },
+        {
+          "codigo": "52",
+          "role_family_id": "ux-ui",
+          "ocupaciones": [
+            {
+              "codigo": "5201",
+              "nombre": "Diseñador/a UX/UI",
+              "categorias_sysarmy": [
+                "UX Designer"
+              ],
+              "ciuo08": "2166"
+            },
+            {
+              "codigo": "5202",
+              "nombre": "Diseñador/a visual / gráfico/a digital",
+              "categorias_sysarmy": [
+                "Designer"
+              ],
+              "ciuo08": "2166"
+            },
+            {
+              "codigo": "5203",
+              "nombre": "Investigador/a UX",
+              "categorias_sysarmy": [
+                "UX Researcher"
+              ],
+              "ciuo08": "2166"
+            },
+            {
+              "codigo": "5204",
+              "nombre": "Redactor/a UX",
+              "categorias_sysarmy": [
+                "UX Writer"
+              ],
+              "ciuo08": "2641"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

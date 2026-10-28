@@ -17,6 +17,21 @@
     "GCP Engineer",
     "Administrador de Infraestructura Cloud"
   ],
+  "codigo": "31",
+  "grupo": {
+    "codigo": "3",
+    "nombre": "Infraestructura y operaciones"
+  },
+  "ocupaciones": [
+    {
+      "codigo": "3101",
+      "nombre": "Ingeniero/a DevOps / SRE / cloud",
+      "categorias_sysarmy": [
+        "SysAdmin / DevOps / SRE"
+      ],
+      "ciuo08": "2522"
+    }
+  ],
   "distribucion": {
     "porcentaje_estimado": 15.1,
     "tipo": "COMUNITARIO_VERIFICABLE",

@@ -11,15 +11,35 @@ from app.schemas import RoleDistributionOut, RoleFamilyOut
 
 router = APIRouter(prefix="/api/roles", tags=["roles"])
 
-PROFILES_PATH = (
-    Path(__file__).resolve().parents[3] / "data" / "curated" / "role_profiles_sysarmy.json"
-)
+CURATED = Path(__file__).resolve().parents[3] / "data" / "curated"
+PROFILES_PATH = CURATED / "role_profiles_sysarmy.json"
+COIT_PATH = CURATED / "coit_ar.json"
 
 
 @cache
 def _profiles() -> dict:
     """Fichas por rol calculadas por `app.ingestion.sysarmy_profiles` (no pasan por la base)."""
     return json.loads(PROFILES_PATH.read_text(encoding="utf-8"))["perfiles"]
+
+
+@cache
+def clasificador() -> dict:
+    """COIT-AR: clasificador propio de ocupaciones IT (ver data/curated/coit_ar.json)."""
+    return json.loads(COIT_PATH.read_text(encoding="utf-8"))
+
+
+@cache
+def _codigos() -> dict:
+    """role_family_id -> código de familia, gran grupo y ocupaciones COIT-AR."""
+    out = {}
+    for grupo in clasificador()["grupos"]:
+        for fam in grupo["familias"]:
+            out[fam["role_family_id"]] = {
+                "codigo": fam["codigo"],
+                "grupo": {"codigo": grupo["codigo"], "nombre": grupo["nombre"]},
+                "ocupaciones": fam["ocupaciones"],
+            }
+    return out
 
 
 def _build_role_out(db: Session, rf: RoleFamily) -> RoleFamilyOut:
@@ -44,6 +64,7 @@ def _build_role_out(db: Session, rf: RoleFamily) -> RoleFamilyOut:
         aliases=[a.alias for a in rf.aliases],
         distribucion=dist_out,
         perfil=_profiles().get(rf.id),
+        **_codigos().get(rf.id, {}),
     )
 
 
@@ -51,7 +72,7 @@ def _build_role_out(db: Session, rf: RoleFamily) -> RoleFamilyOut:
 def list_roles(db: Session = Depends(get_db)):
     families = db.query(RoleFamily).all()
     result = [_build_role_out(db, rf) for rf in families]
-    result.sort(key=lambda r: (r.distribucion.porcentaje_estimado if r.distribucion else 0), reverse=True)
+    result.sort(key=lambda r: r.codigo or "99")
     return result
 
 

@@ -16,6 +16,37 @@
     "Data Warehouse Developer",
     "Analista de Business Intelligence"
   ],
+  "codigo": "21",
+  "grupo": {
+    "codigo": "2",
+    "nombre": "Datos e inteligencia artificial"
+  },
+  "ocupaciones": [
+    {
+      "codigo": "2101",
+      "nombre": "Analista de datos / BI",
+      "categorias_sysarmy": [
+        "BI Analyst / Data Analyst"
+      ],
+      "ciuo08": "2511"
+    },
+    {
+      "codigo": "2102",
+      "nombre": "Ingeniero/a de datos",
+      "categorias_sysarmy": [
+        "Data Engineer"
+      ],
+      "ciuo08": "2521"
+    },
+    {
+      "codigo": "2103",
+      "nombre": "Administrador/a de bases de datos",
+      "categorias_sysarmy": [
+        "DBA (Database Administrator)"
+      ],
+      "ciuo08": "2521"
+    }
+  ],
   "distribucion": {
     "porcentaje_estimado": 11.0,
     "tipo": "COMUNITARIO_VERIFICABLE",

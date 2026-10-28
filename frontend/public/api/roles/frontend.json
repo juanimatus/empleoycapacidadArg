@@ -16,6 +16,21 @@
     "Web Developer Frontend",
     "Frontend JavaScript Developer"
   ],
+  "codigo": "12",
+  "grupo": {
+    "codigo": "1",
+    "nombre": "Desarrollo de software"
+  },
+  "ocupaciones": [
+    {
+      "codigo": "1201",
+      "nombre": "Desarrollador/a frontend",
+      "categorias_sysarmy": [
+        "Developer (stack frontend)"
+      ],
+      "ciuo08": "2513"
+    }
+  ],
   "distribucion": {
     "porcentaje_estimado": 3.2,
     "tipo": "ESTIMACION_EDITORIAL",

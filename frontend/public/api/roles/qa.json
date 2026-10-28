@@ -14,6 +14,21 @@
     "SDET",
     "Analista de Calidad"
   ],
+  "codigo": "41",
+  "grupo": {
+    "codigo": "4",
+    "nombre": "Calidad y seguridad"
+  },
+  "ocupaciones": [
+    {
+      "codigo": "4101",
+      "nombre": "Analista de QA / testing",
+      "categorias_sysarmy": [
+        "QA / Tester"
+      ],
+      "ciuo08": "2519"
+    }
+  ],
   "distribucion": {
     "porcentaje_estimado": 5.9,
     "tipo": "COMUNITARIO_VERIFICABLE",

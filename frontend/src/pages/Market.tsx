@@ -5,6 +5,7 @@ import {
   type EmploymentSnapshot,
   type EmploymentSummary,
 } from "../api/client";
+import { DataTable } from "../components/DataTable";
 import { EmploymentTimeseries } from "../components/EmploymentTimeseries";
 import { RoleDistributionChart } from "../components/RoleDistributionChart";
 import { porcentaje } from "../format";
@@ -58,31 +59,60 @@ export function Market() {
           </span>
           <span className="stat-label">Contra el año anterior</span>
         </div>
-        {summary.kpis.map((kpi) => (
-          <div className="stat" key={kpi.id}>
-            <span className="stat-value">
-              {kpi.unidad === "ARS"
-                ? `$${kpi.valor.toLocaleString("es-AR")}`
-                : kpi.unidad === "pct"
-                  ? porcentaje(kpi.valor)
-                  : kpi.valor.toLocaleString("es-AR")}
-            </span>
-            <span className="stat-label">{kpi.nombre}</span>
-            {kpi.nota && <span className="stat-note">{kpi.nota}</span>}
-          </div>
-        ))}
       </section>
+
+      {summary.kpis.length > 0 && (
+        <details className="disclosure">
+          <summary>Más indicadores del sector</summary>
+          <div className="disclosure-body">
+            <dl className="facts">
+              {summary.kpis.map((kpi) => (
+                <div key={kpi.id}>
+                  <dt>
+                    {kpi.nombre}
+                    {kpi.nota && <small> · {kpi.nota}</small>}
+                  </dt>
+                  <dd>
+                    {kpi.unidad === "ARS"
+                      ? `$${kpi.valor.toLocaleString("es-AR")}`
+                      : kpi.unidad === "pct"
+                        ? porcentaje(kpi.valor)
+                        : kpi.valor.toLocaleString("es-AR")}
+                  </dd>
+                </div>
+              ))}
+            </dl>
+          </div>
+        </details>
+      )}
 
       <div className="profile-grid">
         <section className="panel span-2">
           <h2>Empleo IT registrado, 2015 a {summary.ultimo_anio}</h2>
           <p className="panel-sub">Dato oficial: OEDE, Ministerio de Trabajo.</p>
           <EmploymentTimeseries data={timeseries} />
+          <DataTable
+            summary="Ver los datos en tabla"
+            caption="Empleo IT registrado por año"
+            headers={["Año", "Empleos registrados"]}
+            rows={timeseries.map((t) => [
+              String(t.anio),
+              t.empleos_registrados.toLocaleString("es-AR"),
+            ])}
+          />
         </section>
         <section className="panel span-2">
           <h2>Cómo se reparte entre roles</h2>
           <p className="panel-sub">{byRole.aviso}</p>
           <RoleDistributionChart data={byRole.distribucion} />
+          <DataTable
+            summary="Ver los datos en tabla"
+            caption="Participación estimada de cada rol"
+            headers={["Rol", "% estimado"]}
+            rows={[...byRole.distribucion]
+              .sort((a, b) => b.porcentaje_estimado - a.porcentaje_estimado)
+              .map((r) => [r.nombre, porcentaje(r.porcentaje_estimado)])}
+          />
         </section>
       </div>
     </div>

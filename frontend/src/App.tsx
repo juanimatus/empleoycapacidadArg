@@ -1,5 +1,6 @@
 import { Link, NavLink, Route, HashRouter as Router, Routes, useLocation } from "react-router-dom";
 import { useEffect } from "react";
+import { Classifier } from "./pages/Classifier";
 import { Home } from "./pages/Home";
 import { Market } from "./pages/Market";
 import { Methodology } from "./pages/Methodology";
@@ -42,6 +43,7 @@ function App() {
             <Route path="/mercado" element={<Market />} />
             <Route path="/provincias" element={<Provinces />} />
             <Route path="/metodologia" element={<Methodology />} />
+            <Route path="/clasificador" element={<Classifier />} />
           </Routes>
         </main>
         <footer className="footer">
@@ -56,6 +58,9 @@ function App() {
             <ul>
               <li>
                 <Link to="/metodologia">Fuentes y metodología</Link>
+              </li>
+              <li>
+                <Link to="/clasificador">Clasificador COIT-AR</Link>
               </li>
               <li>
                 <a href={`${REPO}/issues/new`} target="_blank" rel="noreferrer">
