@@ -10,7 +10,7 @@ El observatorio de empleo oficial argentino actualiza pocas métricas y no disti
 
 - `backend/` — API FastAPI + SQLite. Modelos, datos curados (`data/curated/`) y script de seed.
 - `frontend/` — Dashboard en React + TypeScript (Vite): Dashboard, Explorador de Roles, Por Provincia, Fuentes y Metodología.
-- `docs/` — documentación adicional.
+- `docs/` — documentación adicional. `docs/avisos/` tiene el flujo de n8n que junta avisos IT todos los días.
 
 ## Diseño
 
