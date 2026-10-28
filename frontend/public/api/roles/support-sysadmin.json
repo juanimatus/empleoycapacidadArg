@@ -14,6 +14,22 @@
     "Técnico IT",
     "Field Support Engineer"
   ],
+  "codigo": "32",
+  "grupo": {
+    "codigo": "3",
+    "nombre": "Infraestructura y operaciones"
+  },
+  "ocupaciones": [
+    {
+      "codigo": "3201",
+      "nombre": "Técnico/a de soporte y mesa de ayuda",
+      "categorias_sysarmy": [
+        "HelpDesk",
+        "Technical Support"
+      ],
+      "ciuo08": "3512"
+    }
+  ],
   "distribucion": {
     "porcentaje_estimado": 3.7,
     "tipo": "COMUNITARIO_VERIFICABLE",

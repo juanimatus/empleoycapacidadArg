@@ -4,7 +4,7 @@ from contextlib import asynccontextmanager
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from app.api.routes import employment, roles, sources
+from app.api.routes import clasificador, employment, roles, sources
 from app.ingestion.seed_all import seed
 
 
@@ -38,6 +38,7 @@ app.add_middleware(
 app.include_router(roles.router)
 app.include_router(employment.router)
 app.include_router(sources.router)
+app.include_router(clasificador.router)
 
 
 @app.get("/api/health")

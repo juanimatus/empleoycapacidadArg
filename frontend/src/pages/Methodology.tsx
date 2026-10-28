@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { api, type DataSource } from "../api/client";
 import { SourceCitation } from "../components/SourceCitation";
 
@@ -26,29 +27,33 @@ export function Methodology() {
       </section>
 
       <section className="panel">
-        <h2>Tres niveles de dato</h2>
+        <h2>Tres capas de datos</h2>
         <ul className="methodology-list">
           <li>
-            <strong>Dato oficial:</strong> la serie de empleo total registrado (OEDE, Ministerio de
-            Trabajo/Producción), tanto nacional como por provincia, y los indicadores de salario,
-            rotación y género (encuesta CESSI/OPSSI). Publicados directamente por esas instituciones
-            o descargados de sus portales de datos abiertos.
+            <strong>Oficial · total:</strong> la Encuesta Permanente de Hogares (EPH) del INDEC.
+            Pregunta en los hogares, así que capta a quien trabaja en negro, por cuenta propia o
+            para un empleador del exterior. Clasifica a cada persona por lo que hace (ocupación
+            CNO-2001), no por el rubro de la empresa. Cubre 31 aglomerados urbanos y tiene muestra
+            chica para IT, por eso se juntan cuatro trimestres.
           </li>
           <li>
-            <strong>Encuesta comunitaria:</strong> la distribución del empleo por familia de rol se
-            calcula a partir de la Encuesta de Sueldos IT 2025.1 de Sysarmy (5.196 respuestas
-            reales, no una muestra oficial pero sí el relevamiento abierto más grande que existe hoy
-            sobre roles IT en Argentina). No es un censo ni tiene el rigor muestral de una encuesta
-            del INDEC, así que la tratamos como un nivel de confianza intermedio: mejor que una
-            estimación editorial, peor que un dato oficial.
+            <strong>Oficial · registrado:</strong> el empleo asalariado con aportes en empresas de
+            software (OEDE, Ministerio de Trabajo, a partir del SIPA), nacional y por provincia. Es
+            un registro completo, pero no ve a la gente informal, a la que factura como
+            monotributista ni a quien programa en un banco o en el Estado.
           </li>
           <li>
-            <strong>Estimación por tecnologías:</strong> Sysarmy agrupa Backend, Frontend, Full
-            Stack y Mobile en una sola categoría, "Developer". El total de ese bloque es dato real
-            de la encuesta; el reparto interno se infiere con una regla pública sobre las
-            tecnologías que declara cada persona (abajo), y se marca en naranja en todo el sitio.
+            <strong>Complementario:</strong> la Encuesta de Sueldos IT de Sysarmy (5.196 respuestas)
+            y los reportes de la cámara CESSI/OPSSI. No son oficiales ni representativos, pero son
+            lo único que hoy separa roles y sueldos. El reparto entre Backend, Frontend, Full Stack
+            y Mobile es además una estimación por tecnologías, y se marca en naranja.
           </li>
         </ul>
+        <p className="note">
+          Lo que falta: ningún registro oficial dice qué puesto ocupa cada persona dentro de IT. Por
+          eso el observatorio usa su propio <Link to="/clasificador">clasificador COIT-AR</Link> y
+          propone un relevamiento oficial por puesto.
+        </p>
       </section>
 
       <section className="panel">

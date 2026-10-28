@@ -13,6 +13,21 @@
     "Mobile Engineer",
     "App Developer"
   ],
+  "codigo": "14",
+  "grupo": {
+    "codigo": "1",
+    "nombre": "Desarrollo de software"
+  },
+  "ocupaciones": [
+    {
+      "codigo": "1401",
+      "nombre": "Desarrollador/a mobile",
+      "categorias_sysarmy": [
+        "Developer (stack mobile)"
+      ],
+      "ciuo08": "2514"
+    }
+  ],
   "distribucion": {
     "porcentaje_estimado": 2.6,
     "tipo": "ESTIMACION_EDITORIAL",

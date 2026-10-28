@@ -32,3 +32,13 @@ Este documento es el espejo en Markdown de la página "Fuentes y Metodología" d
 2. Actualizar la serie provincial cuando el Ministerio publique datos más recientes que nov-2023.
 3. Cruzar con microdatos de la EPH (INDEC) para variables demográficas (género, edad, informalidad) del sector IT en general.
 4. Usar la tabla de alias/nomenclaturas (`backend/data/curated/role_families.json`) como base para clasificar automáticamente títulos de avisos de empleo reales.
+
+## Clasificador COIT-AR
+
+Argentina no tiene un clasificador que abra el trabajo IT en roles: el CNO-2001 (INDEC) y la CIUO-08 (OIT) lo agrupan en pocas categorías generales. Por eso el observatorio usa un clasificador propio, **COIT-AR** (Clasificador de Ocupaciones IT de Argentina), inspirado en la OSCA australiana. No es oficial.
+
+- **Gran grupo** (1 dígito): 1 Desarrollo de software, 2 Datos e IA, 3 Infraestructura y operaciones, 4 Calidad y seguridad, 5 Producto, diseño y gestión.
+- **Familia de rol** (2 dígitos): una por cada uno de los 12 roles del sitio (ej. `11` Backend).
+- **Ocupación** (4 dígitos): el puesto concreto (ej. `2102` Ingeniero/a de datos), con su categoría Sysarmy de origen y una correspondencia aproximada con la CIUO-08.
+
+La seniority es un atributo de la persona, no una ocupación: no tiene código. El archivo fuente es `backend/data/curated/coit_ar.json` y se publica en `/api/clasificador`.

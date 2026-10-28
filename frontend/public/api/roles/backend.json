@@ -22,6 +22,21 @@
     "Server-side Developer",
     "Desarrollador de Sistemas Backend"
   ],
+  "codigo": "11",
+  "grupo": {
+    "codigo": "1",
+    "nombre": "Desarrollo de software"
+  },
+  "ocupaciones": [
+    {
+      "codigo": "1101",
+      "nombre": "Desarrollador/a backend",
+      "categorias_sysarmy": [
+        "Developer (stack backend)"
+      ],
+      "ciuo08": "2512"
+    }
+  ],
   "distribucion": {
     "porcentaje_estimado": 18.8,
     "tipo": "ESTIMACION_EDITORIAL",

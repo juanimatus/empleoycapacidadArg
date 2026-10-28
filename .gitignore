@@ -19,3 +19,4 @@ frontend/vite.log
 .claude/
 .DS_Store
 .vscode/
+backend/data/raw/sources/eph/

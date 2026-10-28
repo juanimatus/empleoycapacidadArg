@@ -11,6 +11,21 @@
     "Fullstack Software Engineer",
     "Dev FullStack"
   ],
+  "codigo": "13",
+  "grupo": {
+    "codigo": "1",
+    "nombre": "Desarrollo de software"
+  },
+  "ocupaciones": [
+    {
+      "codigo": "1301",
+      "nombre": "Desarrollador/a full stack",
+      "categorias_sysarmy": [
+        "Developer (stack backend y frontend)"
+      ],
+      "ciuo08": "2512"
+    }
+  ],
   "distribucion": {
     "porcentaje_estimado": 18.2,
     "tipo": "ESTIMACION_EDITORIAL",

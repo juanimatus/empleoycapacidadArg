@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { api, type RoleFamily } from "../api/client";
+import { RoleCardsByGroup } from "../components/RoleGroups";
 import { RoleSearch } from "../components/RoleSearch";
-import { RoleCards } from "./Home";
 
 export function RoleList() {
   const [roles, setRoles] = useState<RoleFamily[]>([]);
@@ -22,20 +23,18 @@ export function RoleList() {
     <div className="page">
       <section className="page-header">
         <h1>Roles IT</h1>
-        <p className="lead">
-          Cada familia agrupa los nombres de puesto que se usan en Argentina para un mismo trabajo.
-          Elegí una para ver salario, modalidad, tecnologías y dónde se concentra.
-        </p>
+        <p className="lead">12 roles ordenados en 5 áreas. Elegí uno para ver su ficha.</p>
         <RoleSearch roles={roles} />
       </section>
       {roles.length === 0 ? (
         <p className="loading">Cargando datos...</p>
       ) : (
-        <RoleCards roles={roles} />
+        <RoleCardsByGroup roles={roles} />
       )}
       <p className="note">
-        Salarios: mediana del último sueldo bruto mensual de personas Full-Time Senior, encuesta
-        Sysarmy 2025.1 (primer semestre 2025, pesos nominales).
+        El número de cada rol es su código en el{" "}
+        <Link to="/clasificador">clasificador COIT-AR</Link>. El sueldo es la mediana bruta mensual
+        de personas Full-Time Senior (Sysarmy, primer semestre 2025).
       </p>
     </div>
   );

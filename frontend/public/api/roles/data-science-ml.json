@@ -14,6 +14,29 @@
     "MLOps Engineer",
     "Analista de Inteligencia Artificial"
   ],
+  "codigo": "22",
+  "grupo": {
+    "codigo": "2",
+    "nombre": "Datos e inteligencia artificial"
+  },
+  "ocupaciones": [
+    {
+      "codigo": "2201",
+      "nombre": "Científico/a de datos",
+      "categorias_sysarmy": [
+        "Data Scientist"
+      ],
+      "ciuo08": "2120"
+    },
+    {
+      "codigo": "2202",
+      "nombre": "Ingeniero/a de IA / machine learning",
+      "categorias_sysarmy": [
+        "AI Engineer"
+      ],
+      "ciuo08": "2519"
+    }
+  ],
   "distribucion": {
     "porcentaje_estimado": 2.8,
     "tipo": "COMUNITARIO_VERIFICABLE",

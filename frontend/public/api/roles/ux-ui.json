@@ -13,6 +13,45 @@
     "Interaction Designer",
     "UX Researcher"
   ],
+  "codigo": "52",
+  "grupo": {
+    "codigo": "5",
+    "nombre": "Producto, diseño y gestión"
+  },
+  "ocupaciones": [
+    {
+      "codigo": "5201",
+      "nombre": "Diseñador/a UX/UI",
+      "categorias_sysarmy": [
+        "UX Designer"
+      ],
+      "ciuo08": "2166"
+    },
+    {
+      "codigo": "5202",
+      "nombre": "Diseñador/a visual / gráfico/a digital",
+      "categorias_sysarmy": [
+        "Designer"
+      ],
+      "ciuo08": "2166"
+    },
+    {
+      "codigo": "5203",
+      "nombre": "Investigador/a UX",
+      "categorias_sysarmy": [
+        "UX Researcher"
+      ],
+      "ciuo08": "2166"
+    },
+    {
+      "codigo": "5204",
+      "nombre": "Redactor/a UX",
+      "categorias_sysarmy": [
+        "UX Writer"
+      ],
+      "ciuo08": "2641"
+    }
+  ],
   "distribucion": {
     "porcentaje_estimado": 4.6,
     "tipo": "COMUNITARIO_VERIFICABLE",
