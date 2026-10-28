@@ -25,6 +25,7 @@ ENDPOINTS = [
     "/api/employment/total",
     "/api/sources",
     "/api/clasificador",
+    "/api/coa",
 ]
 
 

@@ -4,6 +4,7 @@ import { Classifier } from "./pages/Classifier";
 import { Home } from "./pages/Home";
 import { Market } from "./pages/Market";
 import { Methodology } from "./pages/Methodology";
+import { Occupations } from "./pages/Occupations";
 import { Provinces } from "./pages/Provinces";
 import { RoleList } from "./pages/RoleList";
 import { RoleProfile } from "./pages/RoleProfile";
@@ -29,6 +30,7 @@ function App() {
             Observatorio IT <span>Argentina</span>
           </Link>
           <nav aria-label="Principal">
+            <NavLink to="/ocupaciones">Ocupaciones</NavLink>
             <NavLink to="/roles">Roles</NavLink>
             <NavLink to="/mercado">Panorama</NavLink>
             <NavLink to="/provincias">Provincias</NavLink>
@@ -44,6 +46,7 @@ function App() {
             <Route path="/provincias" element={<Provinces />} />
             <Route path="/metodologia" element={<Methodology />} />
             <Route path="/clasificador" element={<Classifier />} />
+            <Route path="/ocupaciones" element={<Occupations />} />
           </Routes>
         </main>
         <footer className="footer">
@@ -60,7 +63,10 @@ function App() {
                 <Link to="/metodologia">Fuentes y metodología</Link>
               </li>
               <li>
-                <Link to="/clasificador">Clasificador COIT-AR</Link>
+                <Link to="/ocupaciones">Clasificador de ocupaciones (COA)</Link>
+              </li>
+              <li>
+                <Link to="/clasificador">Clasificador IT (COIT-AR)</Link>
               </li>
               <li>
                 <a href={`${REPO}/issues/new`} target="_blank" rel="noreferrer">
