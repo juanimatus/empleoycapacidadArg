@@ -9,7 +9,9 @@ def test_api_smoke():
 
         roles = client.get("/api/roles").json()
         assert len(roles) == 12
-        assert round(sum(r["distribucion"]["porcentaje_estimado"] for r in roles), 1) == 100.0
+        # Cada porcentaje está redondeado a un decimal: la suma puede correrse una décima.
+        assert abs(sum(r["distribucion"]["porcentaje_estimado"] for r in roles) - 100) <= 0.2
+        assert all(r["perfil"]["respuestas"] > 0 for r in roles)
 
         estimadas = {r["id"] for r in roles if r["distribucion"]["tipo"] == "ESTIMACION_EDITORIAL"}
         assert estimadas == {"backend", "frontend", "fullstack", "mobile"}

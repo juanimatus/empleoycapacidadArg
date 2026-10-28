@@ -6,7 +6,7 @@ Este documento es el espejo en Markdown de la página "Fuentes y Metodología" d
 
 - **Dato oficial**: la serie de empleo total registrado (nacional y por provincia, OEDE/Ministerio de Trabajo-Producción) y los indicadores de salario, rotación y género (encuesta CESSI/OPSSI). Publicados directamente por esas instituciones.
 - **Encuesta comunitaria**: la distribución del empleo por familia de rol, calculada sobre la Encuesta de Sueldos IT 2025.1 de Sysarmy (`backend/data/curated/role_distribution_sysarmy.json`), 5.196 respuestas reales, licencia CC BY-NC-SA 4.0. No es un censo oficial, pero es el relevamiento abierto más grande disponible hoy sobre roles IT en Argentina — mejor que una estimación editorial, peor que un dato oficial.
-- **Estimación editorial**: dentro del bloque "Developer" de Sysarmy (no desagrega Backend/Frontend/Full Stack/Mobile), el reparto entre esas cuatro sub-familias sigue siendo un criterio editorial, marcado como tal.
+- **Estimación por tecnologías**: dentro del bloque "Developer" de Sysarmy (no desagrega Backend/Frontend/Full Stack/Mobile), el reparto entre esas cuatro sub-familias se infiere por las tecnologías que declara cada persona. Mobile si usa Flutter, React Native, SwiftUI, Ionic, Cordova, Swift, Dart u Objective-C; Full Stack si usa un framework de frontend (React, Angular, Vue, Next.js, Svelte) y además uno de backend o un lenguaje de servidor; Frontend o Backend si sólo aparece un lado. Las 100 personas sin tecnologías reconocibles se reparten en la misma proporción. Sensibilidad: si Node.js no contara como backend, Frontend pasaría de 124 a 288 personas y Full Stack de 713 a 549. Código: `backend/app/ingestion/sysarmy_profiles.py`.
 
 ## Fuentes citadas
 

@@ -10,7 +10,7 @@ import {
 } from "recharts";
 import { ESTIMACION_EDITORIAL, type ByRoleItem } from "../api/client";
 
-const MONO = "JetBrains Mono, monospace";
+const FONT = "Inter, system-ui, sans-serif";
 
 export function RoleDistributionChart({ data }: { data: ByRoleItem[] }) {
   const chartData = [...data].sort((a, b) => b.porcentaje_estimado - a.porcentaje_estimado);
@@ -21,17 +21,17 @@ export function RoleDistributionChart({ data }: { data: ByRoleItem[] }) {
     <>
       <ResponsiveContainer width="100%" height={420}>
         <BarChart data={chartData} layout="vertical" margin={{ left: 24, right: 24 }}>
-          <CartesianGrid strokeDasharray="2 2" horizontal={false} stroke="#0a0a0a" opacity={0.15} />
-          <XAxis type="number" unit="%" tick={{ fontFamily: MONO, fontSize: 11 }} />
+          <CartesianGrid strokeDasharray="2 2" horizontal={false} stroke="#d0d7de" />
+          <XAxis type="number" unit="%" tick={{ fontFamily: FONT, fontSize: 11 }} />
           <YAxis
             type="category"
             dataKey="nombre"
             width={220}
-            tick={{ fontFamily: MONO, fontSize: 11 }}
+            tick={{ fontFamily: FONT, fontSize: 11 }}
           />
           <Tooltip
             formatter={(value) => [`${value}%`, "Participación estimada"]}
-            contentStyle={{ borderRadius: 0, border: "1px solid #0a0a0a", fontFamily: MONO }}
+            contentStyle={{ borderRadius: 8, border: "1px solid #d0d7de", fontFamily: FONT }}
           />
           <Bar dataKey="porcentaje_estimado" radius={[0, 0, 0, 0]}>
             {chartData.map((r) => (
@@ -49,8 +49,8 @@ export function RoleDistributionChart({ data }: { data: ByRoleItem[] }) {
             <i style={{ background: "var(--community)" }} /> Encuesta comunitaria (Sysarmy)
           </span>
           <span>
-            <i style={{ background: "var(--estimate)" }} /> Estimación editorial (reparto interno
-            del bloque Developer)
+            <i style={{ background: "var(--estimate)" }} /> Estimación por tecnologías (reparto
+            interno del bloque Developer)
           </span>
         </div>
       )}

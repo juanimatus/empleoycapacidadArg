@@ -17,7 +17,7 @@
   "distribucion": {
     "porcentaje_estimado": 3.7,
     "tipo": "COMUNITARIO_VERIFICABLE",
-    "nota": "Dato directo de la encuesta ('HelpDesk' + 'Technical Support')",
+    "nota": "Dato directo de la encuesta.",
     "fuente": {
       "id": "sysarmy-2025-1",
       "nombre": "Sysarmy - Encuesta de Sueldos IT Argentina 2025.1",
@@ -26,5 +26,174 @@
       "url": "https://sysarmy.com/blog/posts/resultados-de-la-encuesta-de-sueldos-2025-1/",
       "fecha": "2025"
     }
+  },
+  "perfil": {
+    "respuestas": 153,
+    "salario_bruto_mensual_ars": {
+      "Junior": {
+        "n": 28,
+        "p25": 901000.0,
+        "mediana": 989000.0,
+        "p75": 1200000.0
+      },
+      "Semi-Senior": {
+        "n": 41,
+        "p25": 970000.0,
+        "mediana": 1250000.0,
+        "p75": 1600000.0
+      },
+      "Senior": {
+        "n": 69,
+        "p25": 1100000.0,
+        "mediana": 1450000.0,
+        "p75": 2138000.0
+      }
+    },
+    "seniority": {
+      "Junior": 22.9,
+      "Semi-Senior": 28.1,
+      "Senior": 49.0
+    },
+    "modalidad": {
+      "remoto": 13.7,
+      "hibrido": 50.3,
+      "presencial": 35.9
+    },
+    "genero": {
+      "hombres_cis": 90.2,
+      "mujeres_cis": 9.2,
+      "otras_identidades_o_sin_respuesta": 0.7
+    },
+    "sueldo_dolarizado": 17.6,
+    "anios_experiencia_mediana": 5.0,
+    "uso_ia_promedio_0a5": 2.4,
+    "provincias": [
+      {
+        "nombre": "Ciudad Autónoma de Buenos Aires",
+        "porcentaje": 47.7
+      },
+      {
+        "nombre": "Buenos Aires",
+        "porcentaje": 22.2
+      },
+      {
+        "nombre": "Córdoba",
+        "porcentaje": 9.8
+      },
+      {
+        "nombre": "Santa Fe",
+        "porcentaje": 5.2
+      },
+      {
+        "nombre": "Neuquén",
+        "porcentaje": 3.3
+      },
+      {
+        "nombre": "Tucumán",
+        "porcentaje": 2.6
+      }
+    ],
+    "tecnologias": [
+      {
+        "nombre": "SQL",
+        "porcentaje": 29.4
+      },
+      {
+        "nombre": "Python",
+        "porcentaje": 14.4
+      },
+      {
+        "nombre": "Javascript",
+        "porcentaje": 13.7
+      },
+      {
+        "nombre": "HTML",
+        "porcentaje": 12.4
+      },
+      {
+        "nombre": "Bash/Shell",
+        "porcentaje": 11.8
+      },
+      {
+        "nombre": "CSS",
+        "porcentaje": 9.2
+      },
+      {
+        "nombre": "PHP",
+        "porcentaje": 8.5
+      },
+      {
+        "nombre": "Java",
+        "porcentaje": 3.3
+      }
+    ],
+    "frameworks": [
+      {
+        "nombre": "WordPress",
+        "porcentaje": 7.8
+      },
+      {
+        "nombre": "SAP",
+        "porcentaje": 5.9
+      },
+      {
+        "nombre": "Bootstrap",
+        "porcentaje": 5.9
+      },
+      {
+        "nombre": "Node.js",
+        "porcentaje": 3.3
+      },
+      {
+        "nombre": ".NET Core",
+        "porcentaje": 3.3
+      },
+      {
+        "nombre": "React.js",
+        "porcentaje": 2.0
+      },
+      {
+        "nombre": "Django",
+        "porcentaje": 2.0
+      },
+      {
+        "nombre": "Laravel",
+        "porcentaje": 1.3
+      }
+    ],
+    "plataformas": [
+      {
+        "nombre": "Windows Server",
+        "porcentaje": 52.3
+      },
+      {
+        "nombre": "VMWare",
+        "porcentaje": 28.1
+      },
+      {
+        "nombre": "Azure",
+        "porcentaje": 25.5
+      },
+      {
+        "nombre": "Linux",
+        "porcentaje": 24.8
+      },
+      {
+        "nombre": "Google Cloud Platform",
+        "porcentaje": 11.1
+      },
+      {
+        "nombre": "SAP",
+        "porcentaje": 10.5
+      },
+      {
+        "nombre": "Amazon Web Services",
+        "porcentaje": 8.5
+      },
+      {
+        "nombre": "Docker",
+        "porcentaje": 5.2
+      }
+    ]
   }
 }

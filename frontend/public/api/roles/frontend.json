@@ -17,9 +17,9 @@
     "Frontend JavaScript Developer"
   ],
   "distribucion": {
-    "porcentaje_estimado": 11.1,
+    "porcentaje_estimado": 3.2,
     "tipo": "ESTIMACION_EDITORIAL",
-    "nota": "Estimación editorial: Sysarmy no separa Backend/Frontend/Full Stack/Mobile. Lo real es el bloque 'Developer' completo (1.776 respuestas, 42,7%); este reparto interno es criterio propio.",
+    "nota": "Reparto inferido por tecnologías dentro del bloque real 'Developer'. Sysarmy no separa Backend/Frontend/Full Stack/Mobile. Se infiere por las tecnologías declaradas: Mobile si usa Flutter, React Native, SwiftUI, Ionic, Cordova, Swift, Dart u Objective-C; Full Stack si usa un framework de frontend (React, Angular, Vue, Next, Svelte) y además uno de backend o un lenguaje de servidor; Frontend o Backend si sólo aparece uno de los dos lados.",
     "fuente": {
       "id": "sysarmy-2025-1",
       "nombre": "Sysarmy - Encuesta de Sueldos IT Argentina 2025.1",
@@ -28,5 +28,174 @@
       "url": "https://sysarmy.com/blog/posts/resultados-de-la-encuesta-de-sueldos-2025-1/",
       "fecha": "2025"
     }
+  },
+  "perfil": {
+    "respuestas": 124,
+    "salario_bruto_mensual_ars": {
+      "Junior": {
+        "n": 24,
+        "p25": 790000.0,
+        "mediana": 1146000.0,
+        "p75": 1433000.0
+      },
+      "Semi-Senior": {
+        "n": 60,
+        "p25": 1589000.0,
+        "mediana": 2000000.0,
+        "p75": 2600000.0
+      },
+      "Senior": {
+        "n": 35,
+        "p25": 2200000.0,
+        "mediana": 2718000.0,
+        "p75": 4000000.0
+      }
+    },
+    "seniority": {
+      "Junior": 21.8,
+      "Semi-Senior": 50.0,
+      "Senior": 28.2
+    },
+    "modalidad": {
+      "remoto": 77.4,
+      "hibrido": 19.4,
+      "presencial": 3.2
+    },
+    "genero": {
+      "hombres_cis": 65.3,
+      "mujeres_cis": 32.3,
+      "otras_identidades_o_sin_respuesta": 2.4
+    },
+    "sueldo_dolarizado": 49.2,
+    "anios_experiencia_mediana": 4.0,
+    "uso_ia_promedio_0a5": 3.3,
+    "provincias": [
+      {
+        "nombre": "Ciudad Autónoma de Buenos Aires",
+        "porcentaje": 45.2
+      },
+      {
+        "nombre": "Buenos Aires",
+        "porcentaje": 23.4
+      },
+      {
+        "nombre": "Córdoba",
+        "porcentaje": 8.1
+      },
+      {
+        "nombre": "Santa Fe",
+        "porcentaje": 7.3
+      },
+      {
+        "nombre": "San Juan",
+        "porcentaje": 3.2
+      },
+      {
+        "nombre": "Corrientes",
+        "porcentaje": 2.4
+      }
+    ],
+    "tecnologias": [
+      {
+        "nombre": "Javascript",
+        "porcentaje": 91.1
+      },
+      {
+        "nombre": "TypeScript",
+        "porcentaje": 81.5
+      },
+      {
+        "nombre": "HTML",
+        "porcentaje": 61.3
+      },
+      {
+        "nombre": "CSS",
+        "porcentaje": 57.3
+      },
+      {
+        "nombre": "SQL",
+        "porcentaje": 8.1
+      },
+      {
+        "nombre": "Bash/Shell",
+        "porcentaje": 4.0
+      },
+      {
+        "nombre": "Asp",
+        "porcentaje": 0.8
+      },
+      {
+        "nombre": "Delphi",
+        "porcentaje": 0.8
+      }
+    ],
+    "frameworks": [
+      {
+        "nombre": "React.js",
+        "porcentaje": 74.2
+      },
+      {
+        "nombre": "Next.js",
+        "porcentaje": 33.9
+      },
+      {
+        "nombre": "Angular",
+        "porcentaje": 21.0
+      },
+      {
+        "nombre": "Bootstrap",
+        "porcentaje": 15.3
+      },
+      {
+        "nombre": "Vue.js",
+        "porcentaje": 8.1
+      },
+      {
+        "nombre": "jQuery",
+        "porcentaje": 5.6
+      },
+      {
+        "nombre": "Svelte",
+        "porcentaje": 2.4
+      },
+      {
+        "nombre": "Tailwind",
+        "porcentaje": 2.4
+      }
+    ],
+    "plataformas": [
+      {
+        "nombre": "Docker",
+        "porcentaje": 26.6
+      },
+      {
+        "nombre": "Amazon Web Services",
+        "porcentaje": 25.8
+      },
+      {
+        "nombre": "Linux",
+        "porcentaje": 19.4
+      },
+      {
+        "nombre": "Firebase",
+        "porcentaje": 10.5
+      },
+      {
+        "nombre": "Azure",
+        "porcentaje": 9.7
+      },
+      {
+        "nombre": "Kubernetes",
+        "porcentaje": 5.6
+      },
+      {
+        "nombre": "Serverless",
+        "porcentaje": 4.0
+      },
+      {
+        "nombre": "Google Cloud Platform",
+        "porcentaje": 4.0
+      }
+    ]
   }
 }

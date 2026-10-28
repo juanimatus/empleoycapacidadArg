@@ -16,7 +16,7 @@
   "distribucion": {
     "porcentaje_estimado": 4.6,
     "tipo": "COMUNITARIO_VERIFICABLE",
-    "nota": "Dato directo de la encuesta ('UX Designer' + 'Designer' + 'UX Writer' + 'UX Researcher')",
+    "nota": "Dato directo de la encuesta.",
     "fuente": {
       "id": "sysarmy-2025-1",
       "nombre": "Sysarmy - Encuesta de Sueldos IT Argentina 2025.1",
@@ -25,5 +25,174 @@
       "url": "https://sysarmy.com/blog/posts/resultados-de-la-encuesta-de-sueldos-2025-1/",
       "fecha": "2025"
     }
+  },
+  "perfil": {
+    "respuestas": 193,
+    "salario_bruto_mensual_ars": {
+      "Junior": {
+        "n": 33,
+        "p25": 1029000.0,
+        "mediana": 1300000.0,
+        "p75": 1800000.0
+      },
+      "Semi-Senior": {
+        "n": 92,
+        "p25": 1512000.0,
+        "mediana": 1962000.0,
+        "p75": 2669000.0
+      },
+      "Senior": {
+        "n": 59,
+        "p25": 1350000.0,
+        "mediana": 2083000.0,
+        "p75": 3298000.0
+      }
+    },
+    "seniority": {
+      "Junior": 18.1,
+      "Semi-Senior": 49.7,
+      "Senior": 32.1
+    },
+    "modalidad": {
+      "remoto": 53.4,
+      "hibrido": 45.6,
+      "presencial": 1.0
+    },
+    "genero": {
+      "hombres_cis": 31.1,
+      "mujeres_cis": 66.3,
+      "otras_identidades_o_sin_respuesta": 2.6
+    },
+    "sueldo_dolarizado": 43.5,
+    "anios_experiencia_mediana": 4.0,
+    "uso_ia_promedio_0a5": 2.9,
+    "provincias": [
+      {
+        "nombre": "Ciudad Autónoma de Buenos Aires",
+        "porcentaje": 59.6
+      },
+      {
+        "nombre": "Buenos Aires",
+        "porcentaje": 22.8
+      },
+      {
+        "nombre": "Córdoba",
+        "porcentaje": 7.8
+      },
+      {
+        "nombre": "Mendoza",
+        "porcentaje": 3.6
+      },
+      {
+        "nombre": "Santa Fe",
+        "porcentaje": 2.1
+      },
+      {
+        "nombre": "Tucumán",
+        "porcentaje": 1.6
+      }
+    ],
+    "tecnologias": [
+      {
+        "nombre": "HTML",
+        "porcentaje": 15.5
+      },
+      {
+        "nombre": "CSS",
+        "porcentaje": 15.0
+      },
+      {
+        "nombre": "Javascript",
+        "porcentaje": 7.8
+      },
+      {
+        "nombre": "SQL",
+        "porcentaje": 2.6
+      },
+      {
+        "nombre": "C++",
+        "porcentaje": 2.1
+      },
+      {
+        "nombre": "Python",
+        "porcentaje": 2.1
+      },
+      {
+        "nombre": "PHP",
+        "porcentaje": 2.1
+      },
+      {
+        "nombre": "C#",
+        "porcentaje": 1.6
+      }
+    ],
+    "frameworks": [
+      {
+        "nombre": "Bootstrap",
+        "porcentaje": 9.8
+      },
+      {
+        "nombre": "WordPress",
+        "porcentaje": 9.8
+      },
+      {
+        "nombre": "Angular",
+        "porcentaje": 4.1
+      },
+      {
+        "nombre": "React.js",
+        "porcentaje": 3.6
+      },
+      {
+        "nombre": "Flutter",
+        "porcentaje": 2.1
+      },
+      {
+        "nombre": "Next.js",
+        "porcentaje": 1.6
+      },
+      {
+        "nombre": "Drupal",
+        "porcentaje": 1.6
+      },
+      {
+        "nombre": "Vue.js",
+        "porcentaje": 1.6
+      }
+    ],
+    "plataformas": [
+      {
+        "nombre": "Figma",
+        "porcentaje": 14.5
+      },
+      {
+        "nombre": "Google Cloud Platform",
+        "porcentaje": 7.8
+      },
+      {
+        "nombre": "Azure",
+        "porcentaje": 6.2
+      },
+      {
+        "nombre": "Linux",
+        "porcentaje": 2.6
+      },
+      {
+        "nombre": "Miro",
+        "porcentaje": 2.1
+      },
+      {
+        "nombre": "Amazon Web Services",
+        "porcentaje": 2.1
+      },
+      {
+        "nombre": "Docker",
+        "porcentaje": 2.1
+      },
+      {
+        "nombre": "VMWare",
+        "porcentaje": 1.6
+      }
+    ]
   }
 }

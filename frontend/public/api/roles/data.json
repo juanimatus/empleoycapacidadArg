@@ -19,7 +19,7 @@
   "distribucion": {
     "porcentaje_estimado": 11.0,
     "tipo": "COMUNITARIO_VERIFICABLE",
-    "nota": "Dato directo de la encuesta ('BI Analyst/Data Analyst' + 'Data Engineer' + 'DBA')",
+    "nota": "Dato directo de la encuesta.",
     "fuente": {
       "id": "sysarmy-2025-1",
       "nombre": "Sysarmy - Encuesta de Sueldos IT Argentina 2025.1",
@@ -28,5 +28,174 @@
       "url": "https://sysarmy.com/blog/posts/resultados-de-la-encuesta-de-sueldos-2025-1/",
       "fecha": "2025"
     }
+  },
+  "perfil": {
+    "respuestas": 457,
+    "salario_bruto_mensual_ars": {
+      "Junior": {
+        "n": 122,
+        "p25": 1068000.0,
+        "mediana": 1450000.0,
+        "p75": 1978000.0
+      },
+      "Semi-Senior": {
+        "n": 161,
+        "p25": 1618000.0,
+        "mediana": 2200000.0,
+        "p75": 3000000.0
+      },
+      "Senior": {
+        "n": 158,
+        "p25": 2195000.0,
+        "mediana": 3000000.0,
+        "p75": 4025000.0
+      }
+    },
+    "seniority": {
+      "Junior": 28.9,
+      "Semi-Senior": 35.9,
+      "Senior": 35.2
+    },
+    "modalidad": {
+      "remoto": 49.7,
+      "hibrido": 44.2,
+      "presencial": 6.1
+    },
+    "genero": {
+      "hombres_cis": 75.1,
+      "mujeres_cis": 23.4,
+      "otras_identidades_o_sin_respuesta": 1.5
+    },
+    "sueldo_dolarizado": 30.0,
+    "anios_experiencia_mediana": 4.0,
+    "uso_ia_promedio_0a5": 3.2,
+    "provincias": [
+      {
+        "nombre": "Ciudad Autónoma de Buenos Aires",
+        "porcentaje": 54.0
+      },
+      {
+        "nombre": "Buenos Aires",
+        "porcentaje": 16.4
+      },
+      {
+        "nombre": "Córdoba",
+        "porcentaje": 12.5
+      },
+      {
+        "nombre": "Santa Fe",
+        "porcentaje": 4.8
+      },
+      {
+        "nombre": "Mendoza",
+        "porcentaje": 3.3
+      },
+      {
+        "nombre": "Entre Ríos",
+        "porcentaje": 2.2
+      }
+    ],
+    "tecnologias": [
+      {
+        "nombre": "SQL",
+        "porcentaje": 77.2
+      },
+      {
+        "nombre": "Python",
+        "porcentaje": 61.9
+      },
+      {
+        "nombre": "Javascript",
+        "porcentaje": 12.7
+      },
+      {
+        "nombre": "Bash/Shell",
+        "porcentaje": 11.8
+      },
+      {
+        "nombre": "HTML",
+        "porcentaje": 8.5
+      },
+      {
+        "nombre": "R",
+        "porcentaje": 7.7
+      },
+      {
+        "nombre": "Java",
+        "porcentaje": 6.1
+      },
+      {
+        "nombre": "VBA",
+        "porcentaje": 5.5
+      }
+    ],
+    "frameworks": [
+      {
+        "nombre": "Spark",
+        "porcentaje": 13.1
+      },
+      {
+        "nombre": "Hadoop",
+        "porcentaje": 6.3
+      },
+      {
+        "nombre": "Node.js",
+        "porcentaje": 5.7
+      },
+      {
+        "nombre": "Flask",
+        "porcentaje": 5.3
+      },
+      {
+        "nombre": "SAP",
+        "porcentaje": 4.8
+      },
+      {
+        "nombre": "TensorFlow",
+        "porcentaje": 4.6
+      },
+      {
+        "nombre": "React.js",
+        "porcentaje": 4.4
+      },
+      {
+        "nombre": "SAP Hana",
+        "porcentaje": 3.7
+      }
+    ],
+    "plataformas": [
+      {
+        "nombre": "Amazon Web Services",
+        "porcentaje": 26.3
+      },
+      {
+        "nombre": "Azure",
+        "porcentaje": 24.9
+      },
+      {
+        "nombre": "Google Cloud Platform",
+        "porcentaje": 24.3
+      },
+      {
+        "nombre": "Linux",
+        "porcentaje": 21.7
+      },
+      {
+        "nombre": "Docker",
+        "porcentaje": 18.2
+      },
+      {
+        "nombre": "Windows Server",
+        "porcentaje": 17.1
+      },
+      {
+        "nombre": "Kubernetes",
+        "porcentaje": 7.4
+      },
+      {
+        "nombre": "SAP",
+        "porcentaje": 6.6
+      }
+    ]
   }
 }

@@ -13,17 +13,21 @@ export function EmploymentTimeseries({ data }: { data: EmploymentSnapshot[] }) {
   return (
     <ResponsiveContainer width="100%" height={320}>
       <LineChart data={data} margin={{ left: 8, right: 24, top: 8 }}>
-        <CartesianGrid strokeDasharray="3 3" />
-        <XAxis dataKey="anio" tick={{ fontFamily: "JetBrains Mono, monospace", fontSize: 11 }} />
+        <CartesianGrid stroke="#d0d7de" vertical={false} />
+        <XAxis dataKey="anio" tick={{ fontFamily: "Inter, system-ui, sans-serif", fontSize: 11 }} />
         <YAxis
           tickFormatter={(v: number) => `${Math.round(v / 1000)}k`}
           width={50}
-          tick={{ fontFamily: "JetBrains Mono, monospace", fontSize: 11 }}
+          tick={{ fontFamily: "Inter, system-ui, sans-serif", fontSize: 11 }}
         />
         <Tooltip
           formatter={(value) => [Number(value).toLocaleString("es-AR"), "Empleos registrados"]}
           labelFormatter={(label) => `Año ${label}`}
-          contentStyle={{ borderRadius: 0, border: "1px solid #0a0a0a", fontFamily: "JetBrains Mono, monospace" }}
+          contentStyle={{
+            borderRadius: 8,
+            border: "1px solid #d0d7de",
+            fontFamily: "Inter, system-ui, sans-serif",
+          }}
         />
         <Line
           type="monotone"
