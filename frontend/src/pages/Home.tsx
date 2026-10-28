@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { api, type RoleFamily } from "../api/client";
+import { LandscapeBackdrop } from "../components/LandscapeBackdrop";
 import { RoleGroupList } from "../components/RoleGroups";
 import { RoleSearch } from "../components/RoleSearch";
 
@@ -35,11 +36,11 @@ export function Home() {
 
   return (
     <div className="page">
-      <section className="home-hero">
+      <LandscapeBackdrop>
         <h1>El trabajo IT en Argentina, rol por rol</h1>
         <p className="lead">Cuánto se gana, cómo se trabaja y dónde está el empleo.</p>
         <RoleSearch roles={roles} />
-      </section>
+      </LandscapeBackdrop>
 
       {error && <div className="error-box">No se pudieron cargar los datos ({error}).</div>}
 
