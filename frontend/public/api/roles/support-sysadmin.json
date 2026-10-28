@@ -1,0 +1,30 @@
+{
+  "id": "support-sysadmin",
+  "nombre": "Soporte Técnico / Sysadmin",
+  "descripcion": "Soporte técnico a usuarios, administración de sistemas y redes, mantenimiento de infraestructura on-premise.",
+  "aliases": [
+    "Soporte Técnico",
+    "IT Support",
+    "Help Desk",
+    "Mesa de Ayuda",
+    "System Administrator",
+    "Administrador de Sistemas",
+    "Network Administrator",
+    "Administrador de Redes",
+    "Técnico IT",
+    "Field Support Engineer"
+  ],
+  "distribucion": {
+    "porcentaje_estimado": 3.7,
+    "tipo": "COMUNITARIO_VERIFICABLE",
+    "nota": "Dato directo de la encuesta ('HelpDesk' + 'Technical Support')",
+    "fuente": {
+      "id": "sysarmy-2025-1",
+      "nombre": "Sysarmy - Encuesta de Sueldos IT Argentina 2025.1",
+      "tipo": "comunitario",
+      "descripcion": "Encuesta comunitaria abierta (no gubernamental) con 5.196 respuestas de trabajadores IT en Argentina. Dataset publicado bajo licencia CC BY-NC-SA 4.0. Es la fuente primaria más completa disponible hoy para estimar la distribución de roles, a falta de una encuesta oficial.",
+      "url": "https://sysarmy.com/blog/posts/resultados-de-la-encuesta-de-sueldos-2025-1/",
+      "fecha": "2025"
+    }
+  }
+}

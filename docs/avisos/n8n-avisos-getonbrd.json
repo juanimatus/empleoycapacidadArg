@@ -1,0 +1,416 @@
+{
+  "name": "Observatorio IT · Avisos Get on Board (diario)",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "triggerAtHour": 7
+            }
+          ]
+        }
+      },
+      "id": "a1",
+      "name": "Todos los días 7:00",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        0,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "url": "https://raw.githubusercontent.com/juanimatus/empleoycapacidadArg/main/backend/data/curated/role_families.json",
+        "options": {
+          "response": {
+            "response": {
+              "responseFormat": "json"
+            }
+          }
+        }
+      },
+      "id": "a2",
+      "name": "Bajar taxonomía",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        220,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Convierte role_families.json del repo en una lista simple para el clasificador.\n// n8n separa el array del JSON en un ítem por familia: acá se vuelven a juntar.\nconst familias = $input.all().map((i) => i.json);\nreturn [{ json: { familias: familias.map((f) => ({ id: f.id, aliases: f.aliases })) } }];\n"
+      },
+      "id": "a3",
+      "name": "Taxonomía",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        440,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "url": "https://www.getonbrd.com/api/v0/categories",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "per_page",
+              "value": "100"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "a4",
+      "name": "Categorías Get on Board",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        660,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "fieldToSplitOut": "data",
+        "options": {}
+      },
+      "id": "a5",
+      "name": "Una fila por categoría",
+      "type": "n8n-nodes-base.splitOut",
+      "typeVersion": 1,
+      "position": [
+        880,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "url": "=https://www.getonbrd.com/api/v0/categories/{{ $json.id }}/jobs",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "per_page",
+              "value": "100"
+            }
+          ]
+        },
+        "options": {
+          "pagination": {
+            "pagination": {
+              "parameters": {
+                "parameters": [
+                  {
+                    "name": "page",
+                    "value": "={{ $pageCount + 1 }}"
+                  }
+                ]
+              },
+              "paginationCompleteWhen": "other",
+              "completeExpression": "={{ $response.body.data.length === 0 }}",
+              "limitPagesFetched": true,
+              "maxRequests": 10,
+              "requestInterval": 1000
+            }
+          }
+        }
+      },
+      "id": "a6",
+      "name": "Avisos por categoría",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1100,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "fieldToSplitOut": "data",
+        "options": {}
+      },
+      "id": "a7",
+      "name": "Un ítem por aviso",
+      "type": "n8n-nodes-base.splitOut",
+      "typeVersion": 1,
+      "position": [
+        1320,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Clasifica cada aviso en una familia de rol usando la tabla de alias del repo.\n// Entrada: los avisos de Get on Board (uno por ítem) y la taxonomía del nodo \"Taxonomía\".\nconst norm = (s) =>\n  (s || \"\")\n    .toString()\n    .toLowerCase()\n    .normalize(\"NFD\")\n    .replace(/[̀-ͯ]/g, \"\")\n    .replace(/[^a-z0-9+#.]+/g, \" \")\n    .trim();\n\n// 1) Alias exactos del repo, los más largos primero (\"full stack developer\" antes que \"developer\").\nconst familias = $(\"Taxonomía\").first().json.familias || [];\nconst aliases = [];\nfor (const f of familias) {\n  for (const a of f.aliases) aliases.push({ alias: ` ${norm(a)} `, id: f.id });\n}\naliases.sort((x, y) => y.alias.length - x.alias.length);\n\n// 2) Palabras clave de respaldo, en orden: lo más específico arriba.\nconst reglas = [\n  [\"fullstack\", /full ?stack/],\n  [\"mobile\", /\\b(android|ios|mobile|flutter|react native|kotlin|swift)\\b/],\n  [\"data-science-ml\", /\\b(data scien\\w*|machine learning|ml|mlops|ai|ia|llm|cientific\\w* de datos)\\b/],\n  [\"data\", /\\b(data|datos|bi|analytics|etl|dba|power bi|tableau)\\b/],\n  [\"devops\", /\\b(devops|sre|cloud|aws|azure|gcp|kubernetes|infraestructura|platform engineer)\\b/],\n  [\"security\", /\\b(security|seguridad|ciberseguridad|cybersecurity|pentest\\w*|soc|infosec)\\b/],\n  [\"qa\", /\\b(qa|tester|testing|test|quality|automation)\\b/],\n  [\"ux-ui\", /\\b(ux|ui|diseñ\\w*|disen\\w*|designer|figma|product design\\w*)\\b/],\n  [\"support-sysadmin\", /\\b(soporte|support|help ?desk|sysadmin|mesa de ayuda|it technician)\\b/],\n  [\"product-project\", /\\b(product (owner|manager)|project manager|scrum|agile coach|pm|po|delivery manager)\\b/],\n  [\"frontend\", /\\b(front ?end|react|angular|vue|javascript|maquetador)\\b/],\n  [\"backend\", /\\b(back ?end|java|\\.net|python|node|php|golang|go|ruby|api)\\b/],\n];\n\nconst hoy = new Date().toISOString().slice(0, 10);\nconst salida = [];\n\nfor (const item of $input.all()) {\n  const job = item.json;\n  const a = job.attributes || {};\n  const paises = a.countries || [];\n  const enArgentina = paises.some((p) => norm(p).includes(\"argentina\"));\n  if (!enArgentina) continue; // el índice es sólo para avisos abiertos a Argentina\n\n  const titulo = ` ${norm(a.title)} `;\n  let familia = null;\n  let metodo = \"alias\";\n  for (const x of aliases) {\n    if (titulo.includes(x.alias)) { familia = x.id; break; }\n  }\n  if (!familia) {\n    metodo = \"palabra_clave\";\n    for (const [id, re] of reglas) {\n      if (re.test(titulo)) { familia = id; break; }\n    }\n  }\n  if (!familia) metodo = \"sin_clasificar\";\n\n  salida.push({\n    json: {\n      id: job.id,\n      fecha_relevamiento: hoy,\n      publicado: a.published_at ? new Date(a.published_at * 1000).toISOString().slice(0, 10) : \"\",\n      titulo: a.title || \"\",\n      familia_rol: familia || \"sin_clasificar\",\n      metodo_clasificacion: metodo,\n      categoria_getonbrd: a.category_name || \"\",\n      paises: paises.join(\", \"),\n      remoto: a.remote === true ? \"si\" : \"no\",\n      modalidad_remota: a.remote_modality || \"\",\n      seniority_id: a.seniority?.data?.id ?? \"\",\n      salario_min_usd: a.min_salary ?? \"\",\n      salario_max_usd: a.max_salary ?? \"\",\n      url: job.links?.public_url || \"\",\n    },\n  });\n}\n\nreturn salida;\n"
+      },
+      "id": "a8",
+      "name": "Filtrar Argentina y clasificar",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1540,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "operation": "appendOrUpdate",
+        "documentId": {
+          "__rl": true,
+          "value": "PEGAR_ID_DE_LA_PLANILLA",
+          "mode": "id"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "avisos",
+          "mode": "name"
+        },
+        "columns": {
+          "mappingMode": "autoMapInputData",
+          "value": {},
+          "matchingColumns": [
+            "id"
+          ],
+          "schema": [
+            {
+              "id": "id",
+              "displayName": "id",
+              "required": false,
+              "defaultMatch": true,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "fecha_relevamiento",
+              "displayName": "fecha_relevamiento",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "publicado",
+              "displayName": "publicado",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "titulo",
+              "displayName": "titulo",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "familia_rol",
+              "displayName": "familia_rol",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "metodo_clasificacion",
+              "displayName": "metodo_clasificacion",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "categoria_getonbrd",
+              "displayName": "categoria_getonbrd",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "paises",
+              "displayName": "paises",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "remoto",
+              "displayName": "remoto",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "modalidad_remota",
+              "displayName": "modalidad_remota",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "seniority_id",
+              "displayName": "seniority_id",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "salario_min_usd",
+              "displayName": "salario_min_usd",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "salario_max_usd",
+              "displayName": "salario_max_usd",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "url",
+              "displayName": "url",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "a9",
+      "name": "Guardar en Google Sheets",
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.5,
+      "position": [
+        1760,
+        0
+      ]
+    }
+  ],
+  "connections": {
+    "Todos los días 7:00": {
+      "main": [
+        [
+          {
+            "node": "Bajar taxonomía",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Bajar taxonomía": {
+      "main": [
+        [
+          {
+            "node": "Taxonomía",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Taxonomía": {
+      "main": [
+        [
+          {
+            "node": "Categorías Get on Board",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Categorías Get on Board": {
+      "main": [
+        [
+          {
+            "node": "Una fila por categoría",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Una fila por categoría": {
+      "main": [
+        [
+          {
+            "node": "Avisos por categoría",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Avisos por categoría": {
+      "main": [
+        [
+          {
+            "node": "Un ítem por aviso",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Un ítem por aviso": {
+      "main": [
+        [
+          {
+            "node": "Filtrar Argentina y clasificar",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Filtrar Argentina y clasificar": {
+      "main": [
+        [
+          {
+            "node": "Guardar en Google Sheets",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "timezone": "America/Argentina/Mendoza"
+  },
+  "pinData": {}
+}

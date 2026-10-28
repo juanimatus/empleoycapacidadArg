@@ -150,7 +150,7 @@ def seed():
                     RoleDistribution(
                         role_family_id=row["role_family_id"],
                         porcentaje_estimado=row["porcentaje_estimado"],
-                        tipo=dist["tipo"],
+                        tipo=row.get("tipo_dato", dist["tipo"]),
                         nota=row.get("nota"),
                         fuente_id=SOURCE_SYSARMY.id,
                     )

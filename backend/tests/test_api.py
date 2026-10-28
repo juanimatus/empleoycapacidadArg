@@ -11,6 +11,9 @@ def test_api_smoke():
         assert len(roles) == 12
         assert round(sum(r["distribucion"]["porcentaje_estimado"] for r in roles), 1) == 100.0
 
+        estimadas = {r["id"] for r in roles if r["distribucion"]["tipo"] == "ESTIMACION_EDITORIAL"}
+        assert estimadas == {"backend", "frontend", "fullstack", "mobile"}
+
         summary = client.get("/api/employment/summary").json()
         assert summary["ultimo_anio"] == 2024
         assert summary["empleos_registrados_ultimo_anio"] == 158179

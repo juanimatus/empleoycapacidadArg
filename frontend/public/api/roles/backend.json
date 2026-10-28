@@ -1,0 +1,38 @@
+{
+  "id": "backend",
+  "nombre": "Desarrollo Backend",
+  "descripcion": "Diseño y construcción de la lógica de servidor, APIs, bases de datos e integraciones que sostienen una aplicación.",
+  "aliases": [
+    "Backend Developer",
+    "Desarrollador Backend",
+    "Desarrollador/a Backend",
+    "Backend Engineer",
+    "Ingeniero de Software Backend",
+    "Dev Backend",
+    "Programador Backend",
+    "Software Engineer Backend",
+    "API Developer",
+    "Backend .NET",
+    "Backend Java",
+    "Backend Python",
+    "Backend Node",
+    "Backend PHP",
+    "Backend Ruby",
+    "Backend Go",
+    "Server-side Developer",
+    "Desarrollador de Sistemas Backend"
+  ],
+  "distribucion": {
+    "porcentaje_estimado": 17.1,
+    "tipo": "ESTIMACION_EDITORIAL",
+    "nota": "Estimación editorial: Sysarmy no separa Backend/Frontend/Full Stack/Mobile. Lo real es el bloque 'Developer' completo (1.776 respuestas, 42,7%); este reparto interno es criterio propio.",
+    "fuente": {
+      "id": "sysarmy-2025-1",
+      "nombre": "Sysarmy - Encuesta de Sueldos IT Argentina 2025.1",
+      "tipo": "comunitario",
+      "descripcion": "Encuesta comunitaria abierta (no gubernamental) con 5.196 respuestas de trabajadores IT en Argentina. Dataset publicado bajo licencia CC BY-NC-SA 4.0. Es la fuente primaria más completa disponible hoy para estimar la distribución de roles, a falta de una encuesta oficial.",
+      "url": "https://sysarmy.com/blog/posts/resultados-de-la-encuesta-de-sueldos-2025-1/",
+      "fecha": "2025"
+    }
+  }
+}

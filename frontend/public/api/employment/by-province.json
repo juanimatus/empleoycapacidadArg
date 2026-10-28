@@ -1,0 +1,146 @@
+[
+  {
+    "provincia": "Ciudad Autónoma de Buenos Aires",
+    "empleos_registrados": 102632,
+    "porcentaje": 69.69,
+    "periodo": "2023-11"
+  },
+  {
+    "provincia": "Buenos Aires",
+    "empleos_registrados": 16659,
+    "porcentaje": 11.31,
+    "periodo": "2023-11"
+  },
+  {
+    "provincia": "Córdoba",
+    "empleos_registrados": 12453,
+    "porcentaje": 8.46,
+    "periodo": "2023-11"
+  },
+  {
+    "provincia": "Santa Fe",
+    "empleos_registrados": 6398,
+    "porcentaje": 4.34,
+    "periodo": "2023-11"
+  },
+  {
+    "provincia": "Mendoza",
+    "empleos_registrados": 2090,
+    "porcentaje": 1.42,
+    "periodo": "2023-11"
+  },
+  {
+    "provincia": "Tucumán",
+    "empleos_registrados": 1221,
+    "porcentaje": 0.83,
+    "periodo": "2023-11"
+  },
+  {
+    "provincia": "Chaco",
+    "empleos_registrados": 892,
+    "porcentaje": 0.61,
+    "periodo": "2023-11"
+  },
+  {
+    "provincia": "Entre Ríos",
+    "empleos_registrados": 690,
+    "porcentaje": 0.47,
+    "periodo": "2023-11"
+  },
+  {
+    "provincia": "Corrientes",
+    "empleos_registrados": 568,
+    "porcentaje": 0.39,
+    "periodo": "2023-11"
+  },
+  {
+    "provincia": "Neuquén",
+    "empleos_registrados": 527,
+    "porcentaje": 0.36,
+    "periodo": "2023-11"
+  },
+  {
+    "provincia": "San Juan",
+    "empleos_registrados": 428,
+    "porcentaje": 0.29,
+    "periodo": "2023-11"
+  },
+  {
+    "provincia": "Salta",
+    "empleos_registrados": 420,
+    "porcentaje": 0.29,
+    "periodo": "2023-11"
+  },
+  {
+    "provincia": "San Luis",
+    "empleos_registrados": 391,
+    "porcentaje": 0.27,
+    "periodo": "2023-11"
+  },
+  {
+    "provincia": "Misiones",
+    "empleos_registrados": 330,
+    "porcentaje": 0.22,
+    "periodo": "2023-11"
+  },
+  {
+    "provincia": "Chubut",
+    "empleos_registrados": 313,
+    "porcentaje": 0.21,
+    "periodo": "2023-11"
+  },
+  {
+    "provincia": "Río Negro",
+    "empleos_registrados": 260,
+    "porcentaje": 0.18,
+    "periodo": "2023-11"
+  },
+  {
+    "provincia": "Jujuy",
+    "empleos_registrados": 259,
+    "porcentaje": 0.18,
+    "periodo": "2023-11"
+  },
+  {
+    "provincia": "Santiago del Estero",
+    "empleos_registrados": 176,
+    "porcentaje": 0.12,
+    "periodo": "2023-11"
+  },
+  {
+    "provincia": "Tierra del Fuego",
+    "empleos_registrados": 157,
+    "porcentaje": 0.11,
+    "periodo": "2023-11"
+  },
+  {
+    "provincia": "Catamarca",
+    "empleos_registrados": 152,
+    "porcentaje": 0.1,
+    "periodo": "2023-11"
+  },
+  {
+    "provincia": "La Pampa",
+    "empleos_registrados": 115,
+    "porcentaje": 0.08,
+    "periodo": "2023-11"
+  },
+  {
+    "provincia": "La Rioja",
+    "empleos_registrados": 65,
+    "porcentaje": 0.04,
+    "periodo": "2023-11"
+  },
+  {
+    "provincia": "Formosa",
+    "empleos_registrados": 53,
+    "porcentaje": 0.04,
+    "periodo": "2023-11"
+  },
+  {
+    "provincia": "Santa Cruz",
+    "empleos_registrados": 18,
+    "porcentaje": 0.01,
+    "periodo": "2023-11"
+  }
+]

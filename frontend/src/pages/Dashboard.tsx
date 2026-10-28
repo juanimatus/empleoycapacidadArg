@@ -28,12 +28,7 @@ export function Dashboard() {
   }, []);
 
   if (error) {
-    return (
-      <div className="error-box">
-        No se pudo conectar con la API del backend ({error}). Verificá que esté corriendo en
-        http://127.0.0.1:8000.
-      </div>
-    );
+    return <div className="error-box">No se pudieron cargar los datos ({error}).</div>;
   }
 
   if (!summary || !byRole) {
@@ -83,9 +78,7 @@ export function Dashboard() {
         </div>
       </section>
 
-      <Marquee
-        items={byRole.distribucion.map((r) => `${r.nombre} ${r.porcentaje_estimado}%`)}
-      />
+      <Marquee items={byRole.distribucion.map((r) => `${r.nombre} ${r.porcentaje_estimado}%`)} />
 
       <span className="section-kicker">
         <span className="n">02</span> Evolución y distribución

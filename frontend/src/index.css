@@ -521,3 +521,28 @@ main {
     animation-duration: 90s;
   }
 }
+
+/* ---------- leyenda del gráfico por tipo de dato ---------- */
+.chart-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+  margin-top: 12px;
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--muted);
+}
+
+.chart-legend i {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 6px;
+  vertical-align: -1px;
+}
+
+.source-estimacion-badge {
+  margin-left: 10px;
+  color: var(--estimate);
+  border-color: var(--estimate);
+}

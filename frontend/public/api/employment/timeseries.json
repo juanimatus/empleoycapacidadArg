@@ -1,0 +1,62 @@
+[
+  {
+    "anio": 2015,
+    "empleos_registrados": 97642,
+    "variacion_interanual_pct": null,
+    "cobertura": "nacional"
+  },
+  {
+    "anio": 2016,
+    "empleos_registrados": 100722,
+    "variacion_interanual_pct": 3.2,
+    "cobertura": "nacional"
+  },
+  {
+    "anio": 2017,
+    "empleos_registrados": 105186,
+    "variacion_interanual_pct": 4.4,
+    "cobertura": "nacional"
+  },
+  {
+    "anio": 2018,
+    "empleos_registrados": 110060,
+    "variacion_interanual_pct": 4.6,
+    "cobertura": "nacional"
+  },
+  {
+    "anio": 2019,
+    "empleos_registrados": 117681,
+    "variacion_interanual_pct": 6.9,
+    "cobertura": "nacional"
+  },
+  {
+    "anio": 2020,
+    "empleos_registrados": 123148,
+    "variacion_interanual_pct": 4.6,
+    "cobertura": "nacional"
+  },
+  {
+    "anio": 2021,
+    "empleos_registrados": 134694,
+    "variacion_interanual_pct": 9.4,
+    "cobertura": "nacional"
+  },
+  {
+    "anio": 2022,
+    "empleos_registrados": 147660,
+    "variacion_interanual_pct": 9.6,
+    "cobertura": "nacional"
+  },
+  {
+    "anio": 2023,
+    "empleos_registrados": 152048,
+    "variacion_interanual_pct": 3.0,
+    "cobertura": "nacional"
+  },
+  {
+    "anio": 2024,
+    "empleos_registrados": 158179,
+    "variacion_interanual_pct": 4.0,
+    "cobertura": "nacional"
+  }
+]

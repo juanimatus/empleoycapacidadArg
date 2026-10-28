@@ -10,13 +10,21 @@ El observatorio de empleo oficial argentino actualiza pocas métricas y no disti
 
 - `backend/` — API FastAPI + SQLite. Modelos, datos curados (`data/curated/`) y script de seed.
 - `frontend/` — Dashboard en React + TypeScript (Vite): Dashboard, Explorador de Roles, Por Provincia, Fuentes y Metodología.
-- `docs/` — documentación adicional.
+- `docs/` — documentación adicional. `docs/avisos/` tiene el flujo de n8n que junta avisos IT todos los días.
 
 ## Diseño
 
 Estética "Brutalist Grid" adaptada a un observatorio de datos: grillas con líneas finas, tipografía mono (JetBrains Mono) para números y kickers, Space Grotesk para títulos, sin sombras ni bordes redondeados. Elegida a propósito por la afinidad temática con el proyecto — honestidad sobre los números, cero maquillaje — y no por moda visual. Componentes reutilizables en `frontend/src/components/`: `Reveal` (scroll-reveal), `CountUp` (contadores animados), `Marquee` (ticker de roles), `ScrollProgress`.
 
 ## Cómo correrlo
+
+El sitio publicado es estático: la web lee los JSON de `frontend/public/api/`, así que se puede subir a Vercel o GitHub Pages sin servidor. Esos JSON se generan desde el backend con `python -m app.export_static` (desde `backend/`); hay que correrlo después de cambiar cualquier archivo de `data/curated/`. CI falla si quedaron desactualizados.
+
+Para ver el sitio alcanza con el frontend (`npm install && npm run dev` en `frontend/`). El backend sólo hace falta para regenerar los JSON o para usar la API en vivo.
+
+### Publicar en Vercel
+
+Importar el repo en Vercel con **Root Directory = `frontend`**. Vercel detecta Vite solo (build `npm run build`, salida `dist`). No hace falta ninguna variable de entorno.
 
 ### Backend
 
@@ -38,7 +46,7 @@ npm install
 npm run dev
 ```
 
-El dashboard queda en `http://localhost:5173`. Para apuntar a otro backend: `cp .env.example .env` y editar `VITE_API_URL` (en el backend, `CORS_ORIGINS` acepta una lista separada por comas).
+El dashboard queda en `http://localhost:5173` y usa los JSON estáticos. Para consultar el backend en vivo: `cp .env.example .env` y descomentar `VITE_API_URL` (en el backend, `CORS_ORIGINS` acepta una lista separada por comas).
 
 ### Tests
 
@@ -68,5 +76,5 @@ Código: [MIT](LICENSE). Datos: ver [DATA_LICENSES.md](DATA_LICENSES.md) (la dis
 - ✅ Serie de empleo IT registrado 2015-2024, nacional (dato oficial, OEDE vía CESSI/OPSSI).
 - ✅ Empleo IT por provincia (dato oficial, OEDE / datos.produccion.gob.ar, sector privado, nov-2023).
 - ✅ Indicadores sectoriales (salario, rotación, participación femenina).
-- ✅ Distribución de empleo por familia de rol: calculada sobre la **encuesta comunitaria Sysarmy 2025.1** (5.196 respuestas reales, licencia CC BY-NC-SA 4.0) — un nivel de confianza intermedio entre dato oficial y estimación editorial, explícitamente marcado como tal en toda la app. Dentro del bloque "Developer" el reparto Backend/Frontend/Full Stack/Mobile sigue siendo estimación editorial (Sysarmy no lo desagrega).
+- ✅ Distribución de empleo por familia de rol: calculada sobre la **encuesta comunitaria Sysarmy 2025.1** (5.196 respuestas reales, licencia CC BY-NC-SA 4.0) — un nivel de confianza intermedio entre dato oficial y estimación editorial, explícitamente marcado como tal en toda la app. Dentro del bloque "Developer" el reparto Backend/Frontend/Full Stack/Mobile sigue siendo estimación editorial (Sysarmy no lo desagrega): en los datos esas cuatro filas van marcadas `ESTIMACION_EDITORIAL` y el sitio las pinta de otro color.
 - ⏳ Pendiente: cruce con INDEC EPH, clasificador automático de avisos de empleo usando la tabla de alias como base, evaluar acceso a datos primarios de CESSI/OPSSI para reemplazar Sysarmy como fuente de distribución de roles.

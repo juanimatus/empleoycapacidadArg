@@ -1,0 +1,34 @@
+[
+  {
+    "id": "oede-opssi-2025",
+    "nombre": "OEDE (Ministerio de Trabajo), vía CESSI/OPSSI - Foco Talento jul-2025",
+    "tipo": "oficial",
+    "descripcion": "Serie de empleo registrado del sector Software, elaborada por el Observatorio de Empleo y Dinámica Empresarial (OEDE) y republicada con esa cita en el reporte de OPSSI.",
+    "url": "https://cessi.org.ar/wp-content/uploads/2025/08/CESSI-OPSSI-Reporte-de-los-principales-indicadores-de-la-industria-del-Software-con-Foco-en-Talento_Julio-2025.pdf",
+    "fecha": "2025-07"
+  },
+  {
+    "id": "opssi-kpis-2025",
+    "nombre": "CESSI/OPSSI - Foco Talento jul-2025",
+    "tipo": "oficial",
+    "descripcion": "Indicadores sectoriales (salario, rotación, género) relevados por encuesta de OPSSI.",
+    "url": "https://cessi.org.ar/wp-content/uploads/2025/08/CESSI-OPSSI-Reporte-de-los-principales-indicadores-de-la-industria-del-Software-con-Foco-en-Talento_Julio-2025.pdf",
+    "fecha": "2025-07"
+  },
+  {
+    "id": "oede-provincia-2023",
+    "nombre": "OEDE / datos.produccion.gob.ar - Puestos de trabajo por provincia y CLAE2",
+    "tipo": "oficial",
+    "descripcion": "Serie oficial de empleo asalariado registrado por provincia, sector privado, CLAE2 62+63 (Software y Servicios Informáticos). Descarga directa del portal de datos abiertos del Ministerio de Producción.",
+    "url": "https://datos.produccion.gob.ar/dataset/puestos-de-trabajo-registrados-por-provincia-y-sector-de-actividad",
+    "fecha": "2023-11"
+  },
+  {
+    "id": "sysarmy-2025-1",
+    "nombre": "Sysarmy - Encuesta de Sueldos IT Argentina 2025.1",
+    "tipo": "comunitario",
+    "descripcion": "Encuesta comunitaria abierta (no gubernamental) con 5.196 respuestas de trabajadores IT en Argentina. Dataset publicado bajo licencia CC BY-NC-SA 4.0. Es la fuente primaria más completa disponible hoy para estimar la distribución de roles, a falta de una encuesta oficial.",
+    "url": "https://sysarmy.com/blog/posts/resultados-de-la-encuesta-de-sueldos-2025-1/",
+    "fecha": "2025"
+  }
+]

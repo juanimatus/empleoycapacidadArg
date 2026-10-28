@@ -1,0 +1,32 @@
+{
+  "id": "data",
+  "nombre": "Datos y Analytics (BI / Data Engineering)",
+  "descripcion": "Construcción de pipelines de datos, modelado, integración y generación de reportes/business intelligence.",
+  "aliases": [
+    "Data Engineer",
+    "Ingeniero de Datos",
+    "Data Analyst",
+    "Analista de Datos",
+    "BI Developer",
+    "Business Intelligence Analyst",
+    "Analista BI",
+    "ETL Developer",
+    "Database Administrator",
+    "DBA",
+    "Data Warehouse Developer",
+    "Analista de Business Intelligence"
+  ],
+  "distribucion": {
+    "porcentaje_estimado": 11.0,
+    "tipo": "COMUNITARIO_VERIFICABLE",
+    "nota": "Dato directo de la encuesta ('BI Analyst/Data Analyst' + 'Data Engineer' + 'DBA')",
+    "fuente": {
+      "id": "sysarmy-2025-1",
+      "nombre": "Sysarmy - Encuesta de Sueldos IT Argentina 2025.1",
+      "tipo": "comunitario",
+      "descripcion": "Encuesta comunitaria abierta (no gubernamental) con 5.196 respuestas de trabajadores IT en Argentina. Dataset publicado bajo licencia CC BY-NC-SA 4.0. Es la fuente primaria más completa disponible hoy para estimar la distribución de roles, a falta de una encuesta oficial.",
+      "url": "https://sysarmy.com/blog/posts/resultados-de-la-encuesta-de-sueldos-2025-1/",
+      "fecha": "2025"
+    }
+  }
+}

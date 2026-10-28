@@ -1,4 +1,6 @@
-const API_BASE = import.meta.env.VITE_API_URL ?? "http://127.0.0.1:8000";
+// Sin VITE_API_URL el sitio lee los JSON estáticos de public/api/ (generados con
+// `python -m app.export_static`). Con VITE_API_URL consulta el backend FastAPI en vivo.
+const API_BASE: string | undefined = import.meta.env.VITE_API_URL;
 
 export interface DataSource {
   id: string;
@@ -57,6 +59,8 @@ export interface EmploymentSummary {
   kpis: SectorKPI[];
 }
 
+export const ESTIMACION_EDITORIAL = "ESTIMACION_EDITORIAL";
+
 export interface ByRoleItem {
   role_family_id: string;
   nombre: string;
@@ -73,7 +77,8 @@ export interface ByRoleResponse {
 }
 
 async function getJson<T>(path: string): Promise<T> {
-  const res = await fetch(`${API_BASE}${path}`);
+  const url = API_BASE ? `${API_BASE}${path}` : `${import.meta.env.BASE_URL}${path.slice(1)}.json`;
+  const res = await fetch(url);
   if (!res.ok) {
     throw new Error(`Error ${res.status} consultando ${path}`);
   }
