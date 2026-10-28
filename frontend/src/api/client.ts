@@ -167,6 +167,50 @@ export interface EmploymentTotal {
   limites: string[];
 }
 
+/** COA: clasificador propio de todas las ocupaciones (estructura CIUO-08 + nivel argentino). */
+export interface CoaOcupacion {
+  codigo: string;
+  nombre: string;
+  rubros: string[];
+  ciuo08: string;
+  ciuo08_aproximado: boolean;
+  cno2001: { caracter: string[]; calificacion: string[] };
+  coit_ar?: string;
+  role_family_id?: string;
+  nota?: string;
+}
+
+export interface CoaFamilia {
+  codigo: string;
+  nombre: string;
+  ocupaciones: CoaOcupacion[];
+}
+
+export interface CoaGranGrupo {
+  codigo: string;
+  nombre: string;
+  subgrupos: { codigo: string; nombre: string; familias: CoaFamilia[] }[];
+}
+
+export interface CoaRubro {
+  id: string;
+  nombre: string;
+  descripcion: string;
+  ramas: { ciiu4: string; nombre: string }[];
+}
+
+export interface Coa {
+  nombre: string;
+  version: string;
+  descripcion: string;
+  estructura: { nivel: string; digitos: number; ejemplo: string; origen: string }[];
+  notas: string[];
+  fuentes: { nombre: string; url: string }[];
+  cno2001: Record<"caracter" | "jerarquia" | "tecnologia" | "calificacion", Record<string, string>>;
+  rubros: CoaRubro[];
+  grandes_grupos: CoaGranGrupo[];
+}
+
 async function getJson<T>(path: string): Promise<T> {
   const url = API_BASE ? `${API_BASE}${path}` : `${import.meta.env.BASE_URL}${path.slice(1)}.json`;
   const res = await fetch(url);
@@ -181,6 +225,7 @@ export const api = {
   role: (id: string) => getJson<RoleFamily>(`/api/roles/${id}`),
   employmentTotal: () => getJson<EmploymentTotal>("/api/employment/total"),
   clasificador: () => getJson<Clasificador>("/api/clasificador"),
+  coa: () => getJson<Coa>("/api/coa"),
   employmentSummary: () => getJson<EmploymentSummary>("/api/employment/summary"),
   employmentTimeseries: () => getJson<EmploymentSnapshot[]>("/api/employment/timeseries"),
   employmentByRole: () => getJson<ByRoleResponse>("/api/employment/by-role"),

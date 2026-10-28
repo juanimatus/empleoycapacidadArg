@@ -35,6 +35,10 @@ export function Classifier() {
           Un código para cada trabajo IT: el primer dígito es el área, dos dígitos la familia de rol
           y cuatro la ocupación.
         </p>
+        <p>
+          Este clasificador se está ampliando a todos los rubros: las ocupaciones IT ya tienen su
+          código en el <Link to="/ocupaciones">clasificador de ocupaciones (COA)</Link>.
+        </p>
       </section>
 
       <ol className="coit-tree">
