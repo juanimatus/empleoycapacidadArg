@@ -39,8 +39,11 @@ SOURCE_OEDE = DataSource(
 SOURCE_OPSSI_KPI = DataSource(
     id="opssi-kpis-2025",
     nombre="CESSI/OPSSI - Foco Talento jul-2025",
-    tipo="oficial",
-    descripcion="Indicadores sectoriales (salario, rotación, género) relevados por encuesta de OPSSI.",
+    tipo="comunitario",
+    descripcion=(
+        "Indicadores sectoriales (salario, rotación, género) relevados por encuesta de OPSSI, "
+        "el observatorio de la cámara empresaria del software. No es un dato oficial."
+    ),
     url=(
         "https://cessi.org.ar/wp-content/uploads/2025/08/"
         "CESSI-OPSSI-Reporte-de-los-principales-indicadores-de-la-industria-"
@@ -60,6 +63,19 @@ SOURCE_OEDE_PROVINCIA = DataSource(
     ),
     url="https://datos.produccion.gob.ar/dataset/puestos-de-trabajo-registrados-por-provincia-y-sector-de-actividad",
     fecha="2023-11",
+)
+
+SOURCE_EPH = DataSource(
+    id="indec-eph",
+    nombre="INDEC - Encuesta Permanente de Hogares (microdatos)",
+    tipo="oficial",
+    descripcion=(
+        "Encuesta oficial a hogares de 31 aglomerados urbanos. Capta trabajo formal e informal, "
+        "asalariado y por cuenta propia, y clasifica a cada persona por su ocupación (CNO-2001). "
+        "Procesada con app.ingestion.eph_it."
+    ),
+    url="https://www.indec.gob.ar/indec/web/Institucional-Indec-BasesDeDatos",
+    fecha="2026-1T",
 )
 
 SOURCE_SYSARMY = DataSource(
@@ -87,7 +103,9 @@ def seed():
     db = SessionLocal()
     try:
         if db.query(DataSource).count() == 0:
-            db.add_all([SOURCE_OEDE, SOURCE_OPSSI_KPI, SOURCE_OEDE_PROVINCIA, SOURCE_SYSARMY])
+            db.add_all(
+                [SOURCE_OEDE, SOURCE_OPSSI_KPI, SOURCE_OEDE_PROVINCIA, SOURCE_EPH, SOURCE_SYSARMY]
+            )
             db.commit()
 
         if db.query(RoleFamily).count() == 0:

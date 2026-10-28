@@ -1,0 +1,259 @@
+{
+  "fuente": {
+    "nombre": "Encuesta Permanente de Hogares (EPH), INDEC",
+    "url": "https://www.indec.gob.ar/indec/web/Institucional-Indec-BasesDeDatos",
+    "tipo": "oficial"
+  },
+  "periodo": "2T2025 a 1T2026",
+  "cobertura": "31 aglomerados urbanos (no incluye zonas rurales ni ciudades chicas)",
+  "metodo": "Promedio de 4 trimestres de microdatos. Personas ocupadas, expandidas con el factor PONDERA. Formal/informal según la clasificación de INDEC (variable EMPLEO). Ingreso: mediana de la ocupación principal del último trimestre, en pesos corrientes.",
+  "ocupados_aglomerados": 13471000.0,
+  "ingreso_periodo": "1T2026",
+  "universos": {
+    "software": {
+      "nombre": "Ocupaciones de la producción de software",
+      "definicion": "Ocupación CNO-2001 de carácter 81, en cualquier rama de actividad.",
+      "muestra": 740,
+      "personas": 170600.0,
+      "porcentaje_de_ocupados": 1.27,
+      "informalidad": [
+        {
+          "nombre": "Formal",
+          "porcentaje": 79.7
+        },
+        {
+          "nombre": "Informal",
+          "porcentaje": 20.3
+        }
+      ],
+      "informalidad_por_categoria": {
+        "Cuenta propia": 40.8,
+        "Asalariado/a": 17.2
+      },
+      "fuera_del_sipa_privado": 38.7,
+      "categoria": [
+        {
+          "nombre": "Asalariado/a",
+          "porcentaje": 87.1
+        },
+        {
+          "nombre": "Cuenta propia",
+          "porcentaje": 12.9
+        }
+      ],
+      "estatal": 11.9,
+      "calificacion": [
+        {
+          "nombre": "Técnica",
+          "porcentaje": 46.0
+        },
+        {
+          "nombre": "Profesional",
+          "porcentaje": 42.2
+        },
+        {
+          "nombre": "Operativa",
+          "porcentaje": 11.7
+        }
+      ],
+      "sexo": [
+        {
+          "nombre": "Varones",
+          "porcentaje": 84.6
+        },
+        {
+          "nombre": "Mujeres",
+          "porcentaje": 15.4
+        }
+      ],
+      "region": [
+        {
+          "nombre": "Gran Buenos Aires",
+          "porcentaje": 64.5
+        },
+        {
+          "nombre": "Pampeana",
+          "porcentaje": 22.1
+        },
+        {
+          "nombre": "Cuyo",
+          "porcentaje": 4.8
+        },
+        {
+          "nombre": "Noroeste",
+          "porcentaje": 4.5
+        },
+        {
+          "nombre": "Noreste",
+          "porcentaje": 2.4
+        },
+        {
+          "nombre": "Patagonia",
+          "porcentaje": 1.8
+        }
+      ],
+      "rama": [
+        {
+          "nombre": "Software y consultoría IT",
+          "porcentaje": 49.4
+        },
+        {
+          "nombre": "Estado",
+          "porcentaje": 7.9
+        },
+        {
+          "nombre": "Telecomunicaciones",
+          "porcentaje": 6.4
+        },
+        {
+          "nombre": "Bancos y finanzas",
+          "porcentaje": 4.5
+        },
+        {
+          "nombre": "Servicios de información",
+          "porcentaje": 2.8
+        },
+        {
+          "nombre": "Seguros",
+          "porcentaje": 2.8
+        }
+      ],
+      "rama_it": 52.2,
+      "ingreso_mensual_ocupacion_principal": {
+        "Total": {
+          "mediana": 2000000,
+          "n": 145
+        },
+        "Formal": {
+          "mediana": 2000000,
+          "n": 110
+        },
+        "Informal": {
+          "mediana": 1200000,
+          "n": 35
+        }
+      }
+    },
+    "sector_it": {
+      "nombre": "Empresas de software y servicios informáticos",
+      "definicion": "Cualquier ocupación en la rama CAES 6200 o 6300.",
+      "muestra": 656,
+      "personas": 165400.0,
+      "porcentaje_de_ocupados": 1.23,
+      "informalidad": [
+        {
+          "nombre": "Formal",
+          "porcentaje": 73.9
+        },
+        {
+          "nombre": "Informal",
+          "porcentaje": 26.1
+        }
+      ],
+      "informalidad_por_categoria": {
+        "Cuenta propia": 34.0,
+        "Asalariado/a": 24.4
+      },
+      "fuera_del_sipa_privado": 44.1,
+      "categoria": [
+        {
+          "nombre": "Asalariado/a",
+          "porcentaje": 75.1
+        },
+        {
+          "nombre": "Cuenta propia",
+          "porcentaje": 22.8
+        },
+        {
+          "nombre": "Patrón",
+          "porcentaje": 2.2
+        }
+      ],
+      "estatal": 0.9,
+      "calificacion": [
+        {
+          "nombre": "Técnica",
+          "porcentaje": 49.9
+        },
+        {
+          "nombre": "Profesional",
+          "porcentaje": 32.8
+        },
+        {
+          "nombre": "Operativa",
+          "porcentaje": 16.6
+        },
+        {
+          "nombre": "No calificada",
+          "porcentaje": 0.3
+        }
+      ],
+      "sexo": [
+        {
+          "nombre": "Varones",
+          "porcentaje": 73.5
+        },
+        {
+          "nombre": "Mujeres",
+          "porcentaje": 26.5
+        }
+      ],
+      "region": [
+        {
+          "nombre": "Gran Buenos Aires",
+          "porcentaje": 66.2
+        },
+        {
+          "nombre": "Pampeana",
+          "porcentaje": 22.9
+        },
+        {
+          "nombre": "Cuyo",
+          "porcentaje": 4.4
+        },
+        {
+          "nombre": "Noroeste",
+          "porcentaje": 3.2
+        },
+        {
+          "nombre": "Noreste",
+          "porcentaje": 2.4
+        },
+        {
+          "nombre": "Patagonia",
+          "porcentaje": 0.9
+        }
+      ],
+      "rama": [
+        {
+          "nombre": "Software y consultoría IT",
+          "porcentaje": 85.3
+        },
+        {
+          "nombre": "Servicios de información",
+          "porcentaje": 14.7
+        }
+      ],
+      "rama_it": 100.0,
+      "ingreso_mensual_ocupacion_principal": {
+        "Total": {
+          "mediana": 2000000,
+          "n": 123
+        },
+        "Formal": {
+          "mediana": 2000000,
+          "n": 81
+        },
+        "Informal": {
+          "mediana": 1200000,
+          "n": 42
+        }
+      }
+    }
+  },
+  "limites": [
+    "La EPH no pregunta si el empleador o el cliente está en el exterior: quien trabaja para afuera aparece como cuenta propia o como asalariado/a, formal o informal, según cómo lo declare.",
+    "El CNO-2001 no separa roles dentro de IT (backend, data, QA): el carácter 81 los agrupa a todos. Diseño UX, análisis de datos y soporte pueden quedar codificados en otros caracteres.",
+    "Con unas 700 personas encuestadas por universo, los repartos tienen un margen de error de varios puntos. Los datos por región son orientativos."
+  ]
+}

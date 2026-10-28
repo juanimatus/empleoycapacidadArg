@@ -136,6 +136,37 @@ export interface Clasificador {
   })[];
 }
 
+export interface EphUniverso {
+  nombre: string;
+  definicion: string;
+  muestra: number;
+  personas: number;
+  porcentaje_de_ocupados: number;
+  informalidad: ShareItem[];
+  informalidad_por_categoria: Record<string, number>;
+  fuera_del_sipa_privado: number;
+  categoria: ShareItem[];
+  estatal: number;
+  calificacion: ShareItem[];
+  sexo: ShareItem[];
+  region: ShareItem[];
+  rama: ShareItem[];
+  rama_it: number;
+  ingreso_mensual_ocupacion_principal: Record<string, { mediana: number; n: number }>;
+}
+
+/** Empleo IT formal e informal según la EPH (INDEC). */
+export interface EmploymentTotal {
+  fuente: { nombre: string; url: string; tipo: string };
+  periodo: string;
+  cobertura: string;
+  metodo: string;
+  ocupados_aglomerados: number;
+  ingreso_periodo: string;
+  universos: { software: EphUniverso; sector_it: EphUniverso };
+  limites: string[];
+}
+
 async function getJson<T>(path: string): Promise<T> {
   const url = API_BASE ? `${API_BASE}${path}` : `${import.meta.env.BASE_URL}${path.slice(1)}.json`;
   const res = await fetch(url);
@@ -148,6 +179,7 @@ async function getJson<T>(path: string): Promise<T> {
 export const api = {
   roles: () => getJson<RoleFamily[]>("/api/roles"),
   role: (id: string) => getJson<RoleFamily>(`/api/roles/${id}`),
+  employmentTotal: () => getJson<EmploymentTotal>("/api/employment/total"),
   clasificador: () => getJson<Clasificador>("/api/clasificador"),
   employmentSummary: () => getJson<EmploymentSummary>("/api/employment/summary"),
   employmentTimeseries: () => getJson<EmploymentSnapshot[]>("/api/employment/timeseries"),

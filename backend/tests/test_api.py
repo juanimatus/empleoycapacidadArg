@@ -21,6 +21,11 @@ def test_api_smoke():
         assert None not in codigos and codigos == sorted(set(codigos))
         assert all(o["codigo"].startswith(r["codigo"]) for r in roles for o in r["ocupaciones"])
 
+        total = client.get("/api/employment/total").json()
+        software = total["universos"]["software"]
+        assert software["muestra"] > 300 and 0 < software["fuera_del_sipa_privado"] < 100
+        assert abs(sum(i["porcentaje"] for i in software["informalidad"]) - 100) <= 0.5
+
         coit = client.get("/api/clasificador").json()
         assert len(coit["grupos"]) == 5
 

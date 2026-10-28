@@ -22,6 +22,7 @@ ENDPOINTS = [
     "/api/employment/timeseries",
     "/api/employment/by-role",
     "/api/employment/by-province",
+    "/api/employment/total",
     "/api/sources",
     "/api/clasificador",
 ]

@@ -1003,3 +1003,70 @@ main {
 .coit-occupations {
   padding-left: 18px;
 }
+
+/* ---------- capas de datos ---------- */
+.layer-grid {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 12px;
+}
+
+.layer-card {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  height: 100%;
+  padding: 18px 20px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.layer-card:hover {
+  color: var(--ink);
+  border-color: var(--accent);
+}
+
+.layer-card strong {
+  font-family: var(--display);
+  font-size: 1.8rem;
+  line-height: 1.1;
+}
+
+.layer-card > span:last-child {
+  color: var(--muted);
+}
+
+.layer-badge {
+  align-self: flex-start;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 999px;
+}
+
+.layer-oficial {
+  color: #116329;
+  background: #dafbe1;
+}
+
+.layer-comunitario {
+  color: #5a32a3;
+  background: #f1eafe;
+}
+
+.layer-section {
+  scroll-margin-top: 80px;
+}
+
+.layer-section .stat-row {
+  margin-bottom: 16px;
+}
+
+.section-title:focus {
+  outline: none;
+}

@@ -1,3 +1,6 @@
+import json
+from pathlib import Path
+
 from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
 
@@ -97,3 +100,12 @@ def by_role(db: Session = Depends(get_db)):
         ),
         "distribucion": result,
     }
+
+
+EPH_PATH = Path(__file__).resolve().parents[3] / "data" / "curated" / "eph_empleo_it.json"
+
+
+@router.get("/total")
+def total():
+    """Empleo IT formal e informal (EPH-INDEC), calculado por `app.ingestion.eph_it`."""
+    return json.loads(EPH_PATH.read_text(encoding="utf-8"))

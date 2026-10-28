@@ -15,7 +15,11 @@ const TAREAS = [
     texto: "Empleo registrado por provincia.",
     to: "/provincias",
   },
-  { titulo: "¿Cómo viene el sector?", texto: "Empleo IT desde 2015.", to: "/mercado" },
+  {
+    titulo: "¿Cuánta gente trabaja en IT?",
+    texto: "Formal, informal y registrado.",
+    to: "/mercado",
+  },
 ];
 
 export function Home() {
