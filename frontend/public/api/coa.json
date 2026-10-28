@@ -1,0 +1,1741 @@
+{
+  "nombre": "COA · Clasificador de Ocupaciones de Argentina",
+  "version": "0.1",
+  "fecha": "2026-10",
+  "tipo": "clasificador propio, no oficial",
+  "descripcion": "Clasificador propio del observatorio para todas las ocupaciones de Argentina. Copia la estructura de la CIUO-08 (OIT) en los primeros cuatro dígitos y agrega un nivel propio con nombres argentinos. Cada ocupación lleva su equivalencia con el CNO-2001 del INDEC, que es el que usa la EPH, y los rubros donde suele trabajar.",
+  "estructura": [
+    {
+      "nivel": "Gran grupo",
+      "digitos": 1,
+      "ejemplo": "2",
+      "origen": "CIUO-08"
+    },
+    {
+      "nivel": "Subgrupo",
+      "digitos": 2,
+      "ejemplo": "25",
+      "origen": "CIUO-08"
+    },
+    {
+      "nivel": "Familia",
+      "digitos": 4,
+      "ejemplo": "2512",
+      "origen": "CIUO-08"
+    },
+    {
+      "nivel": "Ocupación",
+      "digitos": 6,
+      "ejemplo": "2512.01",
+      "origen": "propio"
+    }
+  ],
+  "notas": [
+    "Versión piloto: tiene completos los 10 grandes grupos y 43 subgrupos de la CIUO-08, y las ocupaciones de cuatro rubros (IT, Agro, Vitivinicultura y Transporte ferroviario). Los demás rubros se cargan en próximas versiones.",
+    "Los nombres de grandes grupos, subgrupos y familias siguen la traducción al castellano de la CIUO-08 de la OIT; falta cotejarlos uno por uno con la publicación oficial.",
+    "Las ocupaciones marcadas como aproximadas no tienen un grupo CIUO-08 exacto; se ubicaron en el más cercano.",
+    "La equivalencia con el CNO-2001 indica el carácter ocupacional (2 dígitos) y la calificación más habitual. Un mismo carácter CNO abarca muchas ocupaciones COA: la EPH no permite separarlas, y las fichas lo dicen.",
+    "Las ramas de cada rubro usan la CIIU Rev. 4 a 4 dígitos, que es la base del nomenclador CLAE con el que miden SIPA y CEP XXI. Falta verificar los códigos CLAE de 6 dígitos.",
+    "Las 16 ocupaciones del COIT-AR (clasificador IT anterior) quedan recodificadas acá; su código viejo se conserva en el campo coit_ar."
+  ],
+  "fuentes": [
+    {
+      "nombre": "CIUO-08, Clasificación Internacional Uniforme de Ocupaciones (OIT)",
+      "url": "https://www.ilo.org/public/spanish/bureau/stat/isco/isco08/"
+    },
+    {
+      "nombre": "CNO-2001, Clasificador Nacional de Ocupaciones (INDEC)",
+      "url": "https://www.indec.gob.ar/"
+    },
+    {
+      "nombre": "Etiquetas del CNO-2001 tomadas del paquete eph (rOpenSci), que reproduce la tabla del INDEC",
+      "url": "https://github.com/ropensci/eph"
+    },
+    {
+      "nombre": "CIIU Rev. 4 (Naciones Unidas)",
+      "url": "https://unstats.un.org/unsd/classifications/Econ/isic"
+    }
+  ],
+  "cno2001": {
+    "calificacion": {
+      "1": "Profesionales",
+      "2": "Técnicos",
+      "3": "Operativos",
+      "4": "No calificados"
+    },
+    "tecnologia": {
+      "1": "Sin operación de máquina",
+      "2": "Operación de maquinaria y equipos electromecánicos",
+      "3": "Operación de sistemas y equipos informatizados"
+    },
+    "jerarquia": {
+      "0": "Dirección",
+      "1": "Cuenta propia",
+      "2": "Jefes",
+      "3": "Trabajadores asalariados"
+    },
+    "caracter": {
+      "00": "Funcionarios del poder ejecutivo nacional, provincial, municipal y/o departamental",
+      "01": "Funcionarios del poder legislativo nacional, provincial, municipal y/o departamental",
+      "02": "Funcionarios del poder judicial, federal, nacional, provincial, municipal y/o departamental",
+      "03": "Directivos de organismos, empresas e instituciones estatales",
+      "04": "Directivos de instituciones sociales",
+      "05": "Directivos de pequeñas y microempresas",
+      "06": "Directivos de medianas empresas privadas productoras de bienes y servicios",
+      "07": "Directivos de grandes empresas privadas productoras de bienes y servicios",
+      "10": "Ocupaciones de la gestión administrativa, planificación y control de gestión",
+      "11": "Ocupaciones de la gestión jurídico-legal",
+      "20": "Ocupaciones de la gestión presupuestaria, contable y financiera",
+      "30": "Ocupaciones de la comercialización directa",
+      "31": "Ocupaciones del corretaje comercial, venta domiciliaria, viajantes y promotores",
+      "32": "Ocupaciones de la comercialización indirecta",
+      "33": "Ocupaciones de la comercialización ambulante y callejera",
+      "34": "Ocupaciones del transporte",
+      "35": "Ocupaciones de las telecomunicaciones",
+      "36": "Ocupaciones del almacenaje de insumos, materias primas, mercaderías e instrumentos",
+      "40": "Ocupaciones de la salud y sanidad",
+      "41": "Ocupaciones de la educación",
+      "42": "Ocupaciones de la investigación",
+      "43": "Ocupaciones de la asesoria y la consultaría",
+      "44": "Ocupaciones de la prevención de siniestros (naturales, humanos, productivos) atención del medio ambiente y ecología",
+      "45": "Ocupaciones de la comunicación de masas",
+      "46": "Ocupaciones de los servicios sociales, comunales, políticos, gremiales y religiosos",
+      "47": "Ocupaciones de los servicios de vigilancia y seguridad civil",
+      "48": "Ocupaciones de servicios policiales",
+      "49": "Ocupaciones de las FFAA Gendarmería y Prefectura",
+      "50": "Ocupaciones del arte",
+      "51": "Ocupaciones del deporte",
+      "52": "Ocupaciones de servicios de recreación",
+      "53": "Ocupaciones de servicios gastronómicos",
+      "54": "Ocupaciones de los servicios de alojamiento y turismo",
+      "55": "Ocupaciones de los servicios domésticos",
+      "56": "Ocupaciones de servicios de limpieza no domésticos",
+      "57": "Ocupaciones del cuidado y la atención de personas",
+      "58": "Ocupaciones de los servicios sociales varios",
+      "60": "Ocupaciones de la producción agrícola",
+      "61": "Ocupaciones de la producción ganadera",
+      "62": "Ocupaciones de la producción forestal",
+      "63": "Ocupaciones de la producción apícola, avícolas y de otras especies menores",
+      "64": "Ocupaciones de la producción pesquera",
+      "65": "Ocupaciones de la caza",
+      "70": "Ocupaciones de la producción extractiva",
+      "71": "Ocupaciones de la producción de energía, agua y gas",
+      "72": "Ocupaciones de la construcción edilicia, de obras de infraestructura y de redes de distribución de energía, agua potable, gas, telefonía y petróleo",
+      "80": "Ocupaciones de la producción industrial y artesanal",
+      "81": "Ocupaciones de la producción de software",
+      "82": "Ocupaciones de la reparación de bienes de consumo",
+      "90": "Ocupaciones de la instalación y mantenimiento de maquinaria, equipos y sistemas de la producción de bienes",
+      "91": "Ocupaciones del desarrollo tecnológico productivo",
+      "92": "Ocupaciones de la instalación y mantenimiento de maquinaria, equipos y sistemas"
+    }
+  },
+  "rubros": [
+    {
+      "id": "it",
+      "nombre": "Tecnología de la información",
+      "descripcion": "Software, datos, infraestructura y servicios informáticos.",
+      "ramas": [
+        {
+          "ciiu4": "5820",
+          "nombre": "Edición de programas informáticos"
+        },
+        {
+          "ciiu4": "6201",
+          "nombre": "Programación informática"
+        },
+        {
+          "ciiu4": "6202",
+          "nombre": "Consultoría informática y gestión de instalaciones informáticas"
+        },
+        {
+          "ciiu4": "6209",
+          "nombre": "Otras actividades de tecnología de la información y de servicios informáticos"
+        },
+        {
+          "ciiu4": "6311",
+          "nombre": "Procesamiento de datos, hospedaje y actividades conexas"
+        },
+        {
+          "ciiu4": "6312",
+          "nombre": "Portales web"
+        }
+      ]
+    },
+    {
+      "id": "agro",
+      "nombre": "Agro",
+      "descripcion": "Cultivos, ganadería y los servicios que los acompañan.",
+      "ramas": [
+        {
+          "ciiu4": "0111",
+          "nombre": "Cultivo de cereales (excepto arroz), legumbres y semillas oleaginosas"
+        },
+        {
+          "ciiu4": "0113",
+          "nombre": "Cultivo de hortalizas y melones, raíces y tubérculos"
+        },
+        {
+          "ciiu4": "0141",
+          "nombre": "Cría de ganado bovino y búfalos"
+        },
+        {
+          "ciiu4": "0146",
+          "nombre": "Cría de aves de corral"
+        },
+        {
+          "ciiu4": "0161",
+          "nombre": "Actividades de apoyo a la agricultura"
+        },
+        {
+          "ciiu4": "0162",
+          "nombre": "Actividades de apoyo a la ganadería"
+        }
+      ]
+    },
+    {
+      "id": "vitivinicultura",
+      "nombre": "Vitivinicultura",
+      "descripcion": "Viña, bodega y la venta del vino.",
+      "ramas": [
+        {
+          "ciiu4": "0121",
+          "nombre": "Cultivo de uva"
+        },
+        {
+          "ciiu4": "1102",
+          "nombre": "Elaboración de vinos"
+        }
+      ]
+    },
+    {
+      "id": "ferroviario",
+      "nombre": "Transporte ferroviario",
+      "descripcion": "Operación de trenes de pasajeros y carga, vías y talleres.",
+      "ramas": [
+        {
+          "ciiu4": "3020",
+          "nombre": "Fabricación de locomotoras y material rodante"
+        },
+        {
+          "ciiu4": "3315",
+          "nombre": "Reparación de equipo de transporte, excepto vehículos automotores"
+        },
+        {
+          "ciiu4": "4911",
+          "nombre": "Transporte interurbano de pasajeros por ferrocarril"
+        },
+        {
+          "ciiu4": "4912",
+          "nombre": "Transporte de carga por ferrocarril"
+        },
+        {
+          "ciiu4": "5221",
+          "nombre": "Actividades de servicios vinculadas al transporte terrestre"
+        }
+      ]
+    }
+  ],
+  "grandes_grupos": [
+    {
+      "codigo": "0",
+      "nombre": "Ocupaciones militares",
+      "subgrupos": [
+        {
+          "codigo": "01",
+          "nombre": "Oficiales de las fuerzas armadas",
+          "familias": []
+        },
+        {
+          "codigo": "02",
+          "nombre": "Suboficiales de las fuerzas armadas",
+          "familias": []
+        },
+        {
+          "codigo": "03",
+          "nombre": "Otros miembros de las fuerzas armadas",
+          "familias": []
+        }
+      ]
+    },
+    {
+      "codigo": "1",
+      "nombre": "Directores y gerentes",
+      "subgrupos": [
+        {
+          "codigo": "11",
+          "nombre": "Directores ejecutivos, personal directivo de la administración pública y miembros del poder ejecutivo y legislativo",
+          "familias": []
+        },
+        {
+          "codigo": "12",
+          "nombre": "Directores administradores y comerciales",
+          "familias": []
+        },
+        {
+          "codigo": "13",
+          "nombre": "Directores y gerentes de producción y operaciones",
+          "familias": [
+            {
+              "codigo": "1311",
+              "nombre": "Directores de producción agropecuaria y silvicultura",
+              "ocupaciones": [
+                {
+                  "codigo": "1311.01",
+                  "nombre": "Productor/a o gerente de explotación agropecuaria",
+                  "rubros": [
+                    "agro",
+                    "vitivinicultura"
+                  ],
+                  "ciuo08": "1311",
+                  "ciuo08_aproximado": false,
+                  "cno2001": {
+                    "caracter": [
+                      "60",
+                      "61",
+                      "05",
+                      "06"
+                    ],
+                    "calificacion": [
+                      "1",
+                      "2"
+                    ]
+                  },
+                  "nota": "Un productor que trabaja su propio campo figura en el CNO como cuenta propia de producción agrícola o ganadera, no como directivo."
+                }
+              ]
+            },
+            {
+              "codigo": "1324",
+              "nombre": "Directores de servicios de cadenas de suministro, distribución y afines",
+              "ocupaciones": [
+                {
+                  "codigo": "1324.01",
+                  "nombre": "Jefe/a de estación u operaciones ferroviarias",
+                  "rubros": [
+                    "ferroviario"
+                  ],
+                  "ciuo08": "1324",
+                  "ciuo08_aproximado": true,
+                  "cno2001": {
+                    "caracter": [
+                      "34",
+                      "03"
+                    ],
+                    "calificacion": [
+                      "1",
+                      "2"
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "codigo": "1330",
+              "nombre": "Directores de servicios de tecnología de la información y las comunicaciones",
+              "ocupaciones": [
+                {
+                  "codigo": "1330.01",
+                  "nombre": "Líder o gerente de producto / proyecto",
+                  "rubros": [
+                    "it"
+                  ],
+                  "ciuo08": "1330",
+                  "ciuo08_aproximado": true,
+                  "cno2001": {
+                    "caracter": [
+                      "10",
+                      "05",
+                      "06",
+                      "07"
+                    ],
+                    "calificacion": [
+                      "1"
+                    ]
+                  },
+                  "coit_ar": "5101",
+                  "role_family_id": "product-project",
+                  "nota": "Si dirige una empresa, el CNO lo codifica como directivo (05 a 07) según el tamaño."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "codigo": "14",
+          "nombre": "Gerentes de hoteles, restaurantes, comercios y otros servicios",
+          "familias": []
+        }
+      ]
+    },
+    {
+      "codigo": "2",
+      "nombre": "Profesionales científicos e intelectuales",
+      "subgrupos": [
+        {
+          "codigo": "21",
+          "nombre": "Profesionales de las ciencias y de la ingeniería",
+          "familias": [
+            {
+              "codigo": "2120",
+              "nombre": "Matemáticos, actuarios y estadísticos",
+              "ocupaciones": [
+                {
+                  "codigo": "2120.01",
+                  "nombre": "Científico/a de datos",
+                  "rubros": [
+                    "it"
+                  ],
+                  "ciuo08": "2120",
+                  "ciuo08_aproximado": true,
+                  "cno2001": {
+                    "caracter": [
+                      "81",
+                      "42"
+                    ],
+                    "calificacion": [
+                      "1"
+                    ]
+                  },
+                  "coit_ar": "2201",
+                  "role_family_id": "data-science-ml"
+                }
+              ]
+            },
+            {
+              "codigo": "2132",
+              "nombre": "Agrónomos y afines",
+              "ocupaciones": [
+                {
+                  "codigo": "2132.01",
+                  "nombre": "Ingeniero/a agrónomo/a",
+                  "rubros": [
+                    "agro",
+                    "vitivinicultura"
+                  ],
+                  "ciuo08": "2132",
+                  "ciuo08_aproximado": false,
+                  "cno2001": {
+                    "caracter": [
+                      "60",
+                      "43"
+                    ],
+                    "calificacion": [
+                      "1"
+                    ]
+                  }
+                },
+                {
+                  "codigo": "2132.02",
+                  "nombre": "Enólogo/a",
+                  "rubros": [
+                    "vitivinicultura"
+                  ],
+                  "ciuo08": "2132",
+                  "ciuo08_aproximado": true,
+                  "cno2001": {
+                    "caracter": [
+                      "80"
+                    ],
+                    "calificacion": [
+                      "1"
+                    ]
+                  },
+                  "nota": "La CIUO-08 no tiene un grupo para enología. Se ubica provisoriamente con agrónomos; falta contrastar con ESCO."
+                }
+              ]
+            },
+            {
+              "codigo": "2142",
+              "nombre": "Ingenieros civiles",
+              "ocupaciones": [
+                {
+                  "codigo": "2142.01",
+                  "nombre": "Ingeniero/a de vías e infraestructura ferroviaria",
+                  "rubros": [
+                    "ferroviario"
+                  ],
+                  "ciuo08": "2142",
+                  "ciuo08_aproximado": true,
+                  "cno2001": {
+                    "caracter": [
+                      "72"
+                    ],
+                    "calificacion": [
+                      "1"
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "codigo": "2144",
+              "nombre": "Ingenieros mecánicos",
+              "ocupaciones": [
+                {
+                  "codigo": "2144.01",
+                  "nombre": "Ingeniero/a de material rodante",
+                  "rubros": [
+                    "ferroviario"
+                  ],
+                  "ciuo08": "2144",
+                  "ciuo08_aproximado": true,
+                  "cno2001": {
+                    "caracter": [
+                      "92",
+                      "91"
+                    ],
+                    "calificacion": [
+                      "1"
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "codigo": "2166",
+              "nombre": "Diseñadores gráficos y multimedia",
+              "ocupaciones": [
+                {
+                  "codigo": "2166.01",
+                  "nombre": "Diseñador/a UX/UI",
+                  "rubros": [
+                    "it"
+                  ],
+                  "ciuo08": "2166",
+                  "ciuo08_aproximado": true,
+                  "cno2001": {
+                    "caracter": [
+                      "81",
+                      "50"
+                    ],
+                    "calificacion": [
+                      "1",
+                      "2"
+                    ]
+                  },
+                  "coit_ar": "5201",
+                  "role_family_id": "ux-ui"
+                },
+                {
+                  "codigo": "2166.02",
+                  "nombre": "Diseñador/a visual / gráfico/a digital",
+                  "rubros": [
+                    "it"
+                  ],
+                  "ciuo08": "2166",
+                  "ciuo08_aproximado": false,
+                  "cno2001": {
+                    "caracter": [
+                      "50",
+                      "81"
+                    ],
+                    "calificacion": [
+                      "1",
+                      "2"
+                    ]
+                  },
+                  "coit_ar": "5202",
+                  "role_family_id": "ux-ui"
+                },
+                {
+                  "codigo": "2166.03",
+                  "nombre": "Investigador/a UX",
+                  "rubros": [
+                    "it"
+                  ],
+                  "ciuo08": "2166",
+                  "ciuo08_aproximado": true,
+                  "cno2001": {
+                    "caracter": [
+                      "81",
+                      "42"
+                    ],
+                    "calificacion": [
+                      "1"
+                    ]
+                  },
+                  "coit_ar": "5203",
+                  "role_family_id": "ux-ui"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "codigo": "22",
+          "nombre": "Profesionales de la salud",
+          "familias": [
+            {
+              "codigo": "2250",
+              "nombre": "Veterinarios",
+              "ocupaciones": [
+                {
+                  "codigo": "2250.01",
+                  "nombre": "Veterinario/a",
+                  "rubros": [
+                    "agro"
+                  ],
+                  "ciuo08": "2250",
+                  "ciuo08_aproximado": false,
+                  "cno2001": {
+                    "caracter": [
+                      "61",
+                      "40"
+                    ],
+                    "calificacion": [
+                      "1"
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "codigo": "23",
+          "nombre": "Profesionales de la enseñanza",
+          "familias": []
+        },
+        {
+          "codigo": "24",
+          "nombre": "Especialistas en organización de la administración pública y de empresas",
+          "familias": []
+        },
+        {
+          "codigo": "25",
+          "nombre": "Profesionales de tecnología de la información y las comunicaciones",
+          "familias": [
+            {
+              "codigo": "2511",
+              "nombre": "Analistas de sistemas",
+              "ocupaciones": [
+                {
+                  "codigo": "2511.01",
+                  "nombre": "Analista de datos / BI",
+                  "rubros": [
+                    "it"
+                  ],
+                  "ciuo08": "2511",
+                  "ciuo08_aproximado": true,
+                  "cno2001": {
+                    "caracter": [
+                      "81",
+                      "10"
+                    ],
+                    "calificacion": [
+                      "1",
+                      "2"
+                    ]
+                  },
+                  "coit_ar": "2101",
+                  "role_family_id": "data"
+                },
+                {
+                  "codigo": "2511.02",
+                  "nombre": "Scrum master / facilitador/a ágil",
+                  "rubros": [
+                    "it"
+                  ],
+                  "ciuo08": "2511",
+                  "ciuo08_aproximado": true,
+                  "cno2001": {
+                    "caracter": [
+                      "81",
+                      "10"
+                    ],
+                    "calificacion": [
+                      "1",
+                      "2"
+                    ]
+                  },
+                  "coit_ar": "5102",
+                  "role_family_id": "product-project"
+                }
+              ]
+            },
+            {
+              "codigo": "2512",
+              "nombre": "Desarrolladores de software",
+              "ocupaciones": [
+                {
+                  "codigo": "2512.01",
+                  "nombre": "Desarrollador/a backend",
+                  "rubros": [
+                    "it"
+                  ],
+                  "ciuo08": "2512",
+                  "ciuo08_aproximado": false,
+                  "cno2001": {
+                    "caracter": [
+                      "81"
+                    ],
+                    "calificacion": [
+                      "1",
+                      "2"
+                    ]
+                  },
+                  "coit_ar": "1101",
+                  "role_family_id": "backend"
+                },
+                {
+                  "codigo": "2512.02",
+                  "nombre": "Desarrollador/a full stack",
+                  "rubros": [
+                    "it"
+                  ],
+                  "ciuo08": "2512",
+                  "ciuo08_aproximado": false,
+                  "cno2001": {
+                    "caracter": [
+                      "81"
+                    ],
+                    "calificacion": [
+                      "1",
+                      "2"
+                    ]
+                  },
+                  "coit_ar": "1301",
+                  "role_family_id": "fullstack"
+                }
+              ]
+            },
+            {
+              "codigo": "2513",
+              "nombre": "Desarrolladores web y multimedia",
+              "ocupaciones": [
+                {
+                  "codigo": "2513.01",
+                  "nombre": "Desarrollador/a frontend",
+                  "rubros": [
+                    "it"
+                  ],
+                  "ciuo08": "2513",
+                  "ciuo08_aproximado": false,
+                  "cno2001": {
+                    "caracter": [
+                      "81"
+                    ],
+                    "calificacion": [
+                      "1",
+                      "2"
+                    ]
+                  },
+                  "coit_ar": "1201",
+                  "role_family_id": "frontend"
+                }
+              ]
+            },
+            {
+              "codigo": "2514",
+              "nombre": "Programadores de aplicaciones",
+              "ocupaciones": [
+                {
+                  "codigo": "2514.01",
+                  "nombre": "Desarrollador/a mobile",
+                  "rubros": [
+                    "it"
+                  ],
+                  "ciuo08": "2514",
+                  "ciuo08_aproximado": false,
+                  "cno2001": {
+                    "caracter": [
+                      "81"
+                    ],
+                    "calificacion": [
+                      "1",
+                      "2"
+                    ]
+                  },
+                  "coit_ar": "1401",
+                  "role_family_id": "mobile"
+                }
+              ]
+            },
+            {
+              "codigo": "2519",
+              "nombre": "Desarrolladores y analistas de software y multimedia no clasificados bajo otros epígrafes",
+              "ocupaciones": [
+                {
+                  "codigo": "2519.01",
+                  "nombre": "Ingeniero/a de IA / machine learning",
+                  "rubros": [
+                    "it"
+                  ],
+                  "ciuo08": "2519",
+                  "ciuo08_aproximado": true,
+                  "cno2001": {
+                    "caracter": [
+                      "81"
+                    ],
+                    "calificacion": [
+                      "1"
+                    ]
+                  },
+                  "coit_ar": "2202",
+                  "role_family_id": "data-science-ml"
+                },
+                {
+                  "codigo": "2519.02",
+                  "nombre": "Analista de QA / testing",
+                  "rubros": [
+                    "it"
+                  ],
+                  "ciuo08": "2519",
+                  "ciuo08_aproximado": true,
+                  "cno2001": {
+                    "caracter": [
+                      "81"
+                    ],
+                    "calificacion": [
+                      "1",
+                      "2"
+                    ]
+                  },
+                  "coit_ar": "4101",
+                  "role_family_id": "qa"
+                }
+              ]
+            },
+            {
+              "codigo": "2521",
+              "nombre": "Diseñadores y administradores de bases de datos",
+              "ocupaciones": [
+                {
+                  "codigo": "2521.01",
+                  "nombre": "Ingeniero/a de datos",
+                  "rubros": [
+                    "it"
+                  ],
+                  "ciuo08": "2521",
+                  "ciuo08_aproximado": true,
+                  "cno2001": {
+                    "caracter": [
+                      "81"
+                    ],
+                    "calificacion": [
+                      "1",
+                      "2"
+                    ]
+                  },
+                  "coit_ar": "2102",
+                  "role_family_id": "data"
+                },
+                {
+                  "codigo": "2521.02",
+                  "nombre": "Administrador/a de bases de datos",
+                  "rubros": [
+                    "it"
+                  ],
+                  "ciuo08": "2521",
+                  "ciuo08_aproximado": false,
+                  "cno2001": {
+                    "caracter": [
+                      "81"
+                    ],
+                    "calificacion": [
+                      "1",
+                      "2"
+                    ]
+                  },
+                  "coit_ar": "2103",
+                  "role_family_id": "data"
+                }
+              ]
+            },
+            {
+              "codigo": "2522",
+              "nombre": "Administradores de sistemas",
+              "ocupaciones": [
+                {
+                  "codigo": "2522.01",
+                  "nombre": "Ingeniero/a DevOps / SRE / cloud",
+                  "rubros": [
+                    "it"
+                  ],
+                  "ciuo08": "2522",
+                  "ciuo08_aproximado": true,
+                  "cno2001": {
+                    "caracter": [
+                      "81",
+                      "92"
+                    ],
+                    "calificacion": [
+                      "1",
+                      "2"
+                    ]
+                  },
+                  "coit_ar": "3101",
+                  "role_family_id": "devops"
+                }
+              ]
+            },
+            {
+              "codigo": "2529",
+              "nombre": "Especialistas en bases de datos y en redes de computadores no clasificados bajo otros epígrafes",
+              "ocupaciones": [
+                {
+                  "codigo": "2529.01",
+                  "nombre": "Especialista en ciberseguridad",
+                  "rubros": [
+                    "it"
+                  ],
+                  "ciuo08": "2529",
+                  "ciuo08_aproximado": false,
+                  "cno2001": {
+                    "caracter": [
+                      "81",
+                      "92"
+                    ],
+                    "calificacion": [
+                      "1",
+                      "2"
+                    ]
+                  },
+                  "coit_ar": "4201",
+                  "role_family_id": "security"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "codigo": "26",
+          "nombre": "Profesionales en derecho, en ciencias sociales y culturales",
+          "familias": [
+            {
+              "codigo": "2641",
+              "nombre": "Autores y otros escritores",
+              "ocupaciones": [
+                {
+                  "codigo": "2641.01",
+                  "nombre": "Redactor/a UX",
+                  "rubros": [
+                    "it"
+                  ],
+                  "ciuo08": "2641",
+                  "ciuo08_aproximado": true,
+                  "cno2001": {
+                    "caracter": [
+                      "45",
+                      "81"
+                    ],
+                    "calificacion": [
+                      "1",
+                      "2"
+                    ]
+                  },
+                  "coit_ar": "5204",
+                  "role_family_id": "ux-ui"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "3",
+      "nombre": "Técnicos y profesionales de nivel medio",
+      "subgrupos": [
+        {
+          "codigo": "31",
+          "nombre": "Profesionales de las ciencias y la ingeniería de nivel medio",
+          "familias": [
+            {
+              "codigo": "3122",
+              "nombre": "Supervisores de industrias manufactureras",
+              "ocupaciones": [
+                {
+                  "codigo": "3122.01",
+                  "nombre": "Jefe/a de bodega o encargado/a de producción",
+                  "rubros": [
+                    "vitivinicultura"
+                  ],
+                  "ciuo08": "3122",
+                  "ciuo08_aproximado": true,
+                  "cno2001": {
+                    "caracter": [
+                      "80"
+                    ],
+                    "calificacion": [
+                      "2"
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "codigo": "3141",
+              "nombre": "Técnicos en ciencias biológicas (excluyendo la medicina)",
+              "ocupaciones": [
+                {
+                  "codigo": "3141.01",
+                  "nombre": "Técnico/a en enología o laboratorio de bodega",
+                  "rubros": [
+                    "vitivinicultura"
+                  ],
+                  "ciuo08": "3141",
+                  "ciuo08_aproximado": true,
+                  "cno2001": {
+                    "caracter": [
+                      "80"
+                    ],
+                    "calificacion": [
+                      "2"
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "codigo": "3142",
+              "nombre": "Técnicos agronómicos",
+              "ocupaciones": [
+                {
+                  "codigo": "3142.01",
+                  "nombre": "Técnico/a agropecuario/a",
+                  "rubros": [
+                    "agro"
+                  ],
+                  "ciuo08": "3142",
+                  "ciuo08_aproximado": false,
+                  "cno2001": {
+                    "caracter": [
+                      "60",
+                      "61"
+                    ],
+                    "calificacion": [
+                      "2"
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "codigo": "32",
+          "nombre": "Profesionales de nivel medio de la salud",
+          "familias": []
+        },
+        {
+          "codigo": "33",
+          "nombre": "Profesionales de nivel medio en operaciones financieras y administrativas",
+          "familias": []
+        },
+        {
+          "codigo": "34",
+          "nombre": "Profesionales de nivel medio de servicios jurídicos, sociales, culturales y afines",
+          "familias": []
+        },
+        {
+          "codigo": "35",
+          "nombre": "Técnicos de la tecnología de la información y las comunicaciones",
+          "familias": [
+            {
+              "codigo": "3512",
+              "nombre": "Técnicos en asistencia al usuario de tecnología de la información y las comunicaciones",
+              "ocupaciones": [
+                {
+                  "codigo": "3512.01",
+                  "nombre": "Técnico/a de soporte y mesa de ayuda",
+                  "rubros": [
+                    "it"
+                  ],
+                  "ciuo08": "3512",
+                  "ciuo08_aproximado": false,
+                  "cno2001": {
+                    "caracter": [
+                      "92"
+                    ],
+                    "calificacion": [
+                      "2",
+                      "3"
+                    ]
+                  },
+                  "coit_ar": "3201",
+                  "role_family_id": "support-sysadmin"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "4",
+      "nombre": "Personal de apoyo administrativo",
+      "subgrupos": [
+        {
+          "codigo": "41",
+          "nombre": "Oficinistas",
+          "familias": []
+        },
+        {
+          "codigo": "42",
+          "nombre": "Empleados en trato directo con el público",
+          "familias": []
+        },
+        {
+          "codigo": "43",
+          "nombre": "Empleados contables y encargados del registro de materiales",
+          "familias": [
+            {
+              "codigo": "4323",
+              "nombre": "Empleados de servicios de transporte",
+              "ocupaciones": [
+                {
+                  "codigo": "4323.01",
+                  "nombre": "Controlador/a de tráfico ferroviario",
+                  "rubros": [
+                    "ferroviario"
+                  ],
+                  "ciuo08": "4323",
+                  "ciuo08_aproximado": true,
+                  "cno2001": {
+                    "caracter": [
+                      "34"
+                    ],
+                    "calificacion": [
+                      "2"
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "codigo": "44",
+          "nombre": "Otro personal de apoyo administrativo",
+          "familias": []
+        }
+      ]
+    },
+    {
+      "codigo": "5",
+      "nombre": "Trabajadores de los servicios y vendedores de comercios y mercados",
+      "subgrupos": [
+        {
+          "codigo": "51",
+          "nombre": "Trabajadores de los servicios personales",
+          "familias": [
+            {
+              "codigo": "5112",
+              "nombre": "Revisores y cobradores de los transportes públicos",
+              "ocupaciones": [
+                {
+                  "codigo": "5112.01",
+                  "nombre": "Guarda o boletero/a de tren",
+                  "rubros": [
+                    "ferroviario"
+                  ],
+                  "ciuo08": "5112",
+                  "ciuo08_aproximado": false,
+                  "cno2001": {
+                    "caracter": [
+                      "34"
+                    ],
+                    "calificacion": [
+                      "3"
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "codigo": "5131",
+              "nombre": "Camareros de mesa",
+              "ocupaciones": [
+                {
+                  "codigo": "5131.01",
+                  "nombre": "Sommelier",
+                  "rubros": [
+                    "vitivinicultura"
+                  ],
+                  "ciuo08": "5131",
+                  "ciuo08_aproximado": true,
+                  "cno2001": {
+                    "caracter": [
+                      "53"
+                    ],
+                    "calificacion": [
+                      "2"
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "codigo": "52",
+          "nombre": "Vendedores",
+          "familias": []
+        },
+        {
+          "codigo": "53",
+          "nombre": "Trabajadores de los cuidados personales",
+          "familias": []
+        },
+        {
+          "codigo": "54",
+          "nombre": "Personal de los servicios de protección",
+          "familias": []
+        }
+      ]
+    },
+    {
+      "codigo": "6",
+      "nombre": "Agricultores y trabajadores calificados agropecuarios, forestales y pesqueros",
+      "subgrupos": [
+        {
+          "codigo": "61",
+          "nombre": "Agricultores y trabajadores calificados de explotaciones agropecuarias con destino al mercado",
+          "familias": [
+            {
+              "codigo": "6111",
+              "nombre": "Agricultores y trabajadores calificados de cultivos extensivos",
+              "ocupaciones": [
+                {
+                  "codigo": "6111.01",
+                  "nombre": "Agricultor/a de cultivos extensivos (granos y oleaginosas)",
+                  "rubros": [
+                    "agro"
+                  ],
+                  "ciuo08": "6111",
+                  "ciuo08_aproximado": false,
+                  "cno2001": {
+                    "caracter": [
+                      "60"
+                    ],
+                    "calificacion": [
+                      "3"
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "codigo": "6112",
+              "nombre": "Agricultores y trabajadores calificados de plantaciones de árboles y arbustos",
+              "ocupaciones": [
+                {
+                  "codigo": "6112.01",
+                  "nombre": "Viñatero/a o contratista de viña",
+                  "rubros": [
+                    "vitivinicultura"
+                  ],
+                  "ciuo08": "6112",
+                  "ciuo08_aproximado": false,
+                  "cno2001": {
+                    "caracter": [
+                      "60"
+                    ],
+                    "calificacion": [
+                      "3"
+                    ]
+                  },
+                  "nota": "El contratista de viña es una figura propia de Cuyo (Ley 23.154): trabaja la finca a cambio de un porcentaje de la cosecha."
+                }
+              ]
+            },
+            {
+              "codigo": "6113",
+              "nombre": "Agricultores y trabajadores calificados de huertas, invernaderos, viveros y jardines",
+              "ocupaciones": [
+                {
+                  "codigo": "6113.01",
+                  "nombre": "Horticultor/a o viverista",
+                  "rubros": [
+                    "agro"
+                  ],
+                  "ciuo08": "6113",
+                  "ciuo08_aproximado": false,
+                  "cno2001": {
+                    "caracter": [
+                      "60"
+                    ],
+                    "calificacion": [
+                      "3"
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "codigo": "6121",
+              "nombre": "Criadores de ganado",
+              "ocupaciones": [
+                {
+                  "codigo": "6121.01",
+                  "nombre": "Productor/a ganadero/a o puestero/a",
+                  "rubros": [
+                    "agro"
+                  ],
+                  "ciuo08": "6121",
+                  "ciuo08_aproximado": false,
+                  "cno2001": {
+                    "caracter": [
+                      "61"
+                    ],
+                    "calificacion": [
+                      "3"
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "codigo": "6122",
+              "nombre": "Avicultores y trabajadores calificados de la avicultura",
+              "ocupaciones": [
+                {
+                  "codigo": "6122.01",
+                  "nombre": "Avicultor/a",
+                  "rubros": [
+                    "agro"
+                  ],
+                  "ciuo08": "6122",
+                  "ciuo08_aproximado": false,
+                  "cno2001": {
+                    "caracter": [
+                      "63"
+                    ],
+                    "calificacion": [
+                      "3"
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "codigo": "6123",
+              "nombre": "Apicultores y sericultores y trabajadores calificados de la apicultura y la sericultura",
+              "ocupaciones": [
+                {
+                  "codigo": "6123.01",
+                  "nombre": "Apicultor/a",
+                  "rubros": [
+                    "agro"
+                  ],
+                  "ciuo08": "6123",
+                  "ciuo08_aproximado": false,
+                  "cno2001": {
+                    "caracter": [
+                      "63"
+                    ],
+                    "calificacion": [
+                      "3"
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "codigo": "62",
+          "nombre": "Trabajadores forestales calificados, pescadores y cazadores",
+          "familias": []
+        },
+        {
+          "codigo": "63",
+          "nombre": "Trabajadores agropecuarios, pescadores, cazadores y recolectores de subsistencia",
+          "familias": []
+        }
+      ]
+    },
+    {
+      "codigo": "7",
+      "nombre": "Oficiales, operarios y artesanos de artes mecánicas y de otros oficios",
+      "subgrupos": [
+        {
+          "codigo": "71",
+          "nombre": "Oficiales y operarios de la construcción, excluyendo electricistas",
+          "familias": []
+        },
+        {
+          "codigo": "72",
+          "nombre": "Oficiales y operarios de la metalurgia, la construcción mecánica y afines",
+          "familias": [
+            {
+              "codigo": "7233",
+              "nombre": "Mecánicos y ajustadores de maquinaria agrícola e industrial",
+              "ocupaciones": [
+                {
+                  "codigo": "7233.01",
+                  "nombre": "Mecánico/a de material rodante",
+                  "rubros": [
+                    "ferroviario"
+                  ],
+                  "ciuo08": "7233",
+                  "ciuo08_aproximado": true,
+                  "cno2001": {
+                    "caracter": [
+                      "92"
+                    ],
+                    "calificacion": [
+                      "3"
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "codigo": "73",
+          "nombre": "Artesanos y operarios de las artes gráficas",
+          "familias": []
+        },
+        {
+          "codigo": "74",
+          "nombre": "Trabajadores especializados en electricidad y la electrotecnología",
+          "familias": [
+            {
+              "codigo": "7421",
+              "nombre": "Mecánicos y reparadores en electrónica",
+              "ocupaciones": [
+                {
+                  "codigo": "7421.01",
+                  "nombre": "Técnico/a en señalamiento ferroviario",
+                  "rubros": [
+                    "ferroviario"
+                  ],
+                  "ciuo08": "7421",
+                  "ciuo08_aproximado": true,
+                  "cno2001": {
+                    "caracter": [
+                      "92"
+                    ],
+                    "calificacion": [
+                      "2"
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "codigo": "75",
+          "nombre": "Operarios de procesamiento de alimentos, de la confección, ebanistas, otros artesanos y afines",
+          "familias": [
+            {
+              "codigo": "7515",
+              "nombre": "Catadores y clasificadores de alimentos y bebidas",
+              "ocupaciones": [
+                {
+                  "codigo": "7515.01",
+                  "nombre": "Catador/a de vinos",
+                  "rubros": [
+                    "vitivinicultura"
+                  ],
+                  "ciuo08": "7515",
+                  "ciuo08_aproximado": false,
+                  "cno2001": {
+                    "caracter": [
+                      "80"
+                    ],
+                    "calificacion": [
+                      "2"
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "codigo": "7544",
+              "nombre": "Fumigadores y otros controladores de plagas y malas hierbas",
+              "ocupaciones": [
+                {
+                  "codigo": "7544.01",
+                  "nombre": "Aplicador/a de fitosanitarios",
+                  "rubros": [
+                    "agro",
+                    "vitivinicultura"
+                  ],
+                  "ciuo08": "7544",
+                  "ciuo08_aproximado": false,
+                  "cno2001": {
+                    "caracter": [
+                      "60"
+                    ],
+                    "calificacion": [
+                      "3"
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "8",
+      "nombre": "Operadores de instalaciones y máquinas y ensambladores",
+      "subgrupos": [
+        {
+          "codigo": "81",
+          "nombre": "Operadores de instalaciones fijas y máquinas",
+          "familias": [
+            {
+              "codigo": "8160",
+              "nombre": "Operadores de máquinas para elaborar alimentos y productos afines",
+              "ocupaciones": [
+                {
+                  "codigo": "8160.01",
+                  "nombre": "Operario/a de bodega",
+                  "rubros": [
+                    "vitivinicultura"
+                  ],
+                  "ciuo08": "8160",
+                  "ciuo08_aproximado": false,
+                  "cno2001": {
+                    "caracter": [
+                      "80"
+                    ],
+                    "calificacion": [
+                      "3"
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "codigo": "8183",
+              "nombre": "Operadores de máquinas de embalaje, embotellamiento y etiquetado",
+              "ocupaciones": [
+                {
+                  "codigo": "8183.01",
+                  "nombre": "Operario/a de fraccionamiento y embotellado",
+                  "rubros": [
+                    "vitivinicultura"
+                  ],
+                  "ciuo08": "8183",
+                  "ciuo08_aproximado": false,
+                  "cno2001": {
+                    "caracter": [
+                      "80"
+                    ],
+                    "calificacion": [
+                      "3"
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "codigo": "82",
+          "nombre": "Ensambladores",
+          "familias": []
+        },
+        {
+          "codigo": "83",
+          "nombre": "Conductores de vehículos y operadores de equipos pesados móviles",
+          "familias": [
+            {
+              "codigo": "8311",
+              "nombre": "Maquinistas de locomotoras",
+              "ocupaciones": [
+                {
+                  "codigo": "8311.01",
+                  "nombre": "Conductor/a de locomotora (maquinista)",
+                  "rubros": [
+                    "ferroviario"
+                  ],
+                  "ciuo08": "8311",
+                  "ciuo08_aproximado": false,
+                  "cno2001": {
+                    "caracter": [
+                      "34"
+                    ],
+                    "calificacion": [
+                      "3"
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "codigo": "8312",
+              "nombre": "Guardafrenos, guardagujas y agentes de maniobras",
+              "ocupaciones": [
+                {
+                  "codigo": "8312.01",
+                  "nombre": "Señalero/a, cambista o guardagujas",
+                  "rubros": [
+                    "ferroviario"
+                  ],
+                  "ciuo08": "8312",
+                  "ciuo08_aproximado": false,
+                  "cno2001": {
+                    "caracter": [
+                      "34"
+                    ],
+                    "calificacion": [
+                      "3"
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "codigo": "8341",
+              "nombre": "Operadores de maquinaria agrícola y forestal móvil",
+              "ocupaciones": [
+                {
+                  "codigo": "8341.01",
+                  "nombre": "Tractorista u operador/a de maquinaria agrícola",
+                  "rubros": [
+                    "agro",
+                    "vitivinicultura"
+                  ],
+                  "ciuo08": "8341",
+                  "ciuo08_aproximado": false,
+                  "cno2001": {
+                    "caracter": [
+                      "60"
+                    ],
+                    "calificacion": [
+                      "3"
+                    ]
+                  },
+                  "nota": "En el CNO se distingue por la dimensión tecnología (operación de maquinaria)."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "9",
+      "nombre": "Ocupaciones elementales",
+      "subgrupos": [
+        {
+          "codigo": "91",
+          "nombre": "Limpiadores y asistentes",
+          "familias": []
+        },
+        {
+          "codigo": "92",
+          "nombre": "Peones agropecuarios, pesqueros y forestales",
+          "familias": [
+            {
+              "codigo": "9211",
+              "nombre": "Peones de explotaciones agrícolas",
+              "ocupaciones": [
+                {
+                  "codigo": "9211.01",
+                  "nombre": "Peón/a agrícola",
+                  "rubros": [
+                    "agro"
+                  ],
+                  "ciuo08": "9211",
+                  "ciuo08_aproximado": false,
+                  "cno2001": {
+                    "caracter": [
+                      "60"
+                    ],
+                    "calificacion": [
+                      "4"
+                    ]
+                  }
+                },
+                {
+                  "codigo": "9211.02",
+                  "nombre": "Obrero/a de viña o cosechador/a de uva",
+                  "rubros": [
+                    "vitivinicultura"
+                  ],
+                  "ciuo08": "9211",
+                  "ciuo08_aproximado": false,
+                  "cno2001": {
+                    "caracter": [
+                      "60"
+                    ],
+                    "calificacion": [
+                      "4"
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "codigo": "9212",
+              "nombre": "Peones de explotaciones ganaderas",
+              "ocupaciones": [
+                {
+                  "codigo": "9212.01",
+                  "nombre": "Peón/a ganadero/a",
+                  "rubros": [
+                    "agro"
+                  ],
+                  "ciuo08": "9212",
+                  "ciuo08_aproximado": false,
+                  "cno2001": {
+                    "caracter": [
+                      "61"
+                    ],
+                    "calificacion": [
+                      "4"
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "codigo": "93",
+          "nombre": "Peones de la minería, la construcción, la industria manufacturera y el transporte",
+          "familias": [
+            {
+              "codigo": "9312",
+              "nombre": "Peones de obras públicas y mantenimiento",
+              "ocupaciones": [
+                {
+                  "codigo": "9312.01",
+                  "nombre": "Peón/a de vía y mantenimiento",
+                  "rubros": [
+                    "ferroviario"
+                  ],
+                  "ciuo08": "9312",
+                  "ciuo08_aproximado": false,
+                  "cno2001": {
+                    "caracter": [
+                      "72"
+                    ],
+                    "calificacion": [
+                      "4"
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "codigo": "94",
+          "nombre": "Ayudantes de preparación de alimentos",
+          "familias": []
+        },
+        {
+          "codigo": "95",
+          "nombre": "Vendedores ambulantes de servicios y afines",
+          "familias": []
+        },
+        {
+          "codigo": "96",
+          "nombre": "Recolectores de desechos y otras ocupaciones elementales",
+          "familias": []
+        }
+      ]
+    }
+  ]
+}
