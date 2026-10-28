@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { api, type RoleFamily } from "../api/client";
+import { api, ESTIMACION_EDITORIAL, type RoleFamily } from "../api/client";
 import { Reveal } from "../components/Reveal";
 import { SourceCitation } from "../components/SourceCitation";
 
@@ -19,7 +19,7 @@ export function RoleExplorer() {
   }, []);
 
   if (error) {
-    return <div className="error-box">No se pudo conectar con la API del backend ({error}).</div>;
+    return <div className="error-box">No se pudieron cargar los datos ({error}).</div>;
   }
 
   const active = roles.find((r) => r.id === selected);
@@ -30,8 +30,8 @@ export function RoleExplorer() {
         <span className="hero-kicker">02 · Taxonomía</span>
         <h1>Explorador de Roles IT</h1>
         <p>
-          Cada familia agrupa decenas de nombres de puesto reales (nomenclaturas) usados en
-          avisos de empleo argentinos, para poder segmentar el mercado más allá de "programador".
+          Cada familia agrupa decenas de nombres de puesto reales (nomenclaturas) usados en avisos
+          de empleo argentinos, para poder segmentar el mercado más allá de "programador".
         </p>
       </section>
 
@@ -44,7 +44,9 @@ export function RoleExplorer() {
                 onClick={() => setSelected(r.id)}
               >
                 <span>{r.nombre}</span>
-                {r.distribucion && <span className="role-pct">{r.distribucion.porcentaje_estimado}%</span>}
+                {r.distribucion && (
+                  <span className="role-pct">{r.distribucion.porcentaje_estimado}%</span>
+                )}
               </button>
             </li>
           ))}
@@ -57,7 +59,13 @@ export function RoleExplorer() {
             {active.distribucion && (
               <>
                 <p className="panel-sub">
-                  Participación estimada: <strong>{active.distribucion.porcentaje_estimado}%</strong>
+                  Participación estimada:{" "}
+                  <strong>{active.distribucion.porcentaje_estimado}%</strong>
+                  {active.distribucion.tipo === ESTIMACION_EDITORIAL && (
+                    <span className="source-badge source-estimacion-badge">
+                      Estimación editorial
+                    </span>
+                  )}
                 </p>
                 <SourceCitation fuente={active.distribucion.fuente} />
                 {active.distribucion.nota && (

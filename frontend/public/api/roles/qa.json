@@ -1,0 +1,30 @@
+{
+  "id": "qa",
+  "nombre": "QA / Testing",
+  "descripcion": "Diseño y ejecución de pruebas manuales y automatizadas para asegurar la calidad del software.",
+  "aliases": [
+    "QA Engineer",
+    "QA Tester",
+    "Analista de Testing",
+    "Tester",
+    "Quality Assurance Analyst",
+    "Automation Tester",
+    "QA Automation Engineer",
+    "Ingeniero de Calidad de Software",
+    "SDET",
+    "Analista de Calidad"
+  ],
+  "distribucion": {
+    "porcentaje_estimado": 5.9,
+    "tipo": "COMUNITARIO_VERIFICABLE",
+    "nota": "Dato directo de la encuesta ('QA / Tester')",
+    "fuente": {
+      "id": "sysarmy-2025-1",
+      "nombre": "Sysarmy - Encuesta de Sueldos IT Argentina 2025.1",
+      "tipo": "comunitario",
+      "descripcion": "Encuesta comunitaria abierta (no gubernamental) con 5.196 respuestas de trabajadores IT en Argentina. Dataset publicado bajo licencia CC BY-NC-SA 4.0. Es la fuente primaria más completa disponible hoy para estimar la distribución de roles, a falta de una encuesta oficial.",
+      "url": "https://sysarmy.com/blog/posts/resultados-de-la-encuesta-de-sueldos-2025-1/",
+      "fecha": "2025"
+    }
+  }
+}

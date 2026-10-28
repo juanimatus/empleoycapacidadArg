@@ -1,0 +1,33 @@
+{
+  "id": "devops",
+  "nombre": "DevOps / SRE / Infraestructura Cloud",
+  "descripcion": "Automatización de infraestructura, despliegues, monitoreo, confiabilidad de sistemas y administración de la nube.",
+  "aliases": [
+    "DevOps Engineer",
+    "Ingeniero DevOps",
+    "Site Reliability Engineer",
+    "SRE",
+    "Cloud Engineer",
+    "Ingeniero Cloud",
+    "Infrastructure Engineer",
+    "Platform Engineer",
+    "Systems Engineer Cloud",
+    "AWS Engineer",
+    "Azure Engineer",
+    "GCP Engineer",
+    "Administrador de Infraestructura Cloud"
+  ],
+  "distribucion": {
+    "porcentaje_estimado": 15.1,
+    "tipo": "COMUNITARIO_VERIFICABLE",
+    "nota": "Dato directo de la encuesta (categoría 'SysAdmin / DevOps / SRE')",
+    "fuente": {
+      "id": "sysarmy-2025-1",
+      "nombre": "Sysarmy - Encuesta de Sueldos IT Argentina 2025.1",
+      "tipo": "comunitario",
+      "descripcion": "Encuesta comunitaria abierta (no gubernamental) con 5.196 respuestas de trabajadores IT en Argentina. Dataset publicado bajo licencia CC BY-NC-SA 4.0. Es la fuente primaria más completa disponible hoy para estimar la distribución de roles, a falta de una encuesta oficial.",
+      "url": "https://sysarmy.com/blog/posts/resultados-de-la-encuesta-de-sueldos-2025-1/",
+      "fecha": "2025"
+    }
+  }
+}

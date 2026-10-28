@@ -53,7 +53,7 @@ export function Methodology() {
 
       <Reveal className="panel" delay={100}>
         <h2>Fuentes citadas</h2>
-        {error && <p className="error-box">No se pudo conectar con la API ({error}).</p>}
+        {error && <p className="error-box">No se pudieron cargar los datos ({error}).</p>}
         <div className="source-list">
           {sources.map((s) => (
             <div key={s.id} className="source-card">

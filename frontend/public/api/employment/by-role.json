@@ -1,0 +1,91 @@
+{
+  "anio_base": 2024,
+  "empleos_registrados_totales": 158179,
+  "aviso": "El total es dato oficial (OEDE). La segmentación por rol se calcula a partir de la encuesta comunitaria Sysarmy 2025.1 (n=5.196); dentro del bloque 'Developer' el reparto entre Backend/Frontend/Full Stack/Mobile sigue siendo una estimación editorial.",
+  "distribucion": [
+    {
+      "role_family_id": "backend",
+      "nombre": "Desarrollo Backend",
+      "porcentaje_estimado": 17.1,
+      "empleos_estimados": 27049,
+      "tipo_dato": "ESTIMACION_EDITORIAL"
+    },
+    {
+      "role_family_id": "devops",
+      "nombre": "DevOps / SRE / Infraestructura Cloud",
+      "porcentaje_estimado": 15.1,
+      "empleos_estimados": 23885,
+      "tipo_dato": "COMUNITARIO_VERIFICABLE"
+    },
+    {
+      "role_family_id": "product-project",
+      "nombre": "Gestión de Producto / Proyecto IT",
+      "porcentaje_estimado": 11.2,
+      "empleos_estimados": 17716,
+      "tipo_dato": "COMUNITARIO_VERIFICABLE"
+    },
+    {
+      "role_family_id": "frontend",
+      "nombre": "Desarrollo Frontend",
+      "porcentaje_estimado": 11.1,
+      "empleos_estimados": 17558,
+      "tipo_dato": "ESTIMACION_EDITORIAL"
+    },
+    {
+      "role_family_id": "data",
+      "nombre": "Datos y Analytics (BI / Data Engineering)",
+      "porcentaje_estimado": 11.0,
+      "empleos_estimados": 17400,
+      "tipo_dato": "COMUNITARIO_VERIFICABLE"
+    },
+    {
+      "role_family_id": "fullstack",
+      "nombre": "Desarrollo Full Stack",
+      "porcentaje_estimado": 9.4,
+      "empleos_estimados": 14869,
+      "tipo_dato": "ESTIMACION_EDITORIAL"
+    },
+    {
+      "role_family_id": "qa",
+      "nombre": "QA / Testing",
+      "porcentaje_estimado": 5.9,
+      "empleos_estimados": 9333,
+      "tipo_dato": "COMUNITARIO_VERIFICABLE"
+    },
+    {
+      "role_family_id": "mobile",
+      "nombre": "Desarrollo Mobile",
+      "porcentaje_estimado": 5.1,
+      "empleos_estimados": 8067,
+      "tipo_dato": "ESTIMACION_EDITORIAL"
+    },
+    {
+      "role_family_id": "ux-ui",
+      "nombre": "UX/UI Design",
+      "porcentaje_estimado": 4.6,
+      "empleos_estimados": 7276,
+      "tipo_dato": "COMUNITARIO_VERIFICABLE"
+    },
+    {
+      "role_family_id": "support-sysadmin",
+      "nombre": "Soporte Técnico / Sysadmin",
+      "porcentaje_estimado": 3.7,
+      "empleos_estimados": 5853,
+      "tipo_dato": "COMUNITARIO_VERIFICABLE"
+    },
+    {
+      "role_family_id": "security",
+      "nombre": "Ciberseguridad",
+      "porcentaje_estimado": 3.0,
+      "empleos_estimados": 4745,
+      "tipo_dato": "COMUNITARIO_VERIFICABLE"
+    },
+    {
+      "role_family_id": "data-science-ml",
+      "nombre": "Data Science / IA / Machine Learning",
+      "porcentaje_estimado": 2.8,
+      "empleos_estimados": 4429,
+      "tipo_dato": "COMUNITARIO_VERIFICABLE"
+    }
+  ]
+}

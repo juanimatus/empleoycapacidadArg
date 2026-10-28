@@ -13,7 +13,7 @@ export function Provinces() {
   }, []);
 
   if (error) {
-    return <div className="error-box">No se pudo conectar con la API del backend ({error}).</div>;
+    return <div className="error-box">No se pudieron cargar los datos ({error}).</div>;
   }
 
   if (data.length === 0) {

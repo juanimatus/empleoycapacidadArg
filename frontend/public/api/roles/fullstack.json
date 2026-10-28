@@ -1,0 +1,27 @@
+{
+  "id": "fullstack",
+  "nombre": "Desarrollo Full Stack",
+  "descripcion": "Rol que combina responsabilidades de backend y frontend en un mismo puesto.",
+  "aliases": [
+    "Full Stack Developer",
+    "Desarrollador Full Stack",
+    "Desarrollador/a FullStack",
+    "Full Stack Engineer",
+    "Programador Full Stack",
+    "Fullstack Software Engineer",
+    "Dev FullStack"
+  ],
+  "distribucion": {
+    "porcentaje_estimado": 9.4,
+    "tipo": "ESTIMACION_EDITORIAL",
+    "nota": "Estimación editorial: Sysarmy no separa Backend/Frontend/Full Stack/Mobile. Lo real es el bloque 'Developer' completo (1.776 respuestas, 42,7%); este reparto interno es criterio propio.",
+    "fuente": {
+      "id": "sysarmy-2025-1",
+      "nombre": "Sysarmy - Encuesta de Sueldos IT Argentina 2025.1",
+      "tipo": "comunitario",
+      "descripcion": "Encuesta comunitaria abierta (no gubernamental) con 5.196 respuestas de trabajadores IT en Argentina. Dataset publicado bajo licencia CC BY-NC-SA 4.0. Es la fuente primaria más completa disponible hoy para estimar la distribución de roles, a falta de una encuesta oficial.",
+      "url": "https://sysarmy.com/blog/posts/resultados-de-la-encuesta-de-sueldos-2025-1/",
+      "fecha": "2025"
+    }
+  }
+}

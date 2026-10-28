@@ -1,0 +1,29 @@
+{
+  "id": "ux-ui",
+  "nombre": "UX/UI Design",
+  "descripcion": "Diseño de experiencia e interfaz de usuario: investigación, prototipado y diseño visual de productos digitales.",
+  "aliases": [
+    "UX Designer",
+    "UI Designer",
+    "UX/UI Designer",
+    "Diseñador UX",
+    "Diseñador UX/UI",
+    "Product Designer",
+    "Diseñador de Producto",
+    "Interaction Designer",
+    "UX Researcher"
+  ],
+  "distribucion": {
+    "porcentaje_estimado": 4.6,
+    "tipo": "COMUNITARIO_VERIFICABLE",
+    "nota": "Dato directo de la encuesta ('UX Designer' + 'Designer' + 'UX Writer' + 'UX Researcher')",
+    "fuente": {
+      "id": "sysarmy-2025-1",
+      "nombre": "Sysarmy - Encuesta de Sueldos IT Argentina 2025.1",
+      "tipo": "comunitario",
+      "descripcion": "Encuesta comunitaria abierta (no gubernamental) con 5.196 respuestas de trabajadores IT en Argentina. Dataset publicado bajo licencia CC BY-NC-SA 4.0. Es la fuente primaria más completa disponible hoy para estimar la distribución de roles, a falta de una encuesta oficial.",
+      "url": "https://sysarmy.com/blog/posts/resultados-de-la-encuesta-de-sueldos-2025-1/",
+      "fecha": "2025"
+    }
+  }
+}

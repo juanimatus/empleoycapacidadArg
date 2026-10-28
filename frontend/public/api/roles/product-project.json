@@ -1,0 +1,31 @@
+{
+  "id": "product-project",
+  "nombre": "Gestión de Producto / Proyecto IT",
+  "descripcion": "Planificación, priorización y coordinación de equipos y entregas de productos o proyectos de software.",
+  "aliases": [
+    "Product Owner",
+    "Product Manager",
+    "Project Manager IT",
+    "Scrum Master",
+    "Agile Coach",
+    "Gerente de Producto",
+    "Gerente de Proyecto IT",
+    "Líder de Proyecto",
+    "PMO IT",
+    "Delivery Manager",
+    "Coordinador de Proyectos IT"
+  ],
+  "distribucion": {
+    "porcentaje_estimado": 11.2,
+    "tipo": "COMUNITARIO_VERIFICABLE",
+    "nota": "Dato directo de la encuesta ('Manager / Director' + 'Scrum Master')",
+    "fuente": {
+      "id": "sysarmy-2025-1",
+      "nombre": "Sysarmy - Encuesta de Sueldos IT Argentina 2025.1",
+      "tipo": "comunitario",
+      "descripcion": "Encuesta comunitaria abierta (no gubernamental) con 5.196 respuestas de trabajadores IT en Argentina. Dataset publicado bajo licencia CC BY-NC-SA 4.0. Es la fuente primaria más completa disponible hoy para estimar la distribución de roles, a falta de una encuesta oficial.",
+      "url": "https://sysarmy.com/blog/posts/resultados-de-la-encuesta-de-sueldos-2025-1/",
+      "fecha": "2025"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "data-science-ml",
+  "nombre": "Data Science / IA / Machine Learning",
+  "descripcion": "Desarrollo de modelos estadísticos, de machine learning e inteligencia artificial, y análisis avanzado de datos.",
+  "aliases": [
+    "Data Scientist",
+    "Científico de Datos",
+    "Machine Learning Engineer",
+    "ML Engineer",
+    "AI Engineer",
+    "Ingeniero de IA",
+    "Investigador de IA",
+    "NLP Engineer",
+    "MLOps Engineer",
+    "Analista de Inteligencia Artificial"
+  ],
+  "distribucion": {
+    "porcentaje_estimado": 2.8,
+    "tipo": "COMUNITARIO_VERIFICABLE",
+    "nota": "Dato directo de la encuesta ('Data Scientist' + 'AI Engineer')",
+    "fuente": {
+      "id": "sysarmy-2025-1",
+      "nombre": "Sysarmy - Encuesta de Sueldos IT Argentina 2025.1",
+      "tipo": "comunitario",
+      "descripcion": "Encuesta comunitaria abierta (no gubernamental) con 5.196 respuestas de trabajadores IT en Argentina. Dataset publicado bajo licencia CC BY-NC-SA 4.0. Es la fuente primaria más completa disponible hoy para estimar la distribución de roles, a falta de una encuesta oficial.",
+      "url": "https://sysarmy.com/blog/posts/resultados-de-la-encuesta-de-sueldos-2025-1/",
+      "fecha": "2025"
+    }
+  }
+}

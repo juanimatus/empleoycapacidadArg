@@ -1,0 +1,73 @@
+{
+  "ultimo_anio": 2024,
+  "empleos_registrados_ultimo_anio": 158179,
+  "variacion_interanual_pct": 4.0,
+  "cantidad_familias_rol": 12,
+  "periodo_datos": "2015-2024",
+  "kpis": [
+    {
+      "id": "participacion_femenina",
+      "nombre": "Participación femenina en el empleo del sector",
+      "valor": 35.4,
+      "unidad": "pct",
+      "periodo": "2025",
+      "nota": "Creció casi 10 puntos porcentuales desde 2018.",
+      "fuente": {
+        "id": "opssi-kpis-2025",
+        "nombre": "CESSI/OPSSI - Foco Talento jul-2025",
+        "tipo": "oficial",
+        "descripcion": "Indicadores sectoriales (salario, rotación, género) relevados por encuesta de OPSSI.",
+        "url": "https://cessi.org.ar/wp-content/uploads/2025/08/CESSI-OPSSI-Reporte-de-los-principales-indicadores-de-la-industria-del-Software-con-Foco-en-Talento_Julio-2025.pdf",
+        "fecha": "2025-07"
+      }
+    },
+    {
+      "id": "salario_promedio",
+      "nombre": "Salario promedio de la industria del Software",
+      "valor": 2725272.0,
+      "unidad": "ARS",
+      "periodo": "2025-03",
+      "nota": "Incremento de 17,9% respecto a dic-2024.",
+      "fuente": {
+        "id": "opssi-kpis-2025",
+        "nombre": "CESSI/OPSSI - Foco Talento jul-2025",
+        "tipo": "oficial",
+        "descripcion": "Indicadores sectoriales (salario, rotación, género) relevados por encuesta de OPSSI.",
+        "url": "https://cessi.org.ar/wp-content/uploads/2025/08/CESSI-OPSSI-Reporte-de-los-principales-indicadores-de-la-industria-del-Software-con-Foco-en-Talento_Julio-2025.pdf",
+        "fecha": "2025-07"
+      }
+    },
+    {
+      "id": "tasa_rotacion",
+      "nombre": "Tasa de rotación de personal",
+      "valor": 20.0,
+      "unidad": "pct",
+      "periodo": "2024",
+      "nota": "La mitad que tres años atrás; refleja mayor estabilidad laboral.",
+      "fuente": {
+        "id": "opssi-kpis-2025",
+        "nombre": "CESSI/OPSSI - Foco Talento jul-2025",
+        "tipo": "oficial",
+        "descripcion": "Indicadores sectoriales (salario, rotación, género) relevados por encuesta de OPSSI.",
+        "url": "https://cessi.org.ar/wp-content/uploads/2025/08/CESSI-OPSSI-Reporte-de-los-principales-indicadores-de-la-industria-del-Software-con-Foco-en-Talento_Julio-2025.pdf",
+        "fecha": "2025-07"
+      }
+    },
+    {
+      "id": "nuevos_empleos_2024",
+      "nombre": "Nuevos puestos de trabajo generados en 2024",
+      "valor": 6131.0,
+      "unidad": "empleos",
+      "periodo": "2024",
+      "nota": "Representa el 63% del empleo generado por el conjunto de la Economía del Conocimiento en 2024.",
+      "fuente": {
+        "id": "opssi-kpis-2025",
+        "nombre": "CESSI/OPSSI - Foco Talento jul-2025",
+        "tipo": "oficial",
+        "descripcion": "Indicadores sectoriales (salario, rotación, género) relevados por encuesta de OPSSI.",
+        "url": "https://cessi.org.ar/wp-content/uploads/2025/08/CESSI-OPSSI-Reporte-de-los-principales-indicadores-de-la-industria-del-Software-con-Foco-en-Talento_Julio-2025.pdf",
+        "fecha": "2025-07"
+      }
+    }
+  ]
+}
